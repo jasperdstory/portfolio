@@ -3,8 +3,6 @@ from flask.ext.script import Manager
 
 app = Flask(__name__)
 
-manager = Manager(app)
-
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -37,4 +35,4 @@ def E():
 
 
 if __name__ == '__main__':
-    manager.run()
+    app.run(host='0.0.0.0')
