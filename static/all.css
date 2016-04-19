@@ -1,0 +1,169 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  .navbar-container {
+    display: none;   }
+    .starttest {
+      font-size: 50px;
+      color: green;   }
+      .mobile-navbar-container {
+        display: block;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        height: 20px;
+        width: 100%;
+        background-color: white;
+        padding: 20px;   }
+        .mobile-navbar-left {
+          display: inline-block;
+          float: left;   }
+          .mobile-navbar-name {
+            display: inline-block;   }
+            .mobile-navbar-right {
+              display: inline-block;
+              float: right;
+              margin-right: 30px;
+              width: auto;   }
+              .mobile-navbar-section {
+                display: inline-block;
+                text-align: right;
+                font-weight: bold;
+                font-size: 13px;   }
+                .mobile-navbar-nav {
+                  display: inline-block;
+                  text-align: right;   }
+                  .mobile-navbar-dropdown {
+                    position: fixed;
+                    top: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    right: 0px;
+                    background-color: #fdfdfd;
+                    padding: 20px;   }
+                    .mobile-navbar-dropdown-left {
+                      text-align: left;
+                      display: inline-block;
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: #007eff;   }
+                      .mobile-navbar-dropdown-right {
+                        display: inline-block;
+                        float: right;   }
+                        .mobile-navbar-dropdown-name {
+                          text-align: right;
+                          display: inline-block;
+                          font-size: 13px;
+                          font-weight: bold;
+                          color: #969696;   }
+                          .mobile-navbar-dropdown-close {
+                            text-align: right;
+                            display: inline-block;   }
+                            .mobile-navbar-dropdown-title {
+                              height: 80px;   }
+                              .mobile-navbar-dropdown-item {
+                                height: 44px;
+                                width: 100%;
+                                color: #282832;   }
+                                .mobile-navbar-dropdown-item-link {
+                                  -webkit-tap-highlight-color: #fafaff;
+                                  display: block;
+                                  width: 100%;
+                                  height: 44px;
+                                  border-bottom: 0.5px solid rgba(160, 160, 170, 0.3);   }
+                                  .mobile-navbar-dropdown-item-link-last {
+                                    border-bottom: none;   }
+                                    .mobile-navbar-dropdown-item a {
+                                      line-height: 2.9;
+                                      text-decoration: none;
+                                      color: #282832;
+                                      opacity: 0.5;   }
+                                      .mobile-navbar-dropdown-item a:visited {
+                                        color: #282832;   }
+                                        .mobile-navbar-dropdown-item a:active {
+                                          background-color: green;
+                                          transition: all 0.2s;   }
+                                          .navbar-dropdown-item-bold {
+                                            font-weight: bold !important;   }
+                                            .navbar-dropdown-item-regular {
+                                              font-weight: normal;   }
+                                              .navbar-close {
+                                                display: none;   }
+                                                .navbar-open {
+                                                  display: block;   }
+                                                  .navbar-open .mobile-navbar-dropdown-item a {
+                                                    -webkit-transition: opacity 2s;
+                                                    transition: opacity 2s;
+                                                    opacity: 1;   }
+                                                    .mobilespace {
+                                                      height: 100px;   }
+                                                      .testblock {
+                                                        background-color: blue;
+                                                        height: 1000px;   }
+                                                        .newscontainer {
+                                                          width: 100%;
+                                                          height: 1500px;
+                                                          background: -moz-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0365c0),
+                                                                                                                    color-stop(100%, #51a7f9));
+                                                          background: -webkit-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                          background: -o-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                          background: -ms-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                          background: linear-gradient(0deg, #51a7f9, #0365c0);
+                                                          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0365C0',
+                                                                                                                    endColorstr='#51A7F9',GradientType=0 );   }
+                                                          .newsh1 {
+                                                            padding-top: 50px;
+                                                            padding-left: 20px;
+                                                            font-size: 32px;
+                                                            font-weight: bold;
+                                                            color: white;   }
+                                                            .newsh2 {
+                                                              margin-top: 30px;
+                                                              font-size: 16px;
+                                                              color: white;
+                                                              padding-left: 20px;
+                                                              width: 200px;   }
+                                                              .newsh3 {
+                                                                margin-top: 30px;
+                                                                font-size: 14px;
+                                                                color: white;
+                                                                padding-left: 20px;
+                                                                line-height: 1.2;
+                                                                width: 300px;   }
+                                                                .hamburger {
+                                                                  cursor: pointer;
+                                                                  position: absolute;
+                                                                  width: 48px;
+                                                                  height: 48px;
+                                                                  transition: all 0.25s;   }
+                                                                  .hamburger__top-bun, .hamburger__bottom-bun {
+                                                                    content: '';
+                                                                    display: block;
+                                                                    position: absolute;
+                                                                    left: 15px;
+                                                                    width: 18px;
+                                                                    height: 1px;
+                                                                    background: blue;
+                                                                    transform: rotate(0);
+                                                                    transition: all 0.25s;   }
+                                                                    .hamburger:hover [class*="-bun"] {
+                                                                      background: red;   }
+                                                                      .hamburger__top-bun {
+                                                                        top: 23px;
+                                                                        transform: translateY(-3px);   }
+                                                                        .hamburger__bottom-bun {
+                                                                          bottom: 23px;
+                                                                          transform: translateY(3px);   }
+                                                                          .hamburger-open {
+                                                                            transform: rotate(90deg);   }
+                                                                            .hamburger-open .hamburger__top-bun {
+                                                                              transform: rotate(45deg) translateY(0px);   }
+                                                                              .hamburger-open .hamburger__bottom-bun {
+                                                                                transform: rotate(-45deg) translateY(0px);   }
+                                                                                .hamburger {
+                                                                                  margin-top: 50px;
+                                                                                  justify-content: center;
+                                                                                  align-items: center;   }
+}

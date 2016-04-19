@@ -9,8 +9,23 @@
     font-weight: bold;
 }
 
+.navbar-container{
+	display: none;
+}
+
 .mobile-navbar-container{
 	display: none;
+}
+
+.currentsection{
+	position: fixed;
+	left: 200;
+	top: 0;
+	width: 100px;
+	height: 100px;
+	padding-top: 20px;
+	font-size: 20px;
+	background-color: white;
 }
 
 .global{
@@ -28,6 +43,21 @@
 
 .testblock{
 	background-color: red;
+	height: 1000px;
+}
+
+.testblockb{
+	background-color: blue;
+	height: 1000px;
+}
+
+.testblockc{
+	background-color: green;
+	height: 1000px;
+}
+
+.testblockd{
+	background-color: orange;
 	height: 1000px;
 }
 
@@ -131,3 +161,20 @@
 	line-height: 1.2;
 	width: 600px;
 }
+
+.navbutton{
+	width: 200px;
+	height: 200px;
+}
+
+.navdrawer {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+

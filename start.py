@@ -1,8 +1,9 @@
 from flask import Flask, render_template
 from flask.ext.script import Manager
+from flask.ext.assets import Environment, Bundle
+
 
 app = Flask(__name__)
-
 
 @app.errorhandler(404)
 def page_not_found(e):

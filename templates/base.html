@@ -1,42 +1,14 @@
 <div class="global">
-    {% block title %}Portfolio{% endblock %}
 
     {% block head %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mobile.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style type="text/css">
-    <!--
-    body {
-     margin-top: 0px;
-     margin-right: 0px;
-     margin-bottom: 0px;
-     margin-left: 0px
-    }
-    -->
-    </style>
+        {% include '_head.html' %}
     {% endblock %}
 
     {% block navbar %}
-    <div class="navbar-container">
-        <div class="topnavbar topnavbar-jasper">
-            <div class="navbar-top"><a href="/">jasper d story</a></div>
-            <div class="navbar-item"><a href="/#intro">#Intro</a></div>
-            <div class="navbar-item"><a href="/#7things">#7things</a></div>
-        </div>
-        <div class="topnavbar topnavbar-portfolio">
-            <div class="navbar-top"><a href="/portfolio">product portfolio</a></div>
-            <div class="navbar-item navbar-item-news"><a href="/portfolio#news">#News</a></div>
-            <div class="navbar-item"><a href="/portfolio#dashboard">#Dashboard</a></div>
-            <div class="navbar-item"><a href="/portfolio#journeys">#Journeys</a></div>
-            <div class="navbar-item"><a href="/portfolio#googleapps">#Google Apps</a></div>
-        </div>
-    </div>
+    
+        {% include '_desktopnav.html' %}    
+        {% include '_mobilenav.html' %}
 
-    <div class="mobile-navbar-container">
-        abcdef        
-    </div>
     {% endblock %}
 
     {% block content %}
