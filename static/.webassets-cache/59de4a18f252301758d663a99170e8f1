@@ -1,0 +1,3 @@
+V@media only screen\u000aand (min-device-width : 320px)\u000aand (max-device-width : 667px)\u000aand (orientation : portrait) {\u000a  .startcontainer .contenth1 {\u000a    font-size: 36px;\u000a    color: green;\u000a    padding-top: 100px;\u000a    letter-spacing: -0.02em;\u000a    font-weight: bold;   }\u000a}\u000a
+p1
+.

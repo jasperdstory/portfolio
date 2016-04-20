@@ -10,7 +10,7 @@
 }
 
 .navbar-container{
-	display: none;
+	display: block;
 }
 
 .mobile-navbar-container{

@@ -1,10 +1,14 @@
-<link rel="stylesheet" scr type="text/css" href="{{ url_for('static', filename='main.css') }}">
-
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='nav.css') }}">
-
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mobile.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='all.css') }}">
 
 <script type="text/javascript" src="{{ url_for('static', filename='nav.js') }}"></script>
+
+{% assets "scss_all" %}
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='typography.scss') }}">
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='desktop-nav.scss') }}">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='mobile-nav.scss') }}">
+{% endassets %}
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 

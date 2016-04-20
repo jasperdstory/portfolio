@@ -5,6 +5,11 @@ from flask.ext.assets import Environment, Bundle
 
 app = Flask(__name__)
 
+assets = Environment(app)
+assets.url = app.static_url_path
+scss = Bundle('mobile-nav.scss', 'desktop-nav.scss', 'typography.scss' filters='pyscss', output='all.css')
+assets.register('scss_all', scss)
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404

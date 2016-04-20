@@ -48,6 +48,19 @@ console.log("js loaded")
 
 var classname = document.getElementsByClassName("mobile-navbar-dropdown-item");
 
+// window.onscroll = function() {myFunction3()};
+//   function myFunction3() {
+//   var scrolly = window.pageYOffset || document.documentElement.scrollTop
+//   var f = document.getElementById("mobile-navbar-header-border");
+//   if (scrolly > 10){
+//       console.log("scrolledpast50")
+//       f.classList.add("fade-border");  
+//     }
+//   else {
+//       f.classList.remove("fade-border");  
+//   }
+// }
+
 // // HAMBURGER TEST
 // document.getElementById("hamburger").addEventListener("click", function() {
 //   console.log("hamburger-clicked")
@@ -58,12 +71,26 @@ var classname = document.getElementsByClassName("mobile-navbar-dropdown-item");
 
 // OPEN NAV
 document.getElementById("mobile-navbar-nav-open").addEventListener("click", function() {
-  var d = document.getElementById("mobile-navbar-dropdown");
-  d.classList.remove("navbar-close");
-  d.classList.add("navbar-open");
+  var d = document.getElementById("mobile-navbar-container");
+  if(d.classList.contains("navbar-close")){
+    d.classList.add("navbar-open");  
+    d.classList.remove("navbar-close");
+  }
+  else{
+   d.classList.remove("navbar-open"); 
+   d.classList.add("navbar-close");  
+  }
+  var e = document.getElementById("hamburger");
+  if(e.classList.contains("hamburger-open")){ 
+    e.classList.remove("hamburger-open");
+  }
+  else{
+   e.classList.add("hamburger-open");  
+  }
+  
 
 // SETTING TO BOLD
-  document.getElementById('currentsection-nav').innerHTML = currentsection;
+  document.getElementById('currentsection').innerHTML = currentsection;
 
   for (var i = 0; i < classname.length; i++) {
 
@@ -86,18 +113,20 @@ document.getElementById("mobile-navbar-nav-open").addEventListener("click", func
 });
 
 // CLOSE NAV
-document.getElementById("mobile-navbar-nav-close").addEventListener("click", function() {
-  console.log("you clicked it");
-  var d = document.getElementById("mobile-navbar-dropdown");
-  d.classList.remove("navbar-open");
-  d.classList.add("navbar-close");
-});
+// document.getElementById("mobile-navbar-nav-close").addEventListener("click", function() {
+//   console.log("you clicked it");
+//   var d = document.getElementById("mobile-navbar-container");
+//   d.classList.remove("navbar-open");
+//   d.classList.add("navbar-close");
+// });
 
 // CLICK LINK
 var myFunction2 = function() {
-  var d = document.getElementById("mobile-navbar-dropdown");
+  var d = document.getElementById("mobile-navbar-container");
   d.classList.remove("navbar-open");
   d.classList.add("navbar-close");
+  var e = document.getElementById("hamburger");
+  e.classList.remove("hamburger-open");
 };
 
 for (var i = 0; i < classname.length; i++) {

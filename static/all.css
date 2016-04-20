@@ -4,166 +4,234 @@ and (max-device-width : 667px)
 and (orientation : portrait) {
   .navbar-container {
     display: none;   }
-    .starttest {
-      font-size: 50px;
-      color: green;   }
-      .mobile-navbar-container {
-        display: block;
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        height: 20px;
+    .mobile-navbar-container {
+      display: block;
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;   }
+      .mobile-navbar-header {
+        background-color: #fafafa;
+        height: 54px;
         width: 100%;
-        background-color: white;
-        padding: 20px;   }
-        .mobile-navbar-left {
-          display: inline-block;
-          float: left;   }
-          .mobile-navbar-name {
-            display: inline-block;   }
-            .mobile-navbar-right {
+        -webkit-tap-highlight-color: transparent;   }
+        .mobile-navbar-header-border {
+          height: 0.5px;
+          background-color: #b4b4c8;
+          opacity: 1;   }
+          .mobile-navbar-nav-open {
+            width: 100%;
+            height: 100%;   }
+            .mobile-navbar-left {
               display: inline-block;
-              float: right;
-              margin-right: 30px;
-              width: auto;   }
-              .mobile-navbar-section {
+              float: left;
+              padding: 20px;   }
+              .mobile-navbar-name {
                 display: inline-block;
-                text-align: right;
                 font-weight: bold;
-                font-size: 13px;   }
-                .mobile-navbar-nav {
+                color: #3c3c50;   }
+                .mobile-navbar-right {
                   display: inline-block;
-                  text-align: right;   }
-                  .mobile-navbar-dropdown {
-                    position: fixed;
-                    top: 0px;
-                    bottom: 0px;
-                    left: 0px;
-                    right: 0px;
-                    background-color: #fdfdfd;
-                    padding: 20px;   }
-                    .mobile-navbar-dropdown-left {
-                      text-align: left;
+                  float: right;
+                  margin-right: -6px;
+                  width: auto;
+                  padding: 20px;   }
+                  .mobile-navbar-section {
+                    display: inline-block;
+                    text-align: right;
+                    font-weight: bold;
+                    font-size: 13px;
+                    margin-right: -5px;   }
+                    .mobile-navbar-nav {
                       display: inline-block;
-                      font-size: 18px;
-                      font-weight: bold;
-                      color: #007eff;   }
-                      .mobile-navbar-dropdown-right {
-                        display: inline-block;
-                        float: right;   }
-                        .mobile-navbar-dropdown-name {
-                          text-align: right;
-                          display: inline-block;
-                          font-size: 13px;
-                          font-weight: bold;
-                          color: #969696;   }
-                          .mobile-navbar-dropdown-close {
-                            text-align: right;
-                            display: inline-block;   }
-                            .mobile-navbar-dropdown-title {
-                              height: 80px;   }
-                              .mobile-navbar-dropdown-item {
-                                height: 44px;
+                      text-align: right;
+                      width: 40px;   }
+                      .mobile-navbar-dropdown-close {
+                        text-align: right;
+                        display: inline-block;   }
+                        .mobile-navbar-dropdown-list {
+                          top: 0px;
+                          bottom: 0px;
+                          left: 0px;
+                          right: 0px;
+                          background-color: #fafafa;
+                          border-bottom: 180, 180, 200;   }
+                          .mobile-navbar-dropdown-headspace {
+                            height: 50px;   }
+                            .mobile-navbar-dropdown-item {
+                              height: 44px;
+                              width: 100%;
+                              color: #282832;
+                              margin-left: 20px;
+                              margin-right: 20px;   }
+                              .mobile-navbar-dropdown-item-link {
+                                -webkit-tap-highlight-color: #fafaff;
+                                display: block;
                                 width: 100%;
-                                color: #282832;   }
-                                .mobile-navbar-dropdown-item-link {
-                                  -webkit-tap-highlight-color: #fafaff;
-                                  display: block;
-                                  width: 100%;
-                                  height: 44px;
-                                  border-bottom: 0.5px solid rgba(160, 160, 170, 0.3);   }
-                                  .mobile-navbar-dropdown-item-link-last {
-                                    border-bottom: none;   }
-                                    .mobile-navbar-dropdown-item a {
-                                      line-height: 2.9;
-                                      text-decoration: none;
-                                      color: #282832;
-                                      opacity: 0.5;   }
-                                      .mobile-navbar-dropdown-item a:visited {
-                                        color: #282832;   }
-                                        .mobile-navbar-dropdown-item a:active {
-                                          background-color: green;
-                                          transition: all 0.2s;   }
-                                          .navbar-dropdown-item-bold {
-                                            font-weight: bold !important;   }
-                                            .navbar-dropdown-item-regular {
-                                              font-weight: normal;   }
+                                height: 44px;
+                                opacity: none;
+                                border-bottom: 0.5px solid rgba(160, 160, 170, 0.3);   }
+                                .mobile-navbar-dropdown-item-link-last {
+                                  border-bottom: none;   }
+                                  .mobile-navbar-dropdown-item a {
+                                    opacity: 0;
+                                    line-height: 2.9;
+                                    text-decoration: none;
+                                    color: #282832;   }
+                                    .mobile-navbar-dropdown-item a:visited {
+                                      color: #282832;   }
+                                      .mobile-navbar-dropdown-item a:active {
+                                        background-color: green;   }
+                                        .navbar-dropdown-item-bold {
+                                          font-weight: bold !important;   }
+                                          .navbar-dropdown-item-regular {
+                                            font-weight: normal;   }
+                                            .navbar-open {
+                                              height: 100%;   }
                                               .navbar-close {
-                                                display: none;   }
-                                                .navbar-open {
-                                                  display: block;   }
-                                                  .navbar-open .mobile-navbar-dropdown-item a {
-                                                    -webkit-transition: opacity 2s;
-                                                    transition: opacity 2s;
-                                                    opacity: 1;   }
-                                                    .mobilespace {
-                                                      height: 100px;   }
-                                                      .testblock {
-                                                        background-color: blue;
-                                                        height: 1000px;   }
-                                                        .newscontainer {
-                                                          width: 100%;
-                                                          height: 1500px;
-                                                          background: -moz-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0365c0),
-                                                                                                                    color-stop(100%, #51a7f9));
-                                                          background: -webkit-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                          background: -o-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                          background: -ms-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                          background: linear-gradient(0deg, #51a7f9, #0365c0);
-                                                          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0365C0',
-                                                                                                                    endColorstr='#51A7F9',GradientType=0 );   }
-                                                          .newsh1 {
-                                                            padding-top: 50px;
-                                                            padding-left: 20px;
-                                                            font-size: 32px;
-                                                            font-weight: bold;
-                                                            color: white;   }
-                                                            .newsh2 {
-                                                              margin-top: 30px;
-                                                              font-size: 16px;
-                                                              color: white;
-                                                              padding-left: 20px;
-                                                              width: 200px;   }
-                                                              .newsh3 {
-                                                                margin-top: 30px;
-                                                                font-size: 14px;
-                                                                color: white;
-                                                                padding-left: 20px;
-                                                                line-height: 1.2;
-                                                                width: 300px;   }
-                                                                .hamburger {
-                                                                  cursor: pointer;
-                                                                  position: absolute;
-                                                                  width: 48px;
-                                                                  height: 48px;
-                                                                  transition: all 0.25s;   }
-                                                                  .hamburger__top-bun, .hamburger__bottom-bun {
-                                                                    content: '';
-                                                                    display: block;
-                                                                    position: absolute;
-                                                                    left: 15px;
-                                                                    width: 18px;
-                                                                    height: 1px;
-                                                                    background: blue;
-                                                                    transform: rotate(0);
-                                                                    transition: all 0.25s;   }
-                                                                    .hamburger:hover [class*="-bun"] {
-                                                                      background: red;   }
-                                                                      .hamburger__top-bun {
-                                                                        top: 23px;
-                                                                        transform: translateY(-3px);   }
-                                                                        .hamburger__bottom-bun {
-                                                                          bottom: 23px;
-                                                                          transform: translateY(3px);   }
-                                                                          .hamburger-open {
-                                                                            transform: rotate(90deg);   }
-                                                                            .hamburger-open .hamburger__top-bun {
-                                                                              transform: rotate(45deg) translateY(0px);   }
-                                                                              .hamburger-open .hamburger__bottom-bun {
-                                                                                transform: rotate(-45deg) translateY(0px);   }
-                                                                                .hamburger {
-                                                                                  margin-top: 50px;
-                                                                                  justify-content: center;
-                                                                                  align-items: center;   }
+                                                height: 100%;   }
+                                                .navbar-close .mobile-navbar-dropdown-list {
+                                                  height: 0px;   }
+                                                  .navbar-open .mobile-navbar-header {
+                                                    border: none;   }
+                                                    .navbar-close .mobile-navbar-name {
+                                                      opacity: 1;   }
+                                                      .navbar-open .mobile-navbar-name {
+                                                        opacity: 0.75;   }
+                                                        .navbar-close .mobile-navbar-section {
+                                                          opacity: 0.75;   }
+                                                          .navbar-open .mobile-navbar-section {
+                                                            opacity: 1;   }
+                                                            .navbar-close .mobile-navbar-dropdown-item {
+                                                              visibility: hidden;
+                                                              transform: translate(0, -10px);
+                                                              -webkit-transition: transform 300ms ease-in-out;
+                                                              transition: transform 300ms ease-in-out;   }
+                                                              .navbar-close .mobile-navbar-dropdown-item a {
+                                                                opacity: 0;
+                                                                -webkit-transition: opacity 300ms ease-in-out;
+                                                                transition: opacity 300ms ease-in-out;   }
+                                                                .navbar-open .mobile-navbar-dropdown-list {
+                                                                  height: 100%;
+                                                                  -webkit-transition: height 300ms ease-in;
+                                                                  transition: height 300ms ease-in;   }
+                                                                  .navbar-open .mobile-navbar-dropdown-item {
+                                                                    visibility: visible;
+                                                                    transform: translate(0, 10px);
+                                                                    -webkit-transition: transform 300ms ease-in-out;
+                                                                    transition: transform 300ms ease-in-out;   }
+                                                                    .navbar-open .mobile-navbar-dropdown-item a {
+                                                                      opacity: 1;
+                                                                      -webkit-transition: opacity 300ms ease-in-out;
+                                                                      transition: opacity 300ms ease-in-out;   }
+                                                                      .navbar-close #mobile-navbar-dropdown-item-1 a {
+                                                                        transition-delay: opacity 20ms;   }
+                                                                        .navbar-open #mobile-navbar-dropdown-item-2 a {
+                                                                          transition-delay: 40ms;   }
+                                                                          .navbar-open #mobile-navbar-dropdown-item-3 a {
+                                                                            transition-delay: 60ms;   }
+                                                                            .navbar-open #mobile-navbar-dropdown-item-4 a {
+                                                                              transition-delay: 80ms;   }
+                                                                              .navbar-open #mobile-navbar-dropdown-item-5 a {
+                                                                                transition-delay: 100ms;   }
+                                                                                .navbar-open #mobile-navbar-dropdown-item-6 a {
+                                                                                  transition-delay: 120ms;   }
+                                                                                  .navbar-close #mobile-navbar-dropdown-item-1 {
+                                                                                    transition-delay: opacity 20ms;   }
+                                                                                    .navbar-open #mobile-navbar-dropdown-item-2 {
+                                                                                      transition-delay: 40ms;   }
+                                                                                      .navbar-open #mobile-navbar-dropdown-item-3 {
+                                                                                        transition-delay: 60ms;   }
+                                                                                        .navbar-open #mobile-navbar-dropdown-item-4 {
+                                                                                          transition-delay: 80ms;   }
+                                                                                          .navbar-open #mobile-navbar-dropdown-item-5 {
+                                                                                            transition-delay: 100ms;   }
+                                                                                            .navbar-open #mobile-navbar-dropdown-item-6 {
+                                                                                              transition-delay: 120ms;   }
+                                                                                              .hamburger {
+                                                                                                cursor: pointer;
+                                                                                                position: absolute;
+                                                                                                width: 48px;
+                                                                                                height: 48px;
+                                                                                                transition: all 0.25s;
+                                                                                                margin-left: 0px;
+                                                                                                margin-top: -28px;   }
+                                                                                                .hamburger__top-bun, .hamburger__bottom-bun {
+                                                                                                  content: '';
+                                                                                                  display: block;
+                                                                                                  position: absolute;
+                                                                                                  left: 15px;
+                                                                                                  width: 21px;
+                                                                                                  height: 1px;
+                                                                                                  background: #323232;
+                                                                                                  transform: rotate(0);
+                                                                                                  transition: all 0.25s ease-in-out;   }
+                                                                                                  .hamburger:hover [class*="-bun"] {
+                                                                                                    background: #282828;   }
+                                                                                                    .hamburger__top-bun {
+                                                                                                      top: 23px;
+                                                                                                      transform: translateY(-3px);   }
+                                                                                                      .hamburger__bottom-bun {
+                                                                                                        bottom: 23px;
+                                                                                                        transform: translateY(3px);   }
+                                                                                                        .hamburger-open {
+                                                                                                          transform: rotate(90deg);   }
+                                                                                                          .hamburger-open .hamburger__top-bun {
+                                                                                                            transform: rotate(45deg) translateY(0px);   }
+                                                                                                            .hamburger-open .hamburger__bottom-bun {
+                                                                                                              transform: rotate(-45deg) translateY(0px);   }
+                                                                                                              .contentcontainer {
+                                                                                                                width: 100%;
+                                                                                                                height: 1500px;   }
+                                                                                                                .startcontainer {
+                                                                                                                  background-color: #fafafa;
+                                                                                                                  width: 100%;
+                                                                                                                  margin-left: -2px;   }
+                                                                                                                  .startcontainer .contenth1 {
+                                                                                                                    font-size: 36px;
+                                                                                                                    color: #007eff;
+                                                                                                                    padding-top: 100px;
+                                                                                                                    letter-spacing: -0.02em;
+                                                                                                                    font-weight: bold;   }
+                                                                                                                    .startcontainer .contenth2 {
+                                                                                                                      font-size: 24px;
+                                                                                                                      width: auto;
+                                                                                                                      color: #505064;
+                                                                                                                      margin-top: 15px;
+                                                                                                                      letter-spacing: -0.01em;
+                                                                                                                      font-weight: bold;   }
+                                                                                                                      .startcontainer .contenth3 {
+                                                                                                                        font-size: 15px;
+                                                                                                                        width: 80%;
+                                                                                                                        color: #282846;
+                                                                                                                        margin-top: 15px;   }
+                                                                                                                        .newscontainer {
+                                                                                                                          background: -moz-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                                                                                          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0365c0),
+                                                                                                                                                                                                                                                    color-stop(100%, #51a7f9));
+                                                                                                                          background: -webkit-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                                                                                          background: -o-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                                                                                          background: -ms-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                                                                                          background: linear-gradient(0deg, #51a7f9, #0365c0);
+                                                                                                                          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0365C0',
+                                                                                                                                                                                                                                                    endColorstr='#51A7F9',GradientType=0 );   }
+                                                                                                                          .contenth1 {
+                                                                                                                            padding-top: 90px;
+                                                                                                                            padding-left: 20px;
+                                                                                                                            font-size: 32px;
+                                                                                                                            font-weight: bold;
+                                                                                                                            color: white;   }
+                                                                                                                            .contenth2 {
+                                                                                                                              margin-top: 30px;
+                                                                                                                              font-size: 16px;
+                                                                                                                              color: white;
+                                                                                                                              padding-left: 20px;
+                                                                                                                              width: 200px;   }
+                                                                                                                              .contenth3 {
+                                                                                                                                margin-top: 30px;
+                                                                                                                                font-size: 14px;
+                                                                                                                                color: white;
+                                                                                                                                padding-left: 20px;
+                                                                                                                                line-height: 1.2;
+                                                                                                                                width: 300px;   }
 }
