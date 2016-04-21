@@ -2,236 +2,373 @@
 and (min-device-width : 320px)
 and (max-device-width : 667px)
 and (orientation : portrait) {
-  .navbar-container {
+  .desktop-navbar-container {
     display: none;   }
     .mobile-navbar-container {
-      display: block;
-      position: fixed;
-      left: 0px;
-      top: 0px;
-      width: 100%;   }
-      .mobile-navbar-header {
-        background-color: #fafafa;
-        height: 54px;
-        width: 100%;
-        -webkit-tap-highlight-color: transparent;   }
-        .mobile-navbar-header-border {
-          height: 0.5px;
-          background-color: #b4b4c8;
-          opacity: 1;   }
-          .mobile-navbar-nav-open {
-            width: 100%;
-            height: 100%;   }
-            .mobile-navbar-left {
+      display: block;   }
+      .mobile-navbar-container {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;   }
+        .mobile-navbar-header {
+          background-color: #fafafa;
+          height: 54px;
+          width: 100%;
+          -webkit-tap-highlight-color: transparent;   }
+          @supports (-webkit-backdrop-filter: blur()) {
+            .mobile-navbar-header {
+              -webkit-backdrop-filter: blur(50px) saturate(500%);
+              background-color: rgba(255, 255, 255, 0.7);     }
+  }
+  .mobile-navbar-header-border {
+    height: 0.5px;
+    background-color: #b4b4c8;
+    opacity: 1;   }
+    .mobile-navbar-nav-open {
+      width: 100%;
+      height: 100%;   }
+      .mobile-navbar-left {
+        display: inline-block;
+        float: left;
+        padding: 20px;   }
+        .mobile-navbar-name {
+          display: inline-block;
+          font-weight: bold;
+          color: #3c3c50;   }
+          .mobile-navbar-right {
+            display: inline-block;
+            float: right;
+            margin-right: -6px;
+            width: auto;
+            padding: 20px;   }
+            .mobile-navbar-section {
               display: inline-block;
-              float: left;
-              padding: 20px;   }
-              .mobile-navbar-name {
+              text-align: right;
+              font-weight: bold;
+              font-size: 13px;
+              margin-right: -5px;   }
+              .mobile-navbar-nav {
                 display: inline-block;
-                font-weight: bold;
-                color: #3c3c50;   }
-                .mobile-navbar-right {
-                  display: inline-block;
-                  float: right;
-                  margin-right: -6px;
-                  width: auto;
-                  padding: 20px;   }
-                  .mobile-navbar-section {
-                    display: inline-block;
-                    text-align: right;
-                    font-weight: bold;
-                    font-size: 13px;
-                    margin-right: -5px;   }
-                    .mobile-navbar-nav {
-                      display: inline-block;
-                      text-align: right;
-                      width: 40px;   }
-                      .mobile-navbar-dropdown-close {
-                        text-align: right;
-                        display: inline-block;   }
-                        .mobile-navbar-dropdown-list {
-                          top: 0px;
-                          bottom: 0px;
-                          left: 0px;
-                          right: 0px;
-                          background-color: #fafafa;
-                          border-bottom: 180, 180, 200;   }
-                          .mobile-navbar-dropdown-headspace {
-                            height: 50px;   }
-                            .mobile-navbar-dropdown-item {
-                              height: 44px;
-                              width: 100%;
-                              color: #282832;
-                              margin-left: 20px;
-                              margin-right: 20px;   }
-                              .mobile-navbar-dropdown-item-link {
-                                -webkit-tap-highlight-color: #fafaff;
-                                display: block;
-                                width: 100%;
-                                height: 44px;
-                                opacity: none;
-                                border-bottom: 0.5px solid rgba(160, 160, 170, 0.3);   }
-                                .mobile-navbar-dropdown-item-link-last {
-                                  border-bottom: none;   }
-                                  .mobile-navbar-dropdown-item a {
-                                    opacity: 0;
-                                    line-height: 2.9;
-                                    text-decoration: none;
-                                    color: #282832;   }
-                                    .mobile-navbar-dropdown-item a:visited {
-                                      color: #282832;   }
-                                      .mobile-navbar-dropdown-item a:active {
-                                        background-color: green;   }
-                                        .navbar-dropdown-item-bold {
-                                          font-weight: bold !important;   }
-                                          .navbar-dropdown-item-regular {
-                                            font-weight: normal;   }
-                                            .navbar-open {
-                                              height: 100%;   }
-                                              .navbar-close {
-                                                height: 100%;   }
-                                                .navbar-close .mobile-navbar-dropdown-list {
-                                                  height: 0px;   }
-                                                  .navbar-open .mobile-navbar-header {
-                                                    border: none;   }
-                                                    .navbar-close .mobile-navbar-name {
-                                                      opacity: 1;   }
-                                                      .navbar-open .mobile-navbar-name {
-                                                        opacity: 0.75;   }
-                                                        .navbar-close .mobile-navbar-section {
-                                                          opacity: 0.75;   }
-                                                          .navbar-open .mobile-navbar-section {
-                                                            opacity: 1;   }
-                                                            .navbar-close .mobile-navbar-dropdown-item {
-                                                              visibility: hidden;
-                                                              transform: translate(0, -10px);
-                                                              -webkit-transition: transform 300ms ease-in-out;
-                                                              transition: transform 300ms ease-in-out;   }
-                                                              .navbar-close .mobile-navbar-dropdown-item a {
-                                                                opacity: 0;
-                                                                -webkit-transition: opacity 300ms ease-in-out;
-                                                                transition: opacity 300ms ease-in-out;   }
-                                                                .navbar-open .mobile-navbar-dropdown-list {
-                                                                  height: 100%;
-                                                                  -webkit-transition: height 300ms ease-in;
-                                                                  transition: height 300ms ease-in;   }
-                                                                  .navbar-open .mobile-navbar-dropdown-item {
-                                                                    visibility: visible;
-                                                                    transform: translate(0, 10px);
-                                                                    -webkit-transition: transform 300ms ease-in-out;
-                                                                    transition: transform 300ms ease-in-out;   }
-                                                                    .navbar-open .mobile-navbar-dropdown-item a {
-                                                                      opacity: 1;
-                                                                      -webkit-transition: opacity 300ms ease-in-out;
-                                                                      transition: opacity 300ms ease-in-out;   }
-                                                                      .navbar-close #mobile-navbar-dropdown-item-1 a {
-                                                                        transition-delay: opacity 20ms;   }
-                                                                        .navbar-open #mobile-navbar-dropdown-item-2 a {
-                                                                          transition-delay: 40ms;   }
-                                                                          .navbar-open #mobile-navbar-dropdown-item-3 a {
-                                                                            transition-delay: 60ms;   }
-                                                                            .navbar-open #mobile-navbar-dropdown-item-4 a {
-                                                                              transition-delay: 80ms;   }
-                                                                              .navbar-open #mobile-navbar-dropdown-item-5 a {
-                                                                                transition-delay: 100ms;   }
-                                                                                .navbar-open #mobile-navbar-dropdown-item-6 a {
-                                                                                  transition-delay: 120ms;   }
-                                                                                  .navbar-close #mobile-navbar-dropdown-item-1 {
-                                                                                    transition-delay: opacity 20ms;   }
-                                                                                    .navbar-open #mobile-navbar-dropdown-item-2 {
-                                                                                      transition-delay: 40ms;   }
-                                                                                      .navbar-open #mobile-navbar-dropdown-item-3 {
-                                                                                        transition-delay: 60ms;   }
-                                                                                        .navbar-open #mobile-navbar-dropdown-item-4 {
-                                                                                          transition-delay: 80ms;   }
-                                                                                          .navbar-open #mobile-navbar-dropdown-item-5 {
-                                                                                            transition-delay: 100ms;   }
-                                                                                            .navbar-open #mobile-navbar-dropdown-item-6 {
-                                                                                              transition-delay: 120ms;   }
-                                                                                              .hamburger {
-                                                                                                cursor: pointer;
-                                                                                                position: absolute;
-                                                                                                width: 48px;
-                                                                                                height: 48px;
-                                                                                                transition: all 0.25s;
-                                                                                                margin-left: 0px;
-                                                                                                margin-top: -28px;   }
-                                                                                                .hamburger__top-bun, .hamburger__bottom-bun {
-                                                                                                  content: '';
-                                                                                                  display: block;
-                                                                                                  position: absolute;
-                                                                                                  left: 15px;
-                                                                                                  width: 21px;
-                                                                                                  height: 1px;
-                                                                                                  background: #323232;
-                                                                                                  transform: rotate(0);
-                                                                                                  transition: all 0.25s ease-in-out;   }
-                                                                                                  .hamburger:hover [class*="-bun"] {
-                                                                                                    background: #282828;   }
-                                                                                                    .hamburger__top-bun {
-                                                                                                      top: 23px;
-                                                                                                      transform: translateY(-3px);   }
-                                                                                                      .hamburger__bottom-bun {
-                                                                                                        bottom: 23px;
-                                                                                                        transform: translateY(3px);   }
-                                                                                                        .hamburger-open {
-                                                                                                          transform: rotate(90deg);   }
-                                                                                                          .hamburger-open .hamburger__top-bun {
-                                                                                                            transform: rotate(45deg) translateY(0px);   }
-                                                                                                            .hamburger-open .hamburger__bottom-bun {
-                                                                                                              transform: rotate(-45deg) translateY(0px);   }
-                                                                                                              .contentcontainer {
-                                                                                                                width: 100%;
-                                                                                                                height: 1500px;   }
-                                                                                                                .startcontainer {
-                                                                                                                  background-color: #fafafa;
-                                                                                                                  width: 100%;
-                                                                                                                  margin-left: -2px;   }
-                                                                                                                  .startcontainer .contenth1 {
-                                                                                                                    font-size: 36px;
-                                                                                                                    color: #007eff;
-                                                                                                                    padding-top: 100px;
-                                                                                                                    letter-spacing: -0.02em;
-                                                                                                                    font-weight: bold;   }
-                                                                                                                    .startcontainer .contenth2 {
-                                                                                                                      font-size: 24px;
-                                                                                                                      width: auto;
-                                                                                                                      color: #505064;
-                                                                                                                      margin-top: 15px;
-                                                                                                                      letter-spacing: -0.01em;
-                                                                                                                      font-weight: bold;   }
-                                                                                                                      .startcontainer .contenth3 {
-                                                                                                                        font-size: 15px;
-                                                                                                                        width: 80%;
-                                                                                                                        color: #282846;
-                                                                                                                        margin-top: 15px;   }
-                                                                                                                        .newscontainer {
-                                                                                                                          background: -moz-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                                                                                          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0365c0),
-                                                                                                                                                                                                                                                    color-stop(100%, #51a7f9));
-                                                                                                                          background: -webkit-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                                                                                          background: -o-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                                                                                          background: -ms-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                                                                                          background: linear-gradient(0deg, #51a7f9, #0365c0);
-                                                                                                                          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0365C0',
-                                                                                                                                                                                                                                                    endColorstr='#51A7F9',GradientType=0 );   }
-                                                                                                                          .contenth1 {
-                                                                                                                            padding-top: 90px;
-                                                                                                                            padding-left: 20px;
-                                                                                                                            font-size: 32px;
-                                                                                                                            font-weight: bold;
-                                                                                                                            color: white;   }
-                                                                                                                            .contenth2 {
-                                                                                                                              margin-top: 30px;
-                                                                                                                              font-size: 16px;
-                                                                                                                              color: white;
-                                                                                                                              padding-left: 20px;
-                                                                                                                              width: 200px;   }
-                                                                                                                              .contenth3 {
-                                                                                                                                margin-top: 30px;
-                                                                                                                                font-size: 14px;
-                                                                                                                                color: white;
-                                                                                                                                padding-left: 20px;
-                                                                                                                                line-height: 1.2;
-                                                                                                                                width: 300px;   }
+                text-align: right;
+                width: 40px;   }
+                .mobile-navbar-dropdown-close {
+                  text-align: right;
+                  display: inline-block;   }
+                  .mobile-navbar-dropdown-list {
+                    top: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    right: 0px;
+                    background-color: #fafafa;
+                    border-bottom: 180, 180, 200;   }
+                    @supports (-webkit-backdrop-filter: blur()) {
+                      .mobile-navbar-dropdown-list {
+                        -webkit-backdrop-filter: blur(50px) saturate(500%);
+                        background-color: rgba(255, 255, 255, 0.7);     }
+  }
+  .mobile-navbar-dropdown-headspace {
+    height: 50px;   }
+    .mobile-navbar-dropdown-item {
+      height: 44px;
+      width: 100%;
+      color: #282832;
+      margin-left: 20px;
+      margin-right: 20px;   }
+      .mobile-navbar-dropdown-item-link {
+        -webkit-tap-highlight-color: #fafaff;
+        display: block;
+        width: 100%;
+        height: 44px;
+        opacity: none;
+        border-bottom: 0.5px solid rgba(160, 160, 170, 0.3);   }
+        .mobile-navbar-dropdown-item-link-last {
+          border-bottom: none;   }
+          .mobile-navbar-dropdown-item a {
+            opacity: 0;
+            line-height: 2.9;
+            text-decoration: none;
+            color: #282832;   }
+            .mobile-navbar-dropdown-item a:visited {
+              color: #282832;   }
+              .mobile-navbar-dropdown-item a:active {
+                background-color: green;   }
+                .navbar-dropdown-item-bold {
+                  font-weight: bold !important;   }
+                  .navbar-dropdown-item-regular {
+                    font-weight: normal;   }
+                    .navbar-open {
+                      height: 100%;   }
+                      .navbar-close {
+                        height: 100%;   }
+                        .navbar-close .mobile-navbar-dropdown-list {
+                          height: 0px;   }
+                          .navbar-open .mobile-navbar-header {
+                            border: none;   }
+                            .navbar-close .mobile-navbar-name {
+                              opacity: 1;   }
+                              .navbar-open .mobile-navbar-name {
+                                opacity: 0.75;   }
+                                .navbar-close .mobile-navbar-section {
+                                  opacity: 0.75;   }
+                                  .navbar-open .mobile-navbar-section {
+                                    opacity: 1;   }
+                                    .navbar-close .mobile-navbar-dropdown-item {
+                                      visibility: hidden;
+                                      transform: translate(0, -10px);
+                                      -webkit-transition: transform 300ms ease-in-out;
+                                      transition: transform 300ms ease-in-out;   }
+                                      .navbar-close .mobile-navbar-dropdown-item a {
+                                        opacity: 0;
+                                        -webkit-transition: opacity 300ms ease-in-out;
+                                        transition: opacity 300ms ease-in-out;   }
+                                        .navbar-open .mobile-navbar-dropdown-list {
+                                          height: 100%;
+                                          -webkit-transition: height 300ms ease-in;
+                                          transition: height 300ms ease-in;   }
+                                          .navbar-open .mobile-navbar-dropdown-item {
+                                            visibility: visible;
+                                            transform: translate(0, 10px);
+                                            -webkit-transition: transform 300ms ease-in-out;
+                                            transition: transform 300ms ease-in-out;   }
+                                            .navbar-open .mobile-navbar-dropdown-item a {
+                                              opacity: 1;
+                                              -webkit-transition: opacity 300ms ease-in-out;
+                                              transition: opacity 300ms ease-in-out;   }
+                                              .navbar-close #mobile-navbar-dropdown-item-1 a {
+                                                transition-delay: opacity 20ms;   }
+                                                .navbar-open #mobile-navbar-dropdown-item-2 a {
+                                                  transition-delay: 40ms;   }
+                                                  .navbar-open #mobile-navbar-dropdown-item-3 a {
+                                                    transition-delay: 60ms;   }
+                                                    .navbar-open #mobile-navbar-dropdown-item-4 a {
+                                                      transition-delay: 80ms;   }
+                                                      .navbar-open #mobile-navbar-dropdown-item-5 a {
+                                                        transition-delay: 100ms;   }
+                                                        .navbar-open #mobile-navbar-dropdown-item-6 a {
+                                                          transition-delay: 120ms;   }
+                                                          .navbar-close #mobile-navbar-dropdown-item-1 {
+                                                            transition-delay: opacity 20ms;   }
+                                                            .navbar-open #mobile-navbar-dropdown-item-2 {
+                                                              transition-delay: 40ms;   }
+                                                              .navbar-open #mobile-navbar-dropdown-item-3 {
+                                                                transition-delay: 60ms;   }
+                                                                .navbar-open #mobile-navbar-dropdown-item-4 {
+                                                                  transition-delay: 80ms;   }
+                                                                  .navbar-open #mobile-navbar-dropdown-item-5 {
+                                                                    transition-delay: 100ms;   }
+                                                                    .navbar-open #mobile-navbar-dropdown-item-6 {
+                                                                      transition-delay: 120ms;   }
+                                                                      .hamburger {
+                                                                        cursor: pointer;
+                                                                        position: absolute;
+                                                                        width: 48px;
+                                                                        height: 48px;
+                                                                        transition: all 0.25s;
+                                                                        margin-left: 0px;
+                                                                        margin-top: -28px;   }
+                                                                        .hamburger__top-bun, .hamburger__bottom-bun {
+                                                                          content: '';
+                                                                          display: block;
+                                                                          position: absolute;
+                                                                          left: 15px;
+                                                                          width: 21px;
+                                                                          height: 1px;
+                                                                          background: #323232;
+                                                                          transform: rotate(0);
+                                                                          transition: all 0.25s ease-in-out;   }
+                                                                          .hamburger:hover [class*="-bun"] {
+                                                                            background: #282828;   }
+                                                                            .hamburger__top-bun {
+                                                                              top: 23px;
+                                                                              transform: translateY(-3px);   }
+                                                                              .hamburger__bottom-bun {
+                                                                                bottom: 23px;
+                                                                                transform: translateY(3px);   }
+                                                                                .hamburger-open {
+                                                                                  transform: rotate(90deg);   }
+                                                                                  .hamburger-open .hamburger__top-bun {
+                                                                                    transform: rotate(45deg) translateY(0px);   }
+                                                                                    .hamburger-open .hamburger__bottom-bun {
+                                                                                      transform: rotate(-45deg) translateY(0px);   }
+                                                                                      .contentcontainer {
+                                                                                        width: 100%;
+                                                                                        height: 1500px;   }
+                                                                                        .startcontainer {
+                                                                                          background-color: #fafafa;
+                                                                                          width: 100%;
+                                                                                          margin-left: -2px;   }
+                                                                                          .startcontainer .contenth1 {
+                                                                                            font-size: 36px;
+                                                                                            color: #007eff;
+                                                                                            padding-top: 100px;
+                                                                                            letter-spacing: -0.02em;
+                                                                                            font-weight: bold;   }
+                                                                                            .startcontainer .contenth2 {
+                                                                                              font-size: 24px;
+                                                                                              width: auto;
+                                                                                              color: #505064;
+                                                                                              margin-top: 15px;
+                                                                                              letter-spacing: -0.01em;
+                                                                                              font-weight: bold;   }
+                                                                                              .startcontainer .contenth3 {
+                                                                                                font-size: 15px;
+                                                                                                width: 80%;
+                                                                                                color: #282846;
+                                                                                                margin-top: 15px;   }
+                                                                                                .newscontainer {
+                                                                                                  background: -moz-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                                                                  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0365c0),
+                                                                                                                                                                                                    color-stop(100%, #51a7f9));
+                                                                                                  background: -webkit-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                                                                  background: -o-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                                                                  background: -ms-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                                                                                                  background: linear-gradient(0deg, #51a7f9, #0365c0);
+                                                                                                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0365C0',
+                                                                                                                                                                                                    endColorstr='#51A7F9',GradientType=0 );   }
+                                                                                                  .contenth1 {
+                                                                                                    padding-top: 90px;
+                                                                                                    padding-left: 20px;
+                                                                                                    font-size: 32px;
+                                                                                                    font-weight: bold;
+                                                                                                    color: white;   }
+                                                                                                    .contenth2 {
+                                                                                                      margin-top: 30px;
+                                                                                                      font-size: 16px;
+                                                                                                      color: white;
+                                                                                                      padding-left: 20px;
+                                                                                                      width: 200px;   }
+                                                                                                      .contenth3 {
+                                                                                                        margin-top: 30px;
+                                                                                                        font-size: 14px;
+                                                                                                        color: white;
+                                                                                                        padding-left: 20px;
+                                                                                                        line-height: 1.2;
+                                                                                                        width: 300px;   }
 }
+
+.global {
+  font-family: pn;
+  -webkit-font-smoothing: antialiased; }
+
+  @media only screen
+and (min-device-width : 1000px) {
+    .desktop-navbar-container {
+      display: block;   }
+      .mobile-navbar-container {
+        display: none;   }
+        .desktop-navbar-container {
+          width: 100%;
+          position: fixed;
+          left: 0;
+          top: 0;   }
+          .desktop-navbar-container {
+            height: 75px;
+            background-color: #fafafa;
+            border-bottom: 1px solid #c8c8c8;
+            font-size: 14px;   }
+            @supports (-webkit-backdrop-filter: blur()) {
+              .desktop-navbar-container {
+                -webkit-backdrop-filter: blur(20px) saturate(500%);
+                background-color: rgba(255, 255, 255, 0.7);     }
+  }
+    .desktop-navbar-header {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: 16px;   }
+      .desktop-navbar a {
+        text-decoration: none;
+        color: #282828;   }
+        .desktop-navbar-name {
+          margin-left: 70px;
+          font-weight: bold;   }
+          .desktop-navbar-name a {
+            text-decoration: none;   }
+            .desktop-navbar-name a:visited {
+              text-decoration: none;
+              color: black;   }
+              .desktop-navbar-list {
+                margin-left: 70px;
+                margin-top: -5px;   }
+                .desktop-navbar-item {
+                  display: inline-block;
+                  width: auto;
+                  height: 28px;
+                  padding-top: 15px;
+                  text-align: center;
+                  margin-right: 30px;
+                  color: #bebec8;   }
+                  .desktop-navbar-item a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #bebec8;   }
+                    .desktop-navbar-item a:visited {
+                      color: #bebec8;   }
+                      .desktop-navbar-item-bold a {
+                        color: #007eff !important;   }
+                        .newscontainer {
+                          margin-top: -100px;
+                          width: 100%;
+                          height: 1000px;
+                          background: -moz-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0365c0),
+                                                    color-stop(100%, #51a7f9));
+                          background: -webkit-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                          background: -o-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                          background: -ms-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
+                          background: linear-gradient(0deg, #51a7f9, #0365c0);
+                          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0365C0',
+                                                    endColorstr='#51A7F9',GradientType=0 );   }
+                          .newsh1 {
+                            padding-top: 300px;
+                            padding-left: 70px;
+                            font-size: 32px;
+                            font-weight: bold;
+                            color: white;   }
+                            .newsh2 {
+                              margin-top: 15px;
+                              font-size: 16px;
+                              color: white;
+                              padding-left: 70px;   }
+                              .newsh3 {
+                                margin-top: 30px;
+                                font-size: 16px;
+                                color: white;
+                                padding-left: 70px;
+                                line-height: 1.2;
+                                width: 600px;   }
+                                .contentcontainer {
+                                  width: 100%;
+                                  height: 1500px;   }
+                                  .startcontainer {
+                                    background-color: #fafafa;
+                                    width: 100%;
+                                    margin-left: -2px;   }
+                                    .startcontainer .contenth1 {
+                                      font-size: 36px;
+                                      color: #007eff;
+                                      padding-top: 200px;
+                                      letter-spacing: -0.02em;
+                                      font-weight: bold;   }
+                                      .startcontainer .contenth2 {
+                                        font-size: 24px;
+                                        width: auto;
+                                        color: #505064;
+                                        margin-top: 15px;
+                                        letter-spacing: -0.01em;
+                                        font-weight: bold;   }
+                                        .startcontainer .contenth3 {
+                                          font-size: 15px;
+                                          width: 80%;
+                                          color: #282846;
+                                          margin-top: 15px;   }
+}
+
+@font-face {
+  font-family: pn;
+  src: url('PNR.otf'); }
+
+  @font-face {
+    font-family: pn;
+    src: url("PNB.otf");
+    font-weight: bold; }

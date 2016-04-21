@@ -1,0 +1,3 @@
+V@font-face {\u000a  font-family: pn;\u000a  src: url('PNR.otf'); }\u000a\u000a  @font-face {\u000a    font-family: pn;\u000a    src: url("PNB.otf");\u000a    font-weight: bold; }\u000a
+p1
+.

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+window.addEventListener("load", function(event) {
 console.log("js loaded")
 
 // CURRENT SECTION FINDER
@@ -6,14 +6,21 @@ console.log("js loaded")
   // SET Y POSITION VARIABLE FOR EACH ELEMENT
 
   // this is the height of toolbar to appear more accurate
-  var hy = 75
-  var start = document.getElementById('start').offsetTop - hy
-  var things = document.getElementById('things').offsetTop - hy
-  var news = document.getElementById('news').offsetTop - hy 
-  var dashboards = document.getElementById('dashboards').offsetTop - hy
-  var journeys = document.getElementById('journeys').offsetTop - hy
-  var googleapps = document.getElementById('googleapps').offsetTop - hy
+  // var hy = 75
+  var start = document.getElementById('start').offsetTop
+  var things = document.getElementById('things').offsetTop
+  var news = document.getElementById('news').offsetTop
+  var dashboards = document.getElementById('dashboards').offsetTop
+  var journeys = document.getElementById('journeys').offsetTop
+  var googleapps = document.getElementById('googleapps').offsetTop
   var currentsection = "start"
+
+  // console.log(start)
+  // console.log(things)
+  // console.log(news)
+  // console.log(dashboards)
+  // console.log(journeys)
+  // console.log(googleapps)
 
   // CURRENT SCROLL POSITION
   myFunction();
@@ -41,33 +48,36 @@ console.log("js loaded")
     else {
        currentsection = "unknown"
     }
-    
+
+    // console.log(currentscroll)
+
+    // console.log(currentsection)
+
     document.getElementById('currentsection').innerHTML = currentsection;
+
+    var classname = document.getElementsByClassName("desktop-navbar-item");
+
+      for (var i = 0; i < classname.length; i++) {
+
+      var test = currentsection
+      var innerString=classname[i].innerHTML
+
+    if(innerString.indexOf(test) != -1){
+      // console.log("found it desktop")
+      classname[i].classList.add("desktop-navbar-item-bold");
+    }
+    else{
+      if(classname[i].classList.contains("desktop-navbar-item-bold")){
+        classname[i].classList.remove("desktop-navbar-item-bold");
+      }
+  
+    }
+
+}
 
   }
 
 var classname = document.getElementsByClassName("mobile-navbar-dropdown-item");
-
-// window.onscroll = function() {myFunction3()};
-//   function myFunction3() {
-//   var scrolly = window.pageYOffset || document.documentElement.scrollTop
-//   var f = document.getElementById("mobile-navbar-header-border");
-//   if (scrolly > 10){
-//       console.log("scrolledpast50")
-//       f.classList.add("fade-border");  
-//     }
-//   else {
-//       f.classList.remove("fade-border");  
-//   }
-// }
-
-// // HAMBURGER TEST
-// document.getElementById("hamburger").addEventListener("click", function() {
-//   console.log("hamburger-clicked")
-//   var e = document.getElementById("hamburger")
-//   e.classList.add("hamburger-open");
-//   console.log("class-added")
-// })
 
 // OPEN NAV
 document.getElementById("mobile-navbar-nav-open").addEventListener("click", function() {
@@ -110,6 +120,8 @@ document.getElementById("mobile-navbar-nav-open").addEventListener("click", func
 
 }
 
+
+
 });
 
 // CLOSE NAV
@@ -138,3 +150,26 @@ for (var i = 0; i < classname.length; i++) {
 
 
 });
+
+
+
+// window.onscroll = function() {myFunction3()};
+//   function myFunction3() {
+//   var scrolly = window.pageYOffset || document.documentElement.scrollTop
+//   var f = document.getElementById("mobile-navbar-header-border");
+//   if (scrolly > 10){
+//       console.log("scrolledpast50")
+//       f.classList.add("fade-border");  
+//     }
+//   else {
+//       f.classList.remove("fade-border");  
+//   }
+// }
+
+// // HAMBURGER TEST
+// document.getElementById("hamburger").addEventListener("click", function() {
+//   console.log("hamburger-clicked")
+//   var e = document.getElementById("hamburger")
+//   e.classList.add("hamburger-open");
+//   console.log("class-added")
+// })
