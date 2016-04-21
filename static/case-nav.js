@@ -1,5 +1,20 @@
 window.addEventListener("load", function(event) {
-console.log("js loaded")
+console.log("case nav js loaded")
+
+window.onscroll = function() {StickyHead()};
+  function StickyHead() {
+    var currentscroll = window.pageYOffset || document.documentElement.scrollTop
+    console.log(currentscroll)
+    var n = document.getElementById("desktop-case-navbar-container");
+    if(currentscroll > 630){
+      n.classList.add("desktop-case-navbar-stick");
+    }
+    else {
+      n.classList.remove("desktop-case-navbar-stick");
+    }
+}
+
+
 
   
   // var currentlocation = window.location.pathname 

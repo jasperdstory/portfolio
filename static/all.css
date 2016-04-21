@@ -191,60 +191,6 @@ and (orientation : portrait) {
                                                                                     transform: rotate(45deg) translateY(0px);   }
                                                                                     .hamburger-open .hamburger__bottom-bun {
                                                                                       transform: rotate(-45deg) translateY(0px);   }
-                                                                                      .contentcontainer {
-                                                                                        width: 100%;
-                                                                                        height: 1500px;   }
-                                                                                        .startcontainer {
-                                                                                          background-color: #fafafa;
-                                                                                          width: 100%;
-                                                                                          margin-left: -2px;   }
-                                                                                          .startcontainer .contenth1 {
-                                                                                            font-size: 36px;
-                                                                                            color: #007eff;
-                                                                                            padding-top: 100px;
-                                                                                            letter-spacing: -0.02em;
-                                                                                            font-weight: bold;   }
-                                                                                            .startcontainer .contenth2 {
-                                                                                              font-size: 24px;
-                                                                                              width: auto;
-                                                                                              color: #505064;
-                                                                                              margin-top: 15px;
-                                                                                              letter-spacing: -0.01em;
-                                                                                              font-weight: bold;   }
-                                                                                              .startcontainer .contenth3 {
-                                                                                                font-size: 15px;
-                                                                                                width: 80%;
-                                                                                                color: #282846;
-                                                                                                margin-top: 15px;   }
-                                                                                                .newscontainer {
-                                                                                                  background: -moz-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                                                                  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0365c0),
-                                                                                                                                                                                                    color-stop(100%, #51a7f9));
-                                                                                                  background: -webkit-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                                                                  background: -o-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                                                                  background: -ms-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                                                                                                  background: linear-gradient(0deg, #51a7f9, #0365c0);
-                                                                                                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0365C0',
-                                                                                                                                                                                                    endColorstr='#51A7F9',GradientType=0 );   }
-                                                                                                  .contenth1 {
-                                                                                                    padding-top: 90px;
-                                                                                                    padding-left: 20px;
-                                                                                                    font-size: 32px;
-                                                                                                    font-weight: bold;
-                                                                                                    color: white;   }
-                                                                                                    .contenth2 {
-                                                                                                      margin-top: 30px;
-                                                                                                      font-size: 16px;
-                                                                                                      color: white;
-                                                                                                      padding-left: 20px;
-                                                                                                      width: 200px;   }
-                                                                                                      .contenth3 {
-                                                                                                        margin-top: 30px;
-                                                                                                        font-size: 14px;
-                                                                                                        color: white;
-                                                                                                        padding-left: 20px;
-                                                                                                        line-height: 1.2;
-                                                                                                        width: 300px;   }
 }
 
 .global {
@@ -258,110 +204,90 @@ and (min-device-width : 1000px) {
       .mobile-navbar-container {
         display: none;   }
         .desktop-navbar-container {
-          width: 100%;
-          position: fixed;
-          left: 0;
-          top: 0;   }
+          display: block;   }
           .desktop-navbar-container {
+            padding-top: 35px;
             height: 75px;
             background-color: #fafafa;
             border-bottom: 1px solid #c8c8c8;
             font-size: 14px;   }
-            @supports (-webkit-backdrop-filter: blur()) {
-              .desktop-navbar-container {
-                -webkit-backdrop-filter: blur(20px) saturate(500%);
-                background-color: rgba(255, 255, 255, 0.7);     }
-  }
-    .desktop-navbar-header {
-      display: inline-block;
-      margin-top: 18px;
-      font-size: 16px;   }
-      .desktop-navbar a {
-        text-decoration: none;
-        color: #282828;   }
-        .desktop-navbar-name {
-          margin-left: 70px;
-          font-weight: bold;   }
-          .desktop-navbar-name a {
-            text-decoration: none;   }
-            .desktop-navbar-name a:visited {
-              text-decoration: none;
-              color: black;   }
-              .desktop-navbar-list {
-                margin-left: 70px;
-                margin-top: -5px;   }
-                .desktop-navbar-item {
-                  display: inline-block;
-                  width: auto;
-                  height: 28px;
-                  padding-top: 15px;
-                  text-align: center;
-                  margin-right: 30px;
-                  color: #bebec8;   }
-                  .desktop-navbar-item a {
-                    text-decoration: none;
-                    font-size: 14px;
-                    color: #bebec8;   }
-                    .desktop-navbar-item a:visited {
-                      color: #bebec8;   }
-                      .desktop-navbar-item-bold a {
-                        color: #007eff !important;   }
-                        .newscontainer {
-                          margin-top: -100px;
-                          width: 100%;
-                          height: 1000px;
-                          background: -moz-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0365c0),
-                                                    color-stop(100%, #51a7f9));
-                          background: -webkit-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                          background: -o-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                          background: -ms-linear-gradient(90deg, #51a7f9 0%, #0365c0 100%);
-                          background: linear-gradient(0deg, #51a7f9, #0365c0);
-                          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0365C0',
-                                                    endColorstr='#51A7F9',GradientType=0 );   }
-                          .newsh1 {
-                            padding-top: 300px;
-                            padding-left: 70px;
-                            font-size: 32px;
-                            font-weight: bold;
-                            color: white;   }
-                            .newsh2 {
-                              margin-top: 15px;
-                              font-size: 16px;
-                              color: white;
-                              padding-left: 70px;   }
-                              .newsh3 {
-                                margin-top: 30px;
-                                font-size: 16px;
-                                color: white;
-                                padding-left: 70px;
-                                line-height: 1.2;
-                                width: 600px;   }
-                                .contentcontainer {
-                                  width: 100%;
-                                  height: 1500px;   }
-                                  .startcontainer {
-                                    background-color: #fafafa;
-                                    width: 100%;
-                                    margin-left: -2px;   }
-                                    .startcontainer .contenth1 {
-                                      font-size: 36px;
-                                      color: #007eff;
-                                      padding-top: 200px;
-                                      letter-spacing: -0.02em;
-                                      font-weight: bold;   }
-                                      .startcontainer .contenth2 {
-                                        font-size: 24px;
-                                        width: auto;
-                                        color: #505064;
-                                        margin-top: 15px;
-                                        letter-spacing: -0.01em;
-                                        font-weight: bold;   }
-                                        .startcontainer .contenth3 {
-                                          font-size: 15px;
-                                          width: 80%;
-                                          color: #282846;
-                                          margin-top: 15px;   }
+            .desktop-navbar-header {
+              display: inline-block;
+              margin-top: 18px;
+              font-size: 16px;   }
+              .desktop-navbar-name {
+                margin-left: 100px;
+                font-weight: bold;
+                display: inline-block;   }
+                .desktop-navbar-case {
+                  margin-left: 70px;
+                  font-weight: bold;
+                  display: inline-block;   }
+                  .desktop-navbar-list {
+                    margin-left: 100px;
+                    margin-top: -5px;   }
+                    .desktop-navbar-item {
+                      display: inline-block;
+                      width: auto;
+                      height: 28px;
+                      padding-top: 15px;
+                      text-align: center;
+                      margin-right: 30px;   }
+                      .desktop-navbar-item-news {
+                        margin-left: 21px;   }
+                        .desktop-navbar-item a {
+                          text-decoration: none;
+                          font-size: 14px;
+                          color: #bebec8;   }
+                          .desktop-navbar-item a:visited {
+                            color: #bebec8;   }
+                            .desktop-navbar-item-bold a {
+                              color: #007eff !important;   }
+                              .desktop-navbar-container-news {
+                                background-color: none;   }
+                                .desktop-navbar-container-news .desktop-navbar-top {
+                                  color: white;   }
+                                  .desktop-navbar-container-news .desktop-navbar-item a {
+                                    color: rgba(255, 255, 255, 0.6);   }
+                                    .desktop-navbar-container-news .desktop-navbar-item-bold a {
+                                      color: white !important;   }
+                                      .desktop-case-navbar-container {
+                                        width: 100%;
+                                        height: 80px;
+                                        background-color: #fafafa;
+                                        border-bottom: 1px solid gainsboro;
+                                        font-size: 14px;   }
+                                        .desktop-case-navbar-stick {
+                                          position: fixed;
+                                          top: 0px;
+                                          left: 0px;
+                                          margin-bottom: 150px;   }
+                                          .desktop-case-navbar-header {
+                                            display: inline-block;
+                                            margin-top: 18px;
+                                            font-size: 16px;   }
+                                            .desktop-case-navbar-top {
+                                              margin-left: 100px;
+                                              font-weight: bold;
+                                              color: #3c3c3c;   }
+                                              .desktop-case-navbar-list {
+                                                margin-left: 100px;
+                                                margin-top: -2px;   }
+                                                .desktop-case-navbar-item {
+                                                  display: inline-block;
+                                                  width: auto;
+                                                  height: 28px;
+                                                  padding-top: 15px;
+                                                  text-align: center;
+                                                  margin-right: 30px;   }
+                                                  .desktop-case-navbar-item a {
+                                                    text-decoration: none;
+                                                    font-size: 14px;
+                                                    color: #3c3c3c;   }
+                                                    .desktop-case-navbar-item a:visited {
+                                                      color: #3c3c3c;   }
+                                                      .desktop-case-navbar-item-bold a {
+                                                        font-weight: bold !important;   }
 }
 
 @font-face {
