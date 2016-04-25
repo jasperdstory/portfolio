@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block page_content %}
-<div class="case-global">
-<!-- <div class="mobile-top-nav-space">
-</div> -->
+<div id="case-global" class="case-global case-global-show">
 
-<div class="case-head-container news-case">
+<div id="page-verify" class="case news">
+
+<div class="case-head-container">
 	<div class="case-head-block">
 		<div class="case-head-h1">News</div>
 		<div class="case-head-h2">iOS app &nbsp;&nbsp; Web app &nbsp;&nbsp; API &nbsp;&nbsp; Analytics</div>
@@ -13,7 +13,8 @@
 	</div>
 </div>
 
-{% include '_newsnav.html' %}
+{% include '_desktopworknav.html' %}
+{% include '_mobileworknav.html' %}
 
 <a name="users"> </a>
 <div class="case-content-container">
@@ -96,6 +97,7 @@
 	</div>
 </div>
 
+</div>
 
-<div>
+</div>
 {% endblock %}

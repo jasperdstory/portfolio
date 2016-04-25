@@ -1,7 +1,47 @@
 window.addEventListener("load", function(event) {
 console.log("js loaded")
 
-  
+// DESKTOP NAV, VERIFY PAGE, APPLY STYLING
+
+var x = document.getElementById("page-verify")
+var y = document.getElementById("desktop-navbar-container")
+var z = document.getElementById("mobile-navbar-container")
+
+if(x.classList.contains("index")){
+  y.classList.add("index-nav")
+  z.classList.add("index-nav")
+  console.log("on index page!")
+}
+else if(x.classList.contains("things")){
+  y.classList.add("things-nav")
+  z.classList.add("things-nav")
+  console.log("on things page!")
+}
+else if(x.classList.contains("news")){
+  y.classList.add("news-nav")
+  z.classList.add("news-nav")
+  console.log("on news page!")
+}
+else if(x.classList.contains("dashboards")){
+  y.classList.add("dashboards-nav")
+  z.classList.add("dashboards-nav")
+  console.log("on dashboards page!")
+}
+else if(x.classList.contains("journeys")){
+  y.classList.add("journeys-nav")
+  z.classList.add("journeys-nav")
+  console.log("on journeys page!")
+}
+else if(x.classList.contains("googleapps")){
+  y.classList.add("googleapps-nav")
+  z.classList.add("googleapps-nav")
+  console.log("on google apps page!")
+}
+else{
+
+}
+
+
   // var currentlocation = window.location.pathname 
   // console.log(currentlocation)
   // var f = document.getElementById("desktop-navbar-container")
@@ -19,13 +59,13 @@ console.log("js loaded")
 
   // this is the height of toolbar to appear more accurate
   // var hy = 75
-  var start = document.getElementById('start').offsetTop
-  var things = document.getElementById('things').offsetTop
-  var news = document.getElementById('news').offsetTop
-  var dashboards = document.getElementById('dashboards').offsetTop
-  var journeys = document.getElementById('journeys').offsetTop
-  var googleapps = document.getElementById('googleapps').offsetTop
-  var currentsection = "start"
+  // var start = document.getElementById('start').offsetTop
+  // var things = document.getElementById('things').offsetTop
+  // var news = document.getElementById('news').offsetTop
+  // var dashboards = document.getElementById('dashboards').offsetTop
+  // var journeys = document.getElementById('journeys').offsetTop
+  // var googleapps = document.getElementById('googleapps').offsetTop
+  // var currentsection = "start"
 
   // console.log(start)
   // console.log(things)
@@ -35,64 +75,65 @@ console.log("js loaded")
   // console.log(googleapps)
 
   // CURRENT SCROLL POSITION
-  myFunction();
-  window.onscroll = function() {myFunction()};
-  function myFunction() {
-    var currentscroll = window.pageYOffset || document.documentElement.scrollTop
-    if (currentscroll > -500  && currentscroll < things) { 
-       currentsection = "start"
-    }
-    else if (currentscroll >= things && currentscroll < news) {
-      currentsection = "6things"
-    }
-    else if (currentscroll >= news && currentscroll < dashboards) {
-       currentsection = "news"
-    }
-    else if (currentscroll >= dashboards && currentscroll < journeys) {
-       currentsection = "dashboards"
-    }
-    else if (currentscroll >= journeys && currentscroll < googleapps) {
-       currentsection = "journeys"
-    }
-    else if (currentscroll >= googleapps ) {
-       currentsection = "googleapps"
-    }
-    else {
-       currentsection = "unknown"
-    }
+  // myFunction();
+  // window.onscroll = function() {myFunction()};
+  // function myFunction() {
+  //   var currentscroll = window.pageYOffset || document.documentElement.scrollTop
+  //   if (currentscroll > -500  && currentscroll < things) { 
+  //      currentsection = "start"
+  //   }
+  //   else if (currentscroll >= things && currentscroll < news) {
+  //     currentsection = "6things"
+  //   }
+  //   else if (currentscroll >= news && currentscroll < dashboards) {
+  //      currentsection = "news"
+  //   }
+  //   else if (currentscroll >= dashboards && currentscroll < journeys) {
+  //      currentsection = "dashboards"
+  //   }
+  //   else if (currentscroll >= journeys && currentscroll < googleapps) {
+  //      currentsection = "journeys"
+  //   }
+  //   else if (currentscroll >= googleapps ) {
+  //      currentsection = "googleapps"
+  //   }
+  //   else {
+  //      currentsection = "unknown"
+  //   }
 
     // console.log(currentscroll)
 
     // console.log(currentsection)
 
-    document.getElementById('currentsection').innerHTML = currentsection;
+//     document.getElementById('currentsection').innerHTML = currentsection;
 
-    var classname = document.getElementsByClassName("desktop-navbar-item");
+//     var classname = document.getElementsByClassName("desktop-navbar-item");
 
-      for (var i = 0; i < classname.length; i++) {
+//       for (var i = 0; i < classname.length; i++) {
 
-      var test = currentsection
-      var innerString=classname[i].innerHTML
+//       var test = currentsection
+//       var innerString=classname[i].innerHTML
 
-    if(innerString.indexOf(test) != -1){
-      // console.log("found it desktop")
-      classname[i].classList.add("desktop-navbar-item-bold");
-    }
-    else{
-      if(classname[i].classList.contains("desktop-navbar-item-bold")){
-        classname[i].classList.remove("desktop-navbar-item-bold");
-      }
+//     if(innerString.indexOf(test) != -1){
+//       // console.log("found it desktop")
+//       classname[i].classList.add("desktop-navbar-item-bold");
+//     }
+//     else{
+//       if(classname[i].classList.contains("desktop-navbar-item-bold")){
+//         classname[i].classList.remove("desktop-navbar-item-bold");
+//       }
   
-    }
+//     }
 
-}
+// }
 
-  }
+  // }
 
-var classname = document.getElementsByClassName("mobile-navbar-dropdown-item");
+// var classname = document.getElementsByClassName("mobile-navbar-dropdown-item");
 
 // OPEN NAV
 document.getElementById("mobile-navbar-nav-open").addEventListener("click", function() {
+  console.log("open clicked")
   var d = document.getElementById("mobile-navbar-container");
   if(d.classList.contains("navbar-close")){
     d.classList.add("navbar-open");  
@@ -109,28 +150,37 @@ document.getElementById("mobile-navbar-nav-open").addEventListener("click", func
   else{
    e.classList.add("hamburger-open");  
   }
+  var f = document.getElementById("case-global");
+  if(f.classList.contains("case-global-hide")){ 
+    f.classList.add("case-global-show");
+    f.classList.remove("case-global-hide");
+  }
+  else{
+   f.classList.add("case-global-hide");  
+   f.classList.remove("case-global-show");  
+  }
   
 
 // SETTING TO BOLD
-  document.getElementById('currentsection').innerHTML = currentsection;
+//   document.getElementById('currentsection').innerHTML = currentsection;
 
-  for (var i = 0; i < classname.length; i++) {
+//   for (var i = 0; i < classname.length; i++) {
 
-  var test = currentsection
-  var innerString=classname[i].innerHTML
+//   var test = currentsection
+//   var innerString=classname[i].innerHTML
 
-    if(innerString.indexOf(test) != -1){
-      console.log("found it")
-      classname[i].classList.add("navbar-dropdown-item-bold");
-    }
-    else{
-      if(classname[i].classList.contains("navbar-dropdown-item-bold")){
-        classname[i].classList.remove("navbar-dropdown-item-bold");
-      }
+//     if(innerString.indexOf(test) != -1){
+//       console.log("found it")
+//       classname[i].classList.add("navbar-dropdown-item-bold");
+//     }
+//     else{
+//       if(classname[i].classList.contains("navbar-dropdown-item-bold")){
+//         classname[i].classList.remove("navbar-dropdown-item-bold");
+//       }
   
-    }
+//     }
 
-}
+// }
 
 
 
@@ -153,9 +203,9 @@ var myFunction2 = function() {
   e.classList.remove("hamburger-open");
 };
 
-for (var i = 0; i < classname.length; i++) {
-    classname[i].addEventListener('click', myFunction2, false);
-}
+// for (var i = 0; i < classname.length; i++) {
+//     classname[i].addEventListener('click', myFunction2, false);
+// }
 
 // ADD BOLD TO NAV LINKS
 

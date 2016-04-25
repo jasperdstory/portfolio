@@ -1,0 +1,160 @@
+
+.index .index-container{
+  background: -webkit-linear-gradient(90deg, rgba(253,253,253,1) 0%, rgba(248,248,248,1) 100%);
+}
+
+.things .things-container{
+  background: -webkit-linear-gradient(90deg, rgba(253,253,253,1) 0%, rgba(248,248,248,1) 100%);
+}
+
+/* CASE HEADERS BACKGROUNDS */
+
+.news .case-head-container{
+  background: -webkit-linear-gradient(90deg, rgba(3,101,192,1) 0%, rgba(81,167,249,1) 100%);
+}
+
+.dashboards .case-head-container{
+  background: -webkit-linear-gradient(90deg, rgba(253,253,253,1) 0%, rgba(248,248,248,1) 100%);
+}
+
+.journeys .case-head-container{
+  background: -webkit-linear-gradient(90deg, rgba(40,40,30,1) 0%, rgba(20,20,30,1) 100%);
+}
+
+.googleapps .case-head-container{
+  background: -webkit-linear-gradient(90deg, rgba(253,253,253,1) 0%, rgba(248,248,248,1) 100%);
+}
+
+
+/* INDEX HEADER LAYOUT */
+
+.index-head-container{
+  width: 100%;
+}
+
+.index-head-h1{
+  text-align: left;
+  color: rgb(70,70,70);
+}
+
+.index-head-h2{ 
+  text-align: left;
+  color: rgb(120,120,120);
+}
+
+.index-head-h3{ 
+  text-align: left;
+}
+
+.index-head-believe a {
+  color: rgb(0,126,255);
+  text-decoration: none;  
+}
+
+.index-head-believe a:visited {
+  color: rgb(0,126,255);
+  text-decoration: none;
+}
+
+/* CASE HEADER LAYOUT */
+
+.case-head-container{
+  width: 100%;
+}
+
+.case-head-h1{
+  text-align: center;
+}
+
+.case-head-h2{ 
+  text-align: center;
+}
+
+.case-head-h3{ 
+  text-align: center;
+}
+
+
+/* CASE HEADER TEXT COLOURS */
+
+.news .case-head-h1{
+  color: white;
+}
+
+.news .case-head-h2{ 
+  color: white;
+}
+
+.news .case-head-h3{ 
+  color: white;
+}
+
+.dashboards .case-head-h1{
+  color: black;
+}
+
+.dashboards .case-head-h2{ 
+  color: black;
+}
+
+.dashboards .case-head-h3{ 
+  color: black;
+}
+
+
+.journeys .case-head-h1{
+  color: white;
+}
+
+.journeys .case-head-h2{ 
+  color: white;
+}
+
+.journeys .case-head-h3{ 
+  color: white;
+}
+
+.googleapps .case-head-h1{
+  color: black;
+}
+
+.googleapps .case-head-h2{ 
+  color: black;
+}
+
+.googleapp .case-head-h3{ 
+  color: black;
+}
+
+/* CASE CONTENT BLOCK */
+
+.case-content-container{
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.case-content-title{
+  text-transform: uppercase;
+  font-weight: normal;
+  color: rgb(170,170,170);
+  font-size: 18px;
+  letter-spacing: 3.5;
+  margin-top: 10px;
+}
+
+.case-content-h1{
+  margin-top: 20px;
+  margin-bottom: 70px;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(60,60,60);
+}
+
+.case-content-body{
+  font-size: 16px;
+  line-height: 1.3;
+  color: rgb(60,60,60);
+  width: 60%;
+}
+

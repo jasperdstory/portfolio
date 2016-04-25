@@ -9,7 +9,7 @@ assets = Environment(app)
 assets.url = app.static_url_path
 scss = Bundle('mobile-nav.scss', 'desktop-nav.scss', 
 			  'typography.scss', 'desktop-page-content.scss', 
-			  'mobile-page-content.scss',
+			  'mobile-page-content.scss', 'global-page-content.scss',
 			  filters='pyscss', output='all.css')
 assets.register('scss_all', scss)
 
@@ -25,9 +25,9 @@ def internal_server_error(e):
 def index():
     return render_template('index.html')
 
-@app.route('/6things')
+@app.route('/sixthings')
 def sixthings():
-    return render_template('6things.html')
+    return render_template('sixthings.html')
 
 @app.route('/news')
 def news():
