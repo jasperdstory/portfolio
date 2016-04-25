@@ -9,6 +9,8 @@ COMPRESS_MIMETYPES = ['text/html', 'text/css', 'text/xml', 'application/json', '
 
 assets = Environment(app)
 assets.url = app.static_url_path
+# assets.append_path('assets')
+
 scss = Bundle('mobile-nav.scss', 'desktop-nav.scss', 
 			  'typography.scss', 'desktop-page-content.scss', 
 			  'mobile-page-content.scss', 'global-page-content.scss',
