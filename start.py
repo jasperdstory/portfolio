@@ -14,9 +14,12 @@ assets.url = app.static_url_path
 scss = Bundle('mobile-nav.scss', 'desktop-nav.scss', 
 			  'typography.scss', 'desktop-page-content.scss', 
 			  'mobile-page-content.scss', 'global-page-content.scss',
-			  filters='pyscss', output='all.css')
+			  filters='pyscss, cssmin', output='all.css')
 assets.register('scss_all', scss)
 
+js = Bundle('nav.js', 'case-nav.js', 
+            filters='jsmin', output='all.js')
+assets.register('js_all', js)
 
 Compress(app)
 
