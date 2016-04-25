@@ -1,9 +1,11 @@
 from flask import Flask, render_template
 from flask.ext.script import Manager
 from flask.ext.assets import Environment, Bundle
-
+from flask.ext.compress import Compress
 
 app = Flask(__name__)
+
+COMPRESS_MIMETYPES = ['text/html', 'text/css', 'text/xml', 'application/json', 'application/javascript', 'application/x-font-opentype']
 
 assets = Environment(app)
 assets.url = app.static_url_path
@@ -12,6 +14,10 @@ scss = Bundle('mobile-nav.scss', 'desktop-nav.scss',
 			  'mobile-page-content.scss', 'global-page-content.scss',
 			  filters='pyscss', output='all.css')
 assets.register('scss_all', scss)
+
+
+Compress(app)
+
 
 @app.errorhandler(404)
 def page_not_found(e):
