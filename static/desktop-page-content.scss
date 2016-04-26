@@ -121,6 +121,23 @@ and (min-device-width : 1000px) {
   float: right;
 }
 
+/* INDEX WORK BGs */
+
+.index-work-news{
+  background-image: url(news-index-1x.png);
+    background-image: -webkit-image-set(
+    url(news-index-1x.png) 1x,
+    url(news-index-2x.png) 2x
+  );
+  background-image: image-set(
+    url(news-index-1x.png) 1x,
+    url(news-index-2x.png) 2x
+  );
+  background-repeat: no-repeat;
+  background-position: 720px 80px;
+  background-size: 375px 346px;
+}
+
 /* INDEX TESTIMONIAL */
 
 .index-testimonial-container{
