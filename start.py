@@ -2,6 +2,9 @@ from flask import Flask, render_template
 from flask.ext.script import Manager
 from flask.ext.assets import Environment, Bundle
 from flask.ext.compress import Compress
+import newrelic.agent 
+
+newrelic.agent.initialize('/newrelic.ini', 'app1')
 
 app = Flask(__name__)
 
@@ -24,6 +27,8 @@ assets.register('js_all', js)
 COMPRESS_MIMETYPES = ['text/html', 'text/css', 
                       'application/javascript', 'application/x-font-opentype']
 Compress(app)
+
+
 
 
 @app.errorhandler(404)
