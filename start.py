@@ -4,7 +4,7 @@ from flask.ext.assets import Environment, Bundle
 from flask.ext.compress import Compress
 import newrelic.agent 
 
-newrelic.agent.initialize('/newrelic.ini', 'app1')
+newrelic.agent.initialize('newrelic.ini', 'app1')
 
 app = Flask(__name__)
 
