@@ -5,7 +5,7 @@ from flask.ext.compress import Compress
 
 app = Flask(__name__)
 
-COMPRESS_MIMETYPES = ['text/html', 'text/css', 'text/xml', 'application/json', 'application/javascript', 'application/x-font-opentype']
+
 
 assets = Environment(app)
 assets.url = app.static_url_path
@@ -21,6 +21,8 @@ js = Bundle('nav.js', 'case-nav.js',
             filters='jsmin', output='all.js')
 assets.register('js_all', js)
 
+COMPRESS_MIMETYPES = ['text/html', 'text/css', 
+                      'application/javascript', 'application/x-font-opentype']
 Compress(app)
 
 
