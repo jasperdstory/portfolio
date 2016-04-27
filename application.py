@@ -7,7 +7,7 @@ application = Flask(__name__)
 
 
 assets = Environment(application)
-assets.url = app.static_url_path
+assets.url = application.static_url_path
 # assets.append_path('assets')
 
 scss = Bundle('mobile-nav.scss', 'desktop-nav.scss', 
@@ -25,38 +25,38 @@ COMPRESS_MIMETYPES = ['text/html', 'text/css',
 Compress(application)
 
 
-@app.errorhandler(404)
+@application.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
 
-@app.errorhandler(500)
+@application.errorhandler(500)
 def internal_server_error(e):
     return render_template('500.html'), 500
 
-@app.route('/')
+@application.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/sixthings')
+@application.route('/sixthings')
 def sixthings():
     return render_template('sixthings.html')
 
-@app.route('/news')
+@application.route('/news')
 def news():
     return render_template('news.html')
 
-@app.route('/dashboards')
+@application.route('/dashboards')
 def dashboards():
     return render_template('dashboards.html')
 
-@app.route('/journeys')
+@application.route('/journeys')
 def journeys():
     return render_template('journeys.html')
 
-@app.route('/googleapps')
+@application.route('/googleapps')
 def googleapps():
     return render_template('googleapps.html')
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    application.run(host='0.0.0.0')
