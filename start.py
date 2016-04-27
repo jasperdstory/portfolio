@@ -2,12 +2,10 @@ from flask import Flask, render_template
 from flask.ext.script import Manager
 from flask.ext.assets import Environment, Bundle
 from flask.ext.compress import Compress
-import newrelic.agent 
+# from flask_cache import Cache
 
-newrelic.agent.initialize('newrelic.ini', 'app1')
 
 app = Flask(__name__)
-
 
 
 assets = Environment(app)
@@ -28,7 +26,30 @@ COMPRESS_MIMETYPES = ['text/html', 'text/css',
                       'application/javascript', 'application/x-font-opentype']
 Compress(app)
 
+# servers = os.environ.get('MEMCACHIER_SERVERS', '').split(',')
+# user = os.environ.get('MEMCACHIER_USERNAME', '')
+# pass = os.environ.get('MEMCACHIER_PASSWORD', '')
 
+# # for caching
+# mc = pylibmc.Client(servers, binary=True,
+#                     username=user, password=pass,
+#                     behaviors={
+#                       # Faster IO
+#                       "tcp_nodelay": True,
+#                       "no_block": True,
+
+#                       # Timeout for set/get requests
+#                       "_poll_timeout": 2000,
+
+#                       # Use consistent hashing for failover
+#                       "ketama": True,
+
+#                       # Configure failover timings
+#                       "connect_timeout": 2000,
+#                       "remove_failed": 4,
+#                       "retry_timeout": 2,
+#                       "dead_timeout": 10,
+# })
 
 
 @app.errorhandler(404)
