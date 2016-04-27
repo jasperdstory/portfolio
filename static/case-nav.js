@@ -1,13 +1,24 @@
 window.addEventListener("load", function(event) {
 console.log("case nav js loaded")
 
+// if (document.images) {
+//         img1 = new Image();
+//         img2 = new Image();
+//         img3 = new Image();
+
+//         img1.src = "http://jasperportfolio.herokuapp.com/static/";
+//         img2.src = "http://domain.tld/path/to/image-002.gif";
+//         img3.src = "http://domain.tld/path/to/image-003.gif";
+//       }
+
+
 window.onscroll = function() {StickyHead()};
   function StickyHead() {
     var currentscroll = window.pageYOffset || document.documentElement.scrollTop
     var n = document.getElementById("desktop-case-navbar-container");
     var v = document.getElementById("mobile-case-navbar-container");
     
-    if (currentscroll > 630){
+    if (currentscroll > 830){
       n.classList.add("desktop-case-navbar-stick");
     }
     else {

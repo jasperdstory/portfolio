@@ -30,7 +30,7 @@ var f=document.getElementById("case-global");if(f.classList.contains("case-globa
 else{f.classList.add("case-global-hide");f.classList.remove("case-global-show");}
 });var myFunction2=function(){var d=document.getElementById("mobile-navbar-container");d.classList.remove("navbar-open");d.classList.add("navbar-close");var e=document.getElementById("hamburger");e.classList.remove("hamburger-open");};});window.addEventListener("load",function(event){console.log("case nav js loaded")
 window.onscroll=function(){StickyHead()};function StickyHead(){var currentscroll=window.pageYOffset||document.documentElement.scrollTop
-var n=document.getElementById("desktop-case-navbar-container");var v=document.getElementById("mobile-case-navbar-container");if(currentscroll>630){n.classList.add("desktop-case-navbar-stick");}
+var n=document.getElementById("desktop-case-navbar-container");var v=document.getElementById("mobile-case-navbar-container");if(currentscroll>830){n.classList.add("desktop-case-navbar-stick");}
 else{n.classList.remove("desktop-case-navbar-stick");}
 if(currentscroll>990&&!v.classList.contains("mobile-case-navbar-stick")){v.classList.add("mobile-case-navbar-stick");console.log("MOBILE STICK ADDED")}
 else if(currentscroll<990&&v.classList.contains("mobile-case-navbar-stick")){v.classList.remove("mobile-case-navbar-stick");console.log("MOBILE STICK REMOVED")}}})
