@@ -2,9 +2,9 @@ from flask import Flask, render_template
 from flask.ext.script import Manager
 from flask.ext.assets import Environment, Bundle
 from flask.ext.compress import Compress
+from flask.ext.cdn import CDN
 
 application = Flask(__name__)
-
 
 assets = Environment(application)
 assets.url = application.static_url_path
@@ -23,6 +23,9 @@ assets.register('js_all', js)
 COMPRESS_MIMETYPES = ['text/html', 'text/css', 
                       'application/javascript', 'application/x-font-opentype']
 Compress(application)
+
+application.config['CDN_DOMAIN'] = 'dn27tkn48vqxi.cloudfront.net'
+CDN(application)
 
 
 @application.errorhandler(404)
