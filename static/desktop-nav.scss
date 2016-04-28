@@ -35,7 +35,8 @@ and (min-device-width : 1000px)
   font-size: 14px;
   width: 900px;
   margin: 0 auto;
-  /*position: relative;*/
+  z-index: 50;
+  position: relative;
 }
 
 /*@supports (-webkit-backdrop-filter: blur()){
