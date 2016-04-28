@@ -32,10 +32,10 @@ and (min-device-width : 1000px)
 .desktop-navbar-container {
   padding-top: 25px;
   height: 75px;
-  background-color: rgb(250,250,250);
   font-size: 14px;
   width: 900px;
   margin: 0 auto;
+  /*position: relative;*/
 }
 
 /*@supports (-webkit-backdrop-filter: blur()){
@@ -151,28 +151,6 @@ and (min-device-width : 1000px)
 .googleapps-nav .desktop-navbar-item-googleapps a { color: rgb(70,70,70); font-weight: bold; }
 
 
-/* DARK STYLING 
-
-.desktop-navbar-container-light {
-  background-color: none;
-}
-
-.desktop-navbar-container-light .desktop-navbar-left {
-  color: white;
-}
-
-.desktop-navbar-container-light .desktop-navbar-right {
-  color: white;
-}
-
-.desktop-navbar-container-light .desktop-navbar-item a {
-  color: rgba(255,255,255,0.6);
-}
-
-.desktop-navbar-container-light .desktop-navbar-item-bold a {
-  color: white !important;
-  font-weight: bold;
-}
 
 
 
