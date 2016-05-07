@@ -28,7 +28,15 @@ var e=document.getElementById("hamburger");if(e.classList.contains("hamburger-op
 else{e.classList.add("hamburger-open");}
 var f=document.getElementById("case-global");if(f.classList.contains("case-global-hide")){f.classList.add("case-global-show");f.classList.remove("case-global-hide");}
 else{f.classList.add("case-global-hide");f.classList.remove("case-global-show");}
-});var myFunction2=function(){var d=document.getElementById("mobile-navbar-container");d.classList.remove("navbar-open");d.classList.add("navbar-close");var e=document.getElementById("hamburger");e.classList.remove("hamburger-open");};});window.addEventListener("load",function(event){console.log("case nav js loaded")
+});var myFunction2=function(){var d=document.getElementById("mobile-navbar-container");d.classList.remove("navbar-open");d.classList.add("navbar-close");var e=document.getElementById("hamburger");e.classList.remove("hamburger-open");};});window.addEventListener("load",function(event){console.log("menu js loaded")
+carousel=(function(){var contain=document.querySelector('.carousel-contain');var box=document.querySelector('.carouselbox');var next=contain.querySelector('.next');var prev=contain.querySelector('.prev');var items=box.querySelectorAll('.content li');var counter=0;var amount=items.length;var current=items[0];box.classList.add('active');function navigate(direction){current.classList.remove('current');counter=counter+direction;if(direction===-1&&counter<0){counter=amount-1;}
+if(direction===1&&!items[counter]){counter=0;}
+current=items[counter];current.classList.add('current');}
+next.addEventListener('click',function(ev){navigate(1);});prev.addEventListener('click',function(ev){navigate(-1);});navigate(0);})();})
+window.addEventListener("load",function(event){console.log("backtop loaded")
+var clickbutton=document.getElementById("scrolltop")
+clickbutton.addEventListener('click',function(){window.scrollTo(0,0);})})
+window.addEventListener("load",function(event){console.log("case nav js loaded")
 window.onscroll=function(){StickyHead()};function StickyHead(){var currentscroll=window.pageYOffset||document.documentElement.scrollTop
 var n=document.getElementById("desktop-case-navbar-container");var v=document.getElementById("mobile-case-navbar-container");if(currentscroll>830){n.classList.add("desktop-case-navbar-stick");}
 else{n.classList.remove("desktop-case-navbar-stick");}

@@ -311,20 +311,20 @@ and (min-device-width : 1000px) {
 /* NEWS BG*/
 
 .news-bg{
-  width: 630px;
+  width: 575px;
   height: 449px;
   margin: 0 auto;
   position: relative;
-  top: 367px;
- /* background-color: rgba(255,255,255,0.5);*/
+  top: 180px;
+  /*background-color: rgba(255,255,255,0.5);*/
 }
 
 .news-bg-left{
   position: absolute;
   display: block;
   float: left;
-  width: 404px;
-  height: 449px;
+  width: 354px;
+  height: 394px;
  /* background-color: rgba(255,0,0,0.5);*/
   background-image: url(news-head-left-1x.png);
     background-image: -webkit-image-set(
@@ -337,16 +337,16 @@ and (min-device-width : 1000px) {
   );
   background-repeat: no-repeat;
   background-position: 0px 0px;
-  background-size: 404px 449px;
+  background-size: 354px 394px;
 }
 
 .news-bg-right{
-  width: 386px;
-  height: 407px;
+  width: 341px;
+  height: 360px;
   position: absolute;
   display: block;
-  left: 244px;
-  top: 42px;
+  left: 234px;
+  top: 34px;
  /* background-color: rgba(0,0,255,0.5);*/
   background-image: url(news-head-right-1x.png);
     background-image: -webkit-image-set(
@@ -359,7 +359,7 @@ and (min-device-width : 1000px) {
   );
   background-repeat: no-repeat;
   background-position: 0px 0px;
-  background-size: 386px 407px;
+  background-size: 341px 360px;
 }
 
 /* JOURNEYS BG */
@@ -400,6 +400,8 @@ and (min-device-width : 1000px) {
   height: 386px;
 }
 
+/* */
+
 
 
 /* CASE CONTENT BLOCK */
@@ -434,6 +436,201 @@ and (min-device-width : 1000px) {
   line-height: 1.3;
   color: rgb(120,120,120);
 }
+
+
+
+
+/* CAROUSEL */
+
+
+
+.carousel-left-dots{
+  height: 20px;
+  margin-top: 140px;
+  margin-left: 10px;
+  display: block;
+  position: absolute;
+}
+
+.carousel-left-dot{
+  height: 7px;
+  width: 7px; 
+  margin-right: 7px;
+  border-radius: 15px;
+  border: 1px solid rgb(180,180,180);
+  display: inline-block;
+}
+
+.carousel-left-dot-active{
+  background-color: rgb(140,140,140);
+  border: 1px solid rgb(140,140,140);
+}
+
+.carousel-left-text{
+  width: 150px;
+  height: 300px;
+  margin-top: 180px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.carousel-left-title{
+  font-size: 17px;
+  font-weight: bold;
+  height: 50px;
+  position: absolute;
+}
+
+.carousel-left-body{
+  font-size: 15px;
+  margin-top: 25px; 
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  text-align: left;
+}
+
+.carousel-contain{
+  width: 780px;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  height: 432px;
+}
+
+.carousel-content{
+  width: 650px;
+  height: 432px;
+  display: inline-block;
+  border-bottom: 1px solid rgb(200,200,200);
+}
+
+.carousel-content .carousel-left{
+  width: 200px;
+  height: 100%;
+  display: inline-block;
+}
+
+.carousel-content .carousel-right{
+  width: 355px;
+  height: 100%;
+  margin-left: 30px;
+  display: inline-block;
+  background-size: 355px 448px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.carousel-content .carousel-right-one{
+  background-image: url(news-carousel-one.png);
+}
+
+.carousel-content .carousel-right-two{
+  background-image: url(news-carousel-two.png);
+}
+
+.carousel-content .carousel-right-three{
+  background-image: url(news-carousel-three.png);
+}
+
+.carousel-content .carousel-right-four{
+  background-image: url(news-carousel-four.png);
+}
+
+.carousel-content .carousel-right-five{
+  background-image: url(news-carousel-five.png);
+}
+
+.carouselbox {
+  width: 650px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+}
+
+.content li {
+  width: 650px;
+  height: 432px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.active {
+  height: 432px;
+}
+.active li {
+  position: absolute;
+  top: 800px;
+}
+.active li.current {
+  top: 0px;
+}
+
+
+.carousel-button-contain{
+  width: 60px;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.carousel-contain:hover{
+  .carousel-button{
+    opacity: 0.75;
+  }
+}
+
+
+.carousel-button{
+  height: 60px;
+  background-color: rgba(0,0,0,0.04);
+  margin-top: 200px;
+  border-radius: 8px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.carousel-button:hover{
+  opacity: 1 !important;
+}
+
+.carousel-button-left{
+  margin-left: -10px;
+}
+
+.carousel-button-right{
+  margin-left: 10px;
+}
+
+.carousel-button-arrow{
+  width: 60px;
+  height: 60px;
+  background-image: url(caret.png);
+  background-size: 20px 38px;
+  background-repeat: no-repeat;
+  background-position: 20px 12px;
+}
+
+.carousel-button-arrow-left{
+  transform: rotate(180deg);
+  background-position: 25px 12px;
+}
+
+
+.buttons {
+  width: 60px;
+  position: relative;
+}
+
+button {
+  display: block;
+} 
 
 
 

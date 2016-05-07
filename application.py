@@ -11,13 +11,13 @@ assets = Environment(app)
 assets.url = app.static_url_path
 # assets.append_path('assets')
 
-scss = Bundle('mobile-nav.scss', 'desktop-nav.scss', 
-			  'typography.scss', 'desktop-page-content.scss', 
+scss = Bundle('colors.scss', 'mobile-nav.scss', 'desktop-nav.scss', 'typography.scss', 
+			  'layout.scss', 'desktop-page-content.scss', 
 			  'mobile-page-content.scss', 'global-page-content.scss',
 			  filters='pyscss, cssmin', output='all.css')
 assets.register('scss_all', scss)
 
-js = Bundle('nav.js', 'case-nav.js', 'journey.js',
+js = Bundle('nav.js', 'menu.js', 'backtop.js', 'case-nav.js', 'journey.js',
             filters='jsmin', output='all.js')
 assets.register('js_all', js)
 
@@ -62,6 +62,10 @@ def journeys():
 def googleapps():
     return render_template('googleapps.html')
 
+@app.after_request
+def add_header(response):
+    response.cache_control.max_age = 300
+    return response
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
