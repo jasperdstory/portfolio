@@ -4,6 +4,7 @@ $greyone: rgb(83,88,95);
 $greytwo: rgb(120,120,120);
 $greythree: rgb(166,170,169);
 $greyfour: rgb(190,190,200);
+$greysix: rgb(210,210,220);
 $greyseven: rgb(248,248,248);
 $greyeight: rgb(253,253,253);
 
@@ -41,11 +42,12 @@ h6 { color: $greythree;   }
 p  { color: $greyone;     }
 
 /* Special */
-.news     h1 { color: $white;     }
-.news     h2 { color: $white;     }
-.journeys h1 { color: $white;     }
-.journeys h2 { color: $semiwhite; }
-
+.news           h1 { color: $white;     }
+.news           h2 { color: $white;     }
+.journeys       h1 { color: $white;     }
+.journeys       h2 { color: $semiwhite; }
+.googleapps     h1 { color: $white;     }
+.googleapps     h2 { color: $white;     }
 
 
 /* HEADBOX */
@@ -56,6 +58,8 @@ p  { color: $greyone;     }
 /* Special */
 .news .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}
 
+.journeys .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}
+.googleapps .head-contain {background-image: url(googleapps-bg.png); background-size: 1280px 430px; background-repeat: no-repeat;}
 
 /*.dashboards .head-box { 
   background: linear-gradient(to bottom, $greyseven 0%, $greyeight 100%); 
@@ -90,6 +94,14 @@ p  { color: $greyone;     }
 .news-nav .desktop-navbar-case        {color: $semiwhite;}
 .news-nav .desktop-navbar-item-bold a {color: $white;}
 
+.journeys-nav .desktop-navbar a           {color: $semiwhite;}
+.journeys-nav .desktop-navbar-case        {color: $semiwhite;}
+.journeys-nav .desktop-navbar-item-bold a {color: $white;}
+
+
+.googleapps-nav .desktop-navbar a           {color: $semiwhite;}
+.googleapps-nav .desktop-navbar-case        {color: $semiwhite;}
+.googleapps-nav .desktop-navbar-item-bold a {color: $white;}
 
 
 /* NAV COLORS */
@@ -106,12 +118,30 @@ p  { color: $greyone;     }
 .dashboards-nav .desktop-navbar-item a { color: rgba(70,70,70,0.75);}
 .dashboards-nav .desktop-navbar-item-dashboards a { color: rgb(70,70,70); }
 
-.journeys-nav .desktop-navbar-name a { color: white; }
+/*.journeys-nav .desktop-navbar-name a { color: white; }
 .journeys-nav .desktop-navbar-right { color: white; }
 .journeys-nav .desktop-navbar-item a { color: rgba(255,255,255,0.75); }
 .journeys-nav .desktop-navbar-item-journeys a { color: rgb(255,255,255); }
-
-.googleapps-nav .desktop-navbar-name a { color: rgb(70,70,70); }
+*/
+/*.googleapps-nav .desktop-navbar-name a { color: rgb(70,70,70); }
 .googleapps-nav .desktop-navbar-right { color: rgb(70,70,70)}
 .googleapps-nav .desktop-navbar-item a { color: rgba(70,70,70,0.75); }
-.googleapps-nav .desktop-navbar-item-googleapps a { color: rgb(70,70,70); }
+.googleapps-nav .desktop-navbar-item-googleapps a { color: rgb(70,70,70); }*/
+
+
+/* H2 BOXES */
+.h2-item {
+  border: 1px solid $greysix;
+  background-color: rgba(255,255,255,0.75); 
+  @media (-webkit-min-device-pixel-ratio: 2) { 
+      border: 0.5px solid $greysix;
+  }
+}
+
+.news .h2-item, .journeys .h2-item, .googleapps .h2-item {
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0.05); 
+  @media (-webkit-min-device-pixel-ratio: 2) { 
+      border: 0.5px solid rgba(255,255,255,0.5);
+  }
+}
