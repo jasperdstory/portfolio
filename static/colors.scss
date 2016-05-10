@@ -57,27 +57,8 @@ p  { color: $greyone;     }
 
 /* Special */
 .news .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}
-
 .journeys .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}
 .googleapps .head-contain {background-image: url(googleapps-bg.png); background-size: 1280px 430px; background-repeat: no-repeat;}
-
-/*.dashboards .head-box { 
-  background: linear-gradient(to bottom, $greyseven 0%, $greyeight 100%); 
-}*/
-
-.dashboards .case-head-container{
-  background: -webkit-linear-gradient(90deg, rgba(253,253,253,1) 0%, rgba(248,248,248,1) 100%);
-}
-
-.journeys .case-head-container{
-  /*background: -webkit-linear-gradient(90deg, rgba(40,40,30,1) 0%, rgba(20,20,30,1) 100%);*/
-  /*background: none;*/
-}
-
-.googleapps .case-head-container{
-  background: -webkit-linear-gradient(90deg, rgba(253,253,253,1) 0%, rgba(248,248,248,1) 100%);
-}
-
 
 
 
@@ -98,35 +79,10 @@ p  { color: $greyone;     }
 .journeys-nav .desktop-navbar-case        {color: $semiwhite;}
 .journeys-nav .desktop-navbar-item-bold a {color: $white;}
 
-
 .googleapps-nav .desktop-navbar a           {color: $semiwhite;}
 .googleapps-nav .desktop-navbar-case        {color: $semiwhite;}
 .googleapps-nav .desktop-navbar-item-bold a {color: $white;}
 
-
-/* NAV COLORS */
-
-
-
-.news-nav .desktop-navbar-name a { color: white; }
-.news-nav .desktop-navbar-right { color: white; }
-.news-nav .desktop-navbar-item a { color: rgba(255,255,255,0.75); }
-.news-nav .desktop-navbar-item-news a { color: white; }
-
-.dashboards-nav .desktop-navbar-name a { color: rgb(70,70,70);}
-.dashboards-nav .desktop-navbar-right { color: rgb(70,70,70)}
-.dashboards-nav .desktop-navbar-item a { color: rgba(70,70,70,0.75);}
-.dashboards-nav .desktop-navbar-item-dashboards a { color: rgb(70,70,70); }
-
-/*.journeys-nav .desktop-navbar-name a { color: white; }
-.journeys-nav .desktop-navbar-right { color: white; }
-.journeys-nav .desktop-navbar-item a { color: rgba(255,255,255,0.75); }
-.journeys-nav .desktop-navbar-item-journeys a { color: rgb(255,255,255); }
-*/
-/*.googleapps-nav .desktop-navbar-name a { color: rgb(70,70,70); }
-.googleapps-nav .desktop-navbar-right { color: rgb(70,70,70)}
-.googleapps-nav .desktop-navbar-item a { color: rgba(70,70,70,0.75); }
-.googleapps-nav .desktop-navbar-item-googleapps a { color: rgb(70,70,70); }*/
 
 
 /* H2 BOXES */

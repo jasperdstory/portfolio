@@ -38,13 +38,13 @@ h3 {
 }
 
 
-
 h4 {
 	font-size: 35px;
 	font-weight: bold;
 	width: 650px;
 	margin: 0 auto;
 	text-align: left;
+	line-height: 1.1;
 }
 
 h5 {
@@ -65,9 +65,51 @@ p {
 	text-align: left;
 }
 
+
 /* MOBILE */
 
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+
+h1 {
+	font-size: 45px;
+	font-weight: bold;
+	letter-spacing: -0.015em;
+}
 
 
+h2 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+
+h3 {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+
+h4 {
+	font-size: 25px;
+	font-weight: bold;
+	width: calc(100% - 30px);
+	margin: 0 auto;
+	text-align: left;
+	line-height: 1.1;
+}
+
+p { 
+	font-size: 18px;
+	width: calc(100% - 30px);
+	padding-right: 0px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+}
 
 

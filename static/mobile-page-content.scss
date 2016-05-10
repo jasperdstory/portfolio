@@ -3,9 +3,50 @@ and (min-device-width : 320px)
 and (max-device-width : 667px) 
 and (orientation : portrait) {
 
+
+.news-bg{
+  width: calc(100% - 15px);
+  height: 375px;
+  margin: 0 auto;
+  position: relative;
+  top: 109px;
+}
+
+.news-bg-center{
+  width: calc(100% - 15px);
+  height: 375px;
+  margin: 0 auto;
+  background-image: url(news-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: auto 0px;
+  background-size: auto 100%;
+}
+
+/*.news-bg-left{
+  position: absolute;
+  display: block;
+  float: left;
+  width: 354px;
+  height: 394px;
+  background-image: url(news-head-left-1x.png);
+    background-image: -webkit-image-set(
+    url(news-head-left-1x.png) 1x,
+    url(news-head-left-2x.png) 2x
+  );
+  background-image: image-set(
+    url(news-head-left-1x.png) 1x,
+    url(news-head-left-2x.png) 2x
+  );
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 354px 394px;
+}*/
+
+
+
 /* INDEX HEADER */
 
-.index-head-container{
+/*.index-head-container{
   margin-top: -150px;
   padding-left: 17px;
   width: 90%;
@@ -29,7 +70,7 @@ and (orientation : portrait) {
   font-size: 15px;
   font-weight: regular;
   line-height: 1.2;
-  /*letter-spacing: -0.03em;*/
+  /*letter-spacing: -0.03em;
 }
 
 .index-head-h2-bold{
@@ -48,11 +89,11 @@ and (orientation : portrait) {
   background-color: rgb(230,230,230);
   margin-top: 17px;
   margin-bottom: 5px;
-}
+}*/
 
 /* INDEX WORK LINK BITS */
 
-.index-work-container{
+/*.index-work-container{
   margin-top: -1px;
   display: block;
   height: 120px;
@@ -89,8 +130,6 @@ and (orientation : portrait) {
 
 .index-work-button-container{
   width: 150px;
-  /*position: relative;
-  top: 0px;*/
   float: right;
   margin-top: -85px;
   margin-right: 45px;
@@ -101,7 +140,6 @@ and (orientation : portrait) {
   height: 80px;
   color: rgb(0,126,255);
   background-color: none;
-  /*border: 1px solid green;*/
   text-align: right;
   border-radius: 5px;
   padding-top: 12px;
@@ -119,29 +157,29 @@ and (orientation : portrait) {
 .index-work-button-container a:visited{  
   color: rgb(0,126,255);
   text-decoration: none;
-}
+}*/
 
 
 /* TESTIMONIAL DESKTOP BLANK*/
 
-.index-testimonial-container{
+/*.index-testimonial-container{
   display: none;
 }
 
-
+*/
 
 
 /* CASE HEADER */
-
+/*
 .case-global-show{
   display: block;
 }
-
+*/
 /*.case-global-hide{
   display: none;
 }*/
 
-.case-global-hide .case-head-container{
+/*.case-global-hide .case-head-container{
   height: 100%;
 }
 
@@ -191,10 +229,10 @@ and (orientation : portrait) {
   width: 270px;
 }
 
-
+*/
 /* CASE CONTENT BLOCK */
 
-.case-content-container{
+/*.case-content-container{
   height: auto;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -225,6 +263,6 @@ and (orientation : portrait) {
   color: rgb(60,60,60);
   width: 80%;
 }
-
+*/
 
 }
