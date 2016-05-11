@@ -5,7 +5,7 @@ from flask.ext.compress import Compress
 
 # from flask.ext.cdn import CDN
 
-app = Flask(__name__)
+application = app = Flask(__name__)
 
 assets = Environment(app)
 assets.url = app.static_url_path
@@ -68,4 +68,4 @@ def add_header(response):
     return response
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    application.run(host='0.0.0.0')
