@@ -33,20 +33,18 @@ and (orientation : portrait) {
   overflow-x: hidden;
   position: fixed;
   z-index: 350;
-  border-bottom: 1px solid rgb(200,200,200);
 }
 
 .mobile-navbar-header{
   position: absolute;
   top: 0;
-  left: 0;
-  background-color: rgba(255,255,255,1);
-  border-bottom: 0.5px solid rgb(200,200,200);
+  left: 0;  
   height: 54px;
   width: 100%;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   margin-bottom: -54px;
   z-index: 250;
+  
 }
 /*
 @supports (-webkit-backdrop-filter: blur()){
@@ -77,9 +75,9 @@ and (orientation : portrait) {
 .mobile-navbar-name{
   display: inline-block;  
   font-weight: bold;
-  color: rgb(120,120,120);
-  font-size: 14px;
-  /*color: rgb(255,255,255);*/
+  font-size: 13.5px;
+  letter-spacing: 0.03em;
+
 }
 
 .mobile-navbar-right{
@@ -398,7 +396,6 @@ and (orientation : portrait) {
   left: 15px;
   width: 21px;
   height: 1px;
-  background: rgb(60,60,80);
   transform: rotate(0);
   transition: all 0.25s ease-in-out;
 }

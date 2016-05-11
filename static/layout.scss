@@ -181,14 +181,14 @@ and (orientation : portrait) {
 .index .head-contain{ height: 700px; border-bottom: 1px solid rgb(200,200,210); }
 .index .head-contain-clear{ height: 700px; }
 
-.news .head-contain{ height: 600px; }
-.news .head-contain-clear{ height: 600px; }
+.news .head-contain{ height: 640px; }
+.news .head-contain-clear{ height: 640px; }
 
 .dashboards .head-contain{ height: 800px; border-bottom: 1px solid rgb(200,200,210); }
 .dashboards .head-contain-clear{ height: 800px; }
 
-.journeys .head-contain{ height: 430px; }
-.journeys .head-contain-clear{ height: 430px; }
+.journeys .head-contain{ height: 480px; }
+.journeys .head-contain-clear{ height: 480px; }
 
 .googleapps .head-contain{ height: 430px; }
 .googleapps .head-contain-clear{ height: 430px; }
@@ -199,7 +199,7 @@ and (orientation : portrait) {
 	height: 85px;
 	position: relative;
 	margin: 0 auto;
-	top: 40px;
+	top: 60px;
 	border-bottom: 1px solid rgb(220,220,220);
 	z-index: 5;
 	@media (-webkit-min-device-pixel-ratio: 2) { 
