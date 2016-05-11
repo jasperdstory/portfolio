@@ -1,5 +1,5 @@
-window.addEventListener("load", function(event) {
-console.log("case nav js loaded")
+// window.addEventListener("load", function(event) {
+// console.log("case nav js loaded")
 
 // if (document.images) {
 //         img1 = new Image();
@@ -12,29 +12,29 @@ console.log("case nav js loaded")
 //       }
 
 
-window.onscroll = function() {StickyHead()};
-  function StickyHead() {
-    var currentscroll = window.pageYOffset || document.documentElement.scrollTop
-    var n = document.getElementById("desktop-case-navbar-container");
-    var v = document.getElementById("mobile-case-navbar-container");
+// window.onscroll = function() {StickyHead()};
+//   function StickyHead() {
+//     var currentscroll = window.pageYOffset || document.documentElement.scrollTop
+//     var n = document.getElementById("desktop-case-navbar-container");
+//     var v = document.getElementById("mobile-case-navbar-container");
     
-    if (currentscroll > 830){
-      n.classList.add("desktop-case-navbar-stick");
-    }
-    else {
-      n.classList.remove("desktop-case-navbar-stick");
-    }
+//     if (currentscroll > 830){
+//       n.classList.add("desktop-case-navbar-stick");
+//     }
+//     else {
+//       n.classList.remove("desktop-case-navbar-stick");
+//     }
     
-    if(currentscroll > 990 && ! v.classList.contains("mobile-case-navbar-stick")){
-      v.classList.add("mobile-case-navbar-stick");
-      console.log("MOBILE STICK ADDED")
-    }
-    else if(currentscroll < 990 && v.classList.contains("mobile-case-navbar-stick")) {
-      v.classList.remove("mobile-case-navbar-stick");
-      console.log("MOBILE STICK REMOVED")
-    }
-  }
-})
+//     if(currentscroll > 990 && ! v.classList.contains("mobile-case-navbar-stick")){
+//       v.classList.add("mobile-case-navbar-stick");
+//       console.log("MOBILE STICK ADDED")
+//     }
+//     else if(currentscroll < 990 && v.classList.contains("mobile-case-navbar-stick")) {
+//       v.classList.remove("mobile-case-navbar-stick");
+//       console.log("MOBILE STICK REMOVED")
+//     }
+//   }
+// })
 
 
 

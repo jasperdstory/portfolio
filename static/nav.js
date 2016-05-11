@@ -6,35 +6,42 @@ console.log("js loaded")
 var x = document.getElementById("page-verify")
 var y = document.getElementById("desktop-navbar-container")
 var z = document.getElementById("mobile-navbar-container")
+var j = document.getElementById("mobile-navbar-dropdown-head-section")
 
 if(x.classList.contains("index")){
   y.classList.add("index-nav")
   z.classList.add("index-nav")
+  j.innerHTML = ("JASPERSTORY");
   console.log("on index page!")
 }
-else if(x.classList.contains("things")){
-  y.classList.add("things-nav")
-  z.classList.add("things-nav")
-  console.log("on things page!")
-}
+// else if(x.classList.contains("things")){
+//   y.classList.add("things-nav")
+//   z.classList.add("things-nav")
+//   j.innerHTML = ("news");
+//   console.log("on things page!")
+// }
 else if(x.classList.contains("news")){
   y.classList.add("news-nav")
   z.classList.add("news-nav")
+  j.innerHTML = ("NEWS");
   console.log("on news page!")
 }
 else if(x.classList.contains("dashboards")){
   y.classList.add("dashboards-nav")
   z.classList.add("dashboards-nav")
+  j.innerHTML = ("DASHBOARDS");
   console.log("on dashboards page!")
 }
 else if(x.classList.contains("journeys")){
   y.classList.add("journeys-nav")
   z.classList.add("journeys-nav")
+  j.innerHTML = ("JOURNEYS");
   console.log("on journeys page!")
 }
 else if(x.classList.contains("googleapps")){
   y.classList.add("googleapps-nav")
   z.classList.add("googleapps-nav")
+  j.innerHTML = ("GOOGLEAPPS");
   console.log("on google apps page!")
 }
 else{
@@ -132,16 +139,32 @@ else{
 // var classname = document.getElementsByClassName("mobile-navbar-dropdown-item");
 
 // OPEN NAV
+
+
+
 document.getElementById("mobile-navbar-nav-open").addEventListener("click", function() {
   console.log("open clicked")
   var d = document.getElementById("mobile-navbar-container");
+  var f = document.getElementById("page-container");
+  var g = document.getElementsByTagName('body')[0]
   if(d.classList.contains("navbar-close")){
     d.classList.add("navbar-open");  
     d.classList.remove("navbar-close");
+    document.ontouchmove = function(e){ 
+    e.preventDefault(); 
+    }    
+    // g.style.overflow = "hidden";
+    // g.style.position = "fixed";
   }
   else{
    d.classList.remove("navbar-open"); 
    d.classList.add("navbar-close");  
+   f.classList.remove("page-fixed")
+   document.ontouchmove = function(e){ 
+    e.enableDefault(); 
+    }
+   // g.style.overflow = "visible";
+   // g.style.position = "static";
   }
   var e = document.getElementById("hamburger");
   if(e.classList.contains("hamburger-open")){ 
@@ -149,15 +172,6 @@ document.getElementById("mobile-navbar-nav-open").addEventListener("click", func
   }
   else{
    e.classList.add("hamburger-open");  
-  }
-  var f = document.getElementById("case-global");
-  if(f.classList.contains("case-global-hide")){ 
-    f.classList.add("case-global-show");
-    f.classList.remove("case-global-hide");
-  }
-  else{
-   f.classList.add("case-global-hide");  
-   f.classList.remove("case-global-show");  
   }
   
 
