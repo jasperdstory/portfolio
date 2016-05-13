@@ -18,6 +18,13 @@ $white: rgb(255,255,255);
 $semiwhite: rgba(255,255,255,0.8);
 
 
+/* INDEX BG COLORS */
+$orange:  rgb(243,144,25);
+$purple:  rgb(179,106,226);
+$red:     rgb(236,93,87);
+$green:   rgb(112,191,65);
+
+
 
 .carousel-left-title{
   color: $greyone;
@@ -26,6 +33,23 @@ $semiwhite: rgba(255,255,255,0.8);
 .carousel-left-text{
   color: $greytwo;
 }
+
+
+
+
+/* INDEX BG */
+
+.index-head-bg-one    .index-head-bg-text{ color: $orange;}
+.index-head-bg-two    .index-head-bg-text{ color: $purple;}
+.index-head-bg-three  .index-head-bg-text{ color: $red;}
+.index-head-bg-four   .index-head-bg-text{ color: $midblue;}
+.index-head-bg-five   .index-head-bg-text{ color: $green;}
+
+.index-head-bg-one    .index-head-bg-block{ background-color: $orange;}
+.index-head-bg-two    .index-head-bg-block{ background-color: $purple;}
+.index-head-bg-three  .index-head-bg-block{ background-color: $red;}
+.index-head-bg-four   .index-head-bg-block{ background-color: $midblue;}
+.index-head-bg-five   .index-head-bg-block{ background-color: $green;}
 
 
 
@@ -55,6 +79,8 @@ p  { color: $greyone;     }
 /* Default */
 .head-contain {background: linear-gradient(to bottom, $greyseven 0%, $greyeight 100%);}
 
+
+.index .head-contain {background: linear-gradient(to bottom, $greyseven 0%, white 100%);}
 /* Special */
 .news .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}
 /*.journeys .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}*/
@@ -65,15 +91,16 @@ p  { color: $greyone;     }
 /* DESKTOP NAV BAR */
 
 /* Defaults */
-.desktop-navbar-navbar a         { color: $greytwo; }
-.desktop-navbar-case             { color: $greytwo; }
-.desktop-navbar-item-bold a      { color: $greyone !important; }
+.desktop-navbar-item a, .desktop-navbar-item a:visited { color: $greytwo; }
+.desktop-navbar-case             { color: $greythree; }
+.index-nav .desktop-navbar-item-index a, .index-nav .desktop-navbar-item-item a:visited       { color: $greyone !important; }
 
 /* Overrides */
 
-.news-nav .desktop-navbar a           {color: $semiwhite;}
+.news-nav .desktop-navbar-item a, .index-nav .desktop-navbar-item a:visited {color: $semiwhite;}
+.news-nav .desktop-navbar-item-index a, .index-nav .desktop-navbar-item-index a:visited {color: $semiwhite;}
 .news-nav .desktop-navbar-case        {color: $semiwhite;}
-.news-nav .desktop-navbar-item-bold a {color: $white;}
+.news-nav .desktop-navbar-item-news a, .index-nav .desktop-navbar-item-news a:visited {color: $white;}
 
 .journeys-nav .desktop-navbar a           {color: $semiwhite;}
 .journeys-nav .desktop-navbar-case        {color: $semiwhite;}

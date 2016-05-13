@@ -285,6 +285,117 @@ and (orientation : portrait) {
 /*  height: 430px;*/
 }
 
-/* */
+
+/* INDEX HEAD STUFF */
+
+.index .h3-contain{
+  margin-top: 20px;
+}
+
+
+
+/* INDEX NAV STUFF */
+.index-nav-contain {
+  height: auto;
+  width: 100%;
+  padding-bottom: 15px;
+  /*background-color: rgba(255,0,0,0.1);*/
+  border-top: 1px solid rgb(200,200,200);
+  border-bottom: 1px solid rgb(200,200,200);
+  margin-bottom: -1px;
+}
+
+.index-nav-block{
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.index-nav-text{
+  width: auto;
+  max-width: 500px;
+}
+
+.index .index-nav-contain h1 {
+  font-size: 22px;
+  padding-top: 30px;
+ 
+}
+
+.index-nav-contain h3 {
+  font-size: 16px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+   text-align: left;
+}
+
+.index-nav-contain .h2-contain {
+  /*display: none;*/
+  width: auto;
+  display: block;
+  position: static;
+  margin-top: 5px;
+  top: 0px;
+}
+
+.index-nav-button-contain{
+  margin-top: 55px;
+  height: 55px;
+  position: static;
+  display: block;
+  width: calc(100%+30px);
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  -webkit-tap-highlight-color: rgba(68,160,255,0.2) !important;
+}
+
+.index-nav-button-contain a{
+  text-decoration: none;
+  color: rgb(68,160,255);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.index-nav-button-contain a:visited{
+  text-decoration: none;
+  color: rgb(68,160,255);
+  
+}
+
+.index-nav-button{
+  width: 100%;
+  height: 100%;
+  line-height: 3.0;
+}
+
+/*INDEX HEAD BG*/
+
+.index-head-bg-contain{
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  position: relative;
+  top: 140px;
+  height: auto;
+}
+
+.index-head-bg-part{
+  height: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.index-head-bg-block{
+  height: 2px;
+  border-radius: 3px;
+}
+
+.index-head-bg-text{
+  width: 100%;
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 
 }

@@ -40,7 +40,7 @@ h3 {
 
 h4 {
 	font-size: 35px;
-	font-weight: bold;
+	font-weight: normal;
 	width: 650px;
 	margin: 0 auto;
 	text-align: left;
@@ -95,12 +95,18 @@ h3 {
 
 h4 {
 	font-size: 25px;
-	font-weight: bold;
+	font-weight: normal;
 	width: calc(100% - 30px);
 	margin: 0 auto;
 	text-align: left;
 	line-height: 1.1;
 }
+
+.index h4 {
+	font-weight: normal;
+}
+
+
 
 p { 
 	font-size: 18px;

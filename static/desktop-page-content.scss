@@ -55,6 +55,10 @@ and (min-device-width : 1000px) {s
   position: relative;
 }
 
+.index-nav-googleapps{
+  border-bottom: none;
+}
+
 .index-nav-block{
   width: 650px;
   margin: 0 auto;
@@ -62,6 +66,12 @@ and (min-device-width : 1000px) {s
 
 .index-nav-text{
   float: left;
+  width: 300px;
+  position: absolute;
+}
+
+.index-nav-text-left{
+  left: 450px;
   width: 300px;
   position: absolute;
 }
@@ -133,6 +143,32 @@ and (min-device-width : 1000px) {s
   text-decoration: none;
 }
 
+/* INDEX BG */
+
+.index-head-bg-contain{
+  width: 650px;
+  margin: 0 auto;  
+  position: relative;
+  top: 220px;
+  height: auto;
+}
+
+.index-head-bg-part{
+  height: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.index-head-bg-block{
+  height: 3px;
+  border-radius: 3px;
+}
+
+.index-head-bg-text{
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+}
 
 
 /* NEWS BG */
@@ -154,33 +190,56 @@ and (min-device-width : 1000px) {s
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url(news-index-1x.png);
-    background-image: -webkit-image-set(
-    url(news-index-1x.png) 1x,
-    url(news-index-2x.png) 2x
-  );
-  background-image: image-set(
-    url(news-index-1x.png) 1x,
-    url(news-index-2x.png) 2x
-  );
+  background-image: url(index-nav-news-bg.gif);
   background-repeat: no-repeat;
-  background-position: 400px 80px;
-  background-size: 375px 346px;
-  animation-name: newsBGout;
+  background-position: 480px 95px;
+  background-size: 220px 326px;
+  /*animation-name: newsBGout;
   animation-duration: 300ms;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-
+  animation-fill-mode: forwards;*/
 }
 
 .index-nav-news-bg:hover {
-  animation-name: newsBGin;
+  /*animation-name: newsBGin;
   animation-duration: 300ms;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
 
 }
 
+.index-nav-dashboards-bg{
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(index-nav-dashboards-bg.gif);
+  background-repeat: no-repeat;
+  background-position: 60px 80px;
+  background-size: 314px 253px;
+}
+
+.index-nav-journeys-bg{
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(index-nav-journeys-bg.gif);
+  background-repeat: no-repeat;
+  background-position: 470px 100px;
+  background-size: 242px 232px;
+}
+
+.index-nav-googleapps-bg{
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(index-nav-googleapps-bg.gif);
+  background-repeat: no-repeat;
+  background-position: 30px 100px;
+  background-size: 337px 201px;
+}
 
 
 
@@ -666,8 +725,5 @@ and (min-device-width : 1000px) {s
 button {
   display: block;
 } 
-
-
-
 
 }
