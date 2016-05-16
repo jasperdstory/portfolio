@@ -41,7 +41,7 @@ and (orientation : portrait) {
   left: 0;  
   height: 54px;
   width: 100%;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0.1);
   margin-bottom: -54px;
   z-index: 250;
   
@@ -121,7 +121,7 @@ and (orientation : portrait) {
 }
 
 .mobile-navbar-dropdown-item-link{
-  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0.1);
   display: block;
   font-weight: bold;
   font-size: 14px;
@@ -129,7 +129,6 @@ and (orientation : portrait) {
   margin-top: -15;
   height: auto;
   opacity: none;
-  margin-left: 10px;
 }
 
 .mobile-navbar-dropdown-head a {
@@ -188,11 +187,11 @@ and (orientation : portrait) {
 }
 
 .mobile-navbar-dropdown-item-jasperfix{
-  margin-left: -115px !important;
+  margin-left: -122px !important;
 }
 
 .mobile-navbar-dropdown-item-workfix{
-  margin-left: 12px !important;
+  margin-left: 10px !important;
 }
 
 .mobile-navbar-dropdown-item a {
@@ -215,7 +214,7 @@ and (orientation : portrait) {
 .mobile-navbar-dropdown-item-link-work-link-expand{
   height: 100%;
   width: calc(100% - 20px);
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .mobile-navbar-dropdown-item-link-work {
@@ -226,7 +225,7 @@ and (orientation : portrait) {
 .mobile-navbar-dropdown-item-link-work{
   font-weight: bold;
   color: rgb(150,150,150);
-  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  /*-webkit-tap-highlight-color: rgba(255,255,255,0);*/
 }
 
 .mobile-navbar-dropdown-item-link-work-link{
@@ -503,5 +502,73 @@ and (orientation : portrait) {
   color: #0f0 !important;
   outline: solid #f00 1px !important;
 }*/
+
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+
+.mobile-navbar-container{
+  min-height: 58px;
+}
+
+.mobile-navbar-header{
+  height: 58px;
+  margin-bottom: -58px;
+}
+
+.mobile-navbar-dropdown-item-link{
+  margin-top: -21px;
+}
+
+.mobile-navbar-dropdown-head a{
+  height: 38px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.mobile-navbar-nav-open{
+  height: 58px;
+}
+
+.mobile-navbar-dropdown-item{
+  height: 60px;
+}
+
+.mobile-navbar-dropdown-item a {
+  line-height: 4.0;
+  font-size: 15px;
+}
+
+.mobile-navbar-dropdown-item-link-work {
+  line-height: 4.0;
+  font-size: 15px;
+}
+
+.mobile-navbar-dropdown-foot {
+  height: 58px;
+  bottom: 20px;
+}
+
+.mobile-navbar-dropdown-foot a {
+  font-size: 14px !important;
+  line-height: 3.2;
+}
+
+.mobile-navbar-name{
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.hamburger{
+  margin-top: -15px;
+}
+
+.navbar-close .mobile-navbar-header {
+  height: 58px;
+}
 
 }
