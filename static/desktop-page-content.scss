@@ -402,43 +402,43 @@ and (min-device-width : 1000px) {s
   position: absolute;
   display: block;
   float: left;
-  width: 354px;
+  width: 319px;
   height: 394px;
  /* background-color: rgba(255,0,0,0.5);*/
-  background-image: url(news-head-left-1x.png);
-    background-image: -webkit-image-set(
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/news-head-left.png);
+    /*background-image: -webkit-image-set(
     url(news-head-left-1x.png) 1x,
     url(news-head-left-2x.png) 2x
   );
   background-image: image-set(
     url(news-head-left-1x.png) 1x,
     url(news-head-left-2x.png) 2x
-  );
+  );*/
   background-repeat: no-repeat;
   background-position: 0px 0px;
-  background-size: 354px 394px;
+  background-size: 319px 394px;
 }
 
 .news-bg-right{
-  width: 341px;
+  width: 330px;
   height: 360px;
   position: absolute;
   display: block;
   left: 234px;
   top: 34px;
  /* background-color: rgba(0,0,255,0.5);*/
-  background-image: url(news-head-right-1x.png);
-    background-image: -webkit-image-set(
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/news-head-right.png);
+/*    background-image: -webkit-image-set(
     url(news-head-right-1x.png) 1x,
     url(news-head-right-2x.png) 2x
   );
   background-image: image-set(
     url(news-head-right-1x.png) 1x,
     url(news-head-right-2x.png) 2x
-  );
+  );*/
   background-repeat: no-repeat;
   background-position: 0px 0px;
-  background-size: 341px 360px;
+  background-size: 330px 360px;
 }
 
 /*DASHBOARDS BG*/
@@ -610,30 +610,30 @@ and (min-device-width : 1000px) {s
   height: 100%;
   margin-left: 30px;
   display: inline-block;
-  background-size: 355px 448px;
+  background-size: 305px 448px;
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
 .carousel-content .carousel-right-one{
-  background-image: url(news-carousel-one.png);
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/news-carousel-one.png);
 }
 
 .carousel-content .carousel-right-two{
-  background-image: url(news-carousel-two.png);
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/news-carousel-two.png);
 }
 
 .carousel-content .carousel-right-three{
-  background-image: url(news-carousel-three.png);
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/news-carousel-three.png);
 }
 
-.carousel-content .carousel-right-four{
+/*.carousel-content .carousel-right-four{
   background-image: url(news-carousel-four.png);
 }
 
 .carousel-content .carousel-right-five{
   background-image: url(news-carousel-five.png);
-}
+}*/
 
 .carouselbox {
   width: 650px;

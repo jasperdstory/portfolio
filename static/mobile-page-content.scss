@@ -15,10 +15,11 @@ and (orientation : portrait) {
 .news-bg-center{
   width: calc(100% - 15px);
   height: 375px;
+  width: 256px;
   margin: 0 auto;
-  background-image: url(news-bg-mobile.png);
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/news-bg-mobile.png);
   background-repeat: no-repeat;
-  background-position: auto 0px;
+  background-position: 0px -1px;
   background-size: auto 100%;
 }
 
