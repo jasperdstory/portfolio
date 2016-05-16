@@ -3,14 +3,16 @@ console.log("js loaded")
 
 // DESKTOP NAV, VERIFY PAGE, APPLY STYLING
 
+// DESKTOP NAV, VERIFY PAGE, APPLY STYLING
+
 var x = document.getElementById("page-verify")
-var y = document.getElementById("desktop-navbar-container")
+var y = document.getElementById("desktop-navbar-style")
 var z = document.getElementById("mobile-navbar-container")
 var j = document.getElementById("mobile-navbar-dropdown-head-section")
 
 if(x.classList.contains("index")){
-  y.classList.add("index-nav")
   z.classList.add("index-nav")
+  y.className = "index-nav";
   j.innerHTML = ("JASPERSTORY");
   console.log("on index page!")
 }
@@ -21,26 +23,26 @@ if(x.classList.contains("index")){
 //   console.log("on things page!")
 // }
 else if(x.classList.contains("news")){
-  y.classList.add("news-nav")
   z.classList.add("news-nav")
+  y.className = "news-nav";
   j.innerHTML = ("NEWS");
   console.log("on news page!")
 }
 else if(x.classList.contains("dashboards")){
-  y.classList.add("dashboards-nav")
   z.classList.add("dashboards-nav")
+  y.className = "dashboards-nav";
   j.innerHTML = ("DASHBOARDS");
   console.log("on dashboards page!")
 }
 else if(x.classList.contains("journeys")){
-  y.classList.add("journeys-nav")
   z.classList.add("journeys-nav")
+  y.className = "journeys-nav";
   j.innerHTML = ("JOURNEYS");
   console.log("on journeys page!")
 }
 else if(x.classList.contains("googleapps")){
-  y.classList.add("googleapps-nav")
   z.classList.add("googleapps-nav")
+  y.className = "googleapps-nav";
   j.innerHTML = ("GOOGLEAPPS");
   console.log("on google apps page!")
 }

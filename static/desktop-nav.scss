@@ -57,87 +57,9 @@ and (min-device-width : 1000px)
    display: inline-block;
    text-align: center;
    margin-right: 10px;
-   font-weight: bold;
    padding: 10px;
 }
 
-
-
-/* CASE NAVBAR */
-
-/*.desktop-case-navbar-container {
-  width: 100%;
-  height: 60px;
-}
-
-.desktop-case-navbar-block{
-  width: 760px;
-  margin: auto;
-  border-bottom: 1px solid rgb(220,220,220);
-}
-
-.desktop-case-navbar-stick {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  border-bottom: 1px solid rgb(220,220,220);
-  background-color: rgb(255,255,255);
-}
-*/
-/*@supports (-webkit-backdrop-filter: blur()){
-   .desktop-navbar-container {
-    -webkit-backdrop-filter: blur(20px) saturate(500%);
-    background-color: rgba(255,255,255,0.7);
-  }
-}*/
-
-
-/*.desktop-case-navbar-list{
-  padding-left: 45px;
-  padding-right: 8px;
-  height: 100%;
-}
-
-.desktop-case-navbar-item {
-   display: inline-block;
-   width: auto;
-   text-align: center;
-   margin-top: 20px;
-   margin-left: 4px;
-   margin-right: 4px;
-}
-
-.desktop-case-navbar-item a {
-   text-decoration: none;
-   font-size: 16px;
-   color: rgb(150,150,150);
-   border-radius: 5px;
-   padding-right: 10px;
-   padding-left: 10px;
-   padding-top: 10px;
-   padding-bottom: 11px;
-   font-weight: bold;
-}
-
-.desktop-case-navbar-item a:hover {
-  color: rgb(60,60,60) !important;
-  background-color: rgba(0,0,0,0.02);
-}
-
-
-.desktop-case-navbar-item a:visited {
-  color: rgb(150,150,150);
-}
-
-.desktop-case-navbar-item-bold a {
-  color: rgb(100,100,100);
-  font-weight: bold !important; 
-}
-
-.desktop-case-navbar-item-bold a:visited {
-  color: rgb(100,100,100);
-  font-weight: bold !important; 
-}*/
 
 /* Hides Desktop Navbar*/
 .desktop-case-navbar-container{

@@ -16,6 +16,7 @@ $lightblue: rgb(81,167,249);
 
 $white: rgb(255,255,255);
 $semiwhite: rgba(255,255,255,0.8);
+$halfwhite: rgba(255,255,255,0.5);
 
 
 /* INDEX BG COLORS */
@@ -90,14 +91,69 @@ p  { color: $greyone;     }
 
 /* DESKTOP NAV BAR */
 
-/* Defaults */
-.desktop-navbar-item a, .desktop-navbar-item a:visited { color: $greytwo; }
-.desktop-navbar-case             { color: $greythree; }
-.index-nav .desktop-navbar-item-index a, .index-nav .desktop-navbar-item-item a:visited       { color: $greyone !important; }
+.index-nav .desktop-navbar-case a,
+.index-nav .desktop-navbar-case a:visited,
+.index-nav .desktop-navbar-item-item a,
+.index-nav .desktop-navbar-item a:visited { 
+  color: $greythree !important; }
+.index-nav .desktop-navbar-item-index a,
+.index-nav .desktop-navbar-item-index a:visited {
+  color: $greyone !important;
+}
+
+.news-nav .desktop-navbar-item-index a,
+.news-nav .desktop-navbar-item-index a:visited, 
+.news-nav .desktop-navbar-case a,
+.news-nav .desktop-navbar-case a:visited,
+.news-nav .desktop-navbar-item a,
+.news-nav .desktop-navbar-item a:visited { 
+  color: $halfwhite !important;
+}
+.news-nav .desktop-navbar-item-news a,
+.news-nav .desktop-navbar-item-news a:visited {
+  color: $white !important;
+}
+
+
+.dashboards-nav .desktop-navbar-item-index a,
+.dashboards-nav .desktop-navbar-item-index a:visited, 
+.dashboards-nav .desktop-navbar-case a,
+.dashboards-nav .desktop-navbar-case a:visited,
+.dashboards-nav .desktop-navbar-item a,
+.dashboards-nav .desktop-navbar-item a:visited { 
+  color: $greythree !important; }
+.dashboards-nav .desktop-navbar-item-dashboards a,
+.dashboards-nav .desktop-navbar-item-dashboards a:visited {
+  color: $greyone !important;
+}
+
+.journeys-nav .desktop-navbar-item-index a,
+.journeys-nav .desktop-navbar-item-index a:visited, 
+.journeys-nav .desktop-navbar-case a,
+.journeys-nav .desktop-navbar-case a:visited,
+.journeys-nav .desktop-navbar-item a,
+.journeys-nav .desktop-navbar-item a:visited { 
+  color: $halfwhite !important; }
+.journeys-nav .desktop-navbar-item-journeys a,
+.journeys-nav .desktop-navbar-item-journeys a:visited {
+  color: $white !important;
+}
+
+.googleapps-nav .desktop-navbar-item-index a,
+.googleapps-nav .desktop-navbar-item-index a:visited, 
+.googleapps-nav .desktop-navbar-case a,
+.googleapps-nav .desktop-navbar-case a:visited,
+.googleapps-nav .desktop-navbar-item a,
+.googleapps-nav .desktop-navbar-item a:visited { 
+  color: $halfwhite !important; }
+.googleapps-nav .desktop-navbar-item-googleapps a,
+.googleapps-nav .desktop-navbar-item-googleapps a:visited {
+  color: $white !important;
+}
 
 /* Overrides */
 
-.news-nav .desktop-navbar-item a, .index-nav .desktop-navbar-item a:visited {color: $semiwhite;}
+/*.news-nav .desktop-navbar-item a, .index-nav .desktop-navbar-item a:visited {color: $semiwhite;}
 .news-nav .desktop-navbar-item-index a, .index-nav .desktop-navbar-item-index a:visited {color: $semiwhite;}
 .news-nav .desktop-navbar-case        {color: $semiwhite;}
 .news-nav .desktop-navbar-item-news a, .index-nav .desktop-navbar-item-news a:visited {color: $white;}
@@ -108,7 +164,7 @@ p  { color: $greyone;     }
 
 .googleapps-nav .desktop-navbar a           {color: $semiwhite;}
 .googleapps-nav .desktop-navbar-case        {color: $semiwhite;}
-.googleapps-nav .desktop-navbar-item-bold a {color: $white;}
+.googleapps-nav .desktop-navbar-item-bold a {color: $white;}*/
 
 /* MOBILE NAVBAR */
 
