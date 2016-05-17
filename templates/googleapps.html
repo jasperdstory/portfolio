@@ -2,6 +2,13 @@
 
 {% block title %}: Google Apps{% endblock %}
 
+{% block navbar %}
+<div class="googleapps-nav">
+	{% include '_desktopnav.html' %}
+	{% include '_mobilenav.html' %}
+</div>
+{% endblock %}
+
 {% block page_content %}
 
 <div id="page-verify" class="googleapps">

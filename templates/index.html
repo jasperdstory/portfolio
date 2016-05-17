@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block navbar %}
+<div class="index-nav">
+	{% include '_desktopnav.html' %}
+	{% include '_mobilenav.html' %}
+</div>
+{% endblock %}
+
 {% block page_content %}
 
 <div id="page-verify" class="index">

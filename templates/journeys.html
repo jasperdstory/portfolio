@@ -2,6 +2,13 @@
 
 {% block title %}: Journeys{% endblock %}
 
+{% block navbar %}
+<div class="journeys-nav">
+	{% include '_desktopnav.html' %}
+	{% include '_mobilenav.html' %}
+</div>
+{% endblock %}
+
 {% block page_content %}
 
 <div id="page-verify" class="journeys">
