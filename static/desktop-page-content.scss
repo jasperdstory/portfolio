@@ -465,7 +465,19 @@ and (min-device-width : 1000px) {s
   z-index: 10;
   /*background-color: blue;*/
 }
+/*
+body .journeys {
+  background-color: rgb(40,40,50);
+}
 
+.journeys-footer{
+  background-color: rgb(40,40,50);
+}
+
+.journeys .h3-contain{
+  margin-top: -150px;
+  z-index: 100;
+}*/
 
 .journeys .case-head-container{
   height: 586px;
@@ -725,5 +737,34 @@ and (min-device-width : 1000px) {s
 button {
   display: block;
 } 
+
+
+/* GOOGLE APPS */
+
+.googleapps .h1-contain {
+  background-size: 183px 60px;
+  background-repeat: no-repeat;
+  background-position: 0px 13px;
+}
+
+.youtube {
+  border-top: 1px solid rgb(200,200,200);
+  width: 780px;
+  border-bottom: none;
+}
+.youtube h3{
+  width: 650px;
+}
+
+.youtube-90{
+  font-size: 18px;
+
+  color: rgb(180,180,180);
+}
+.youtube-contain{
+  width: 658;
+  margin: 0 auto;
+  border: 1px solid rgb(200,200,200);
+}
 
 }

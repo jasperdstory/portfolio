@@ -18,8 +18,8 @@
 .journeys .head-contain{ height: 430px; }
 .journeys .head-contain-clear{ height: 430px; }
 
-.googleapps .head-contain{ height: 430px; }
-.googleapps .head-contain-clear{ height: 430px; }
+.googleapps .head-contain{ height: 230px; }
+.googleapps .head-contain-clear{ height: 230px; }
 
 
 .head-top-contain{
@@ -40,12 +40,29 @@
 	border-bottom: none;
 }
 
+.googleapps .head-top-contain{
+	border-bottom: none;
+}
+
+.journeys .head-top-contain{
+	border-bottom: none;
+}
+
+
 .h1-contain{
 	position: relative;
 	text-align: left;
 	width: 650px;
 	margin: 0 auto;
 	top: 10px;
+}
+
+.googleapps .h1-contain{
+	height: 100px;
+}
+
+.googleapps h1 {
+	margin-left: 200px;
 }
 
 .h2-contain{
@@ -69,6 +86,10 @@
 	line-height: 0.4;
 	height: 27px;
 	border-radius: 6px;	
+}
+
+.googleapps .h2-contain {
+	top: -57px;
 }
 
 
@@ -119,7 +140,7 @@ p {
 	position: relative;
 	top: 175px;
 	margin-top: 40px;
-}
+}s
 
 .index-bg h3{
 	color: rgb(120,120,120) !important;
@@ -270,8 +291,10 @@ and (orientation : portrait) {
 .journeys .head-contain{ height: 480px; }
 .journeys .head-contain-clear{ height: 480px; }
 
-.googleapps .head-contain{ height: 430px; }
-.googleapps .head-contain-clear{ height: 430px; }
+.googleapps .head-contain{ height: 210px; }
+.googleapps .head-contain-clear{ height: 210px; }
+
+
 
 
 .head-top-contain{
@@ -292,6 +315,14 @@ and (orientation : portrait) {
 	border-bottom: none;
 }
 
+.googleapps .h1-contain{
+	height: 100px;
+}
+
+.googleapps h1 {
+	margin-left: 150px;
+}
+
 .h1-contain{
 	position: relative;
 	text-align: left;
@@ -306,8 +337,15 @@ and (orientation : portrait) {
 	width: calc(100% - 30px);
 	margin: 0 auto;
 	top: 15px;
+	margin-left: 10px;
 	position: relative;
 }
+
+
+.googleapps .h2-contain {
+	top: 0px;
+}
+
 
 .h2-list{
 	float: left;

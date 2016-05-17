@@ -71,9 +71,9 @@ p  { color: $greyone;     }
 .news           h2 { color: $white;     }
 .journeys       h1 { color: $white;     }
 .journeys       h2 { color: $semiwhite; }
-.googleapps     h1 { color: $white;     }
+/*.googleapps     h1 { color: $white;     }
 .googleapps     h2 { color: $white;     }
-
+*/
 
 /* HEADBOX */
 
@@ -85,8 +85,7 @@ p  { color: $greyone;     }
 /* Special */
 .news .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}
 /*.journeys .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}*/
-.googleapps .head-contain {background-image: url(googleapps-bg.png); background-size: 1280px 430px; background-repeat: no-repeat;}
-
+.googleapps .h1-contain {background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/googleapps-bg.png);}
 
 
 /* DESKTOP NAV BAR */
@@ -145,10 +144,10 @@ p  { color: $greyone;     }
 .googleapps-nav .desktop-navbar-case a:visited,
 .googleapps-nav .desktop-navbar-item a,
 .googleapps-nav .desktop-navbar-item a:visited { 
-  color: $halfwhite !important; }
+  color: $greythree !important; }
 .googleapps-nav .desktop-navbar-item-googleapps a,
 .googleapps-nav .desktop-navbar-item-googleapps a:visited {
-  color: $white !important;
+  color: $greyone !important;
 }
 
 /* Overrides */
@@ -197,7 +196,7 @@ p  { color: $greyone;     }
   }
 }
 
-.news .h2-item, .journeys .h2-item, .googleapps .h2-item {
+.news .h2-item, .journeys .h2-item {
   border: 1px solid rgba(255,255,255,0.5);
   background-color: rgba(0,0,0,0.05); 
   @media (-webkit-min-device-pixel-ratio: 2) { 
