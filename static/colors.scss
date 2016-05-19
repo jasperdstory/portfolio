@@ -80,6 +80,7 @@ p  { color: $greyone;     }
 /* Default */
 .head-contain {background: linear-gradient(to bottom, $greyseven 0%, $greyeight 100%);}
 
+.dashboards .head-contain {background: none;}
 
 .index .head-contain {background: linear-gradient(to bottom, $greyseven 0%, white 100%);}
 /* Special */
@@ -100,51 +101,55 @@ p  { color: $greyone;     }
   color: $greyone !important;
 }
 
-.news-nav .desktop-navbar-item-index a,
-.news-nav .desktop-navbar-item-index a:visited, 
+
+.news-nav .desktop-navbar-left-com,
 .news-nav .desktop-navbar-case a,
 .news-nav .desktop-navbar-case a:visited,
 .news-nav .desktop-navbar-item a,
 .news-nav .desktop-navbar-item a:visited { 
   color: $halfwhite !important;
 }
+.news-nav .desktop-navbar-item-index a,
+.news-nav .desktop-navbar-item-index a:visited,
 .news-nav .desktop-navbar-item-news a,
 .news-nav .desktop-navbar-item-news a:visited {
   color: $white !important;
 }
 
-
-.dashboards-nav .desktop-navbar-item-index a,
-.dashboards-nav .desktop-navbar-item-index a:visited, 
+.dashboards-nav .desktop-navbar-left-com,
 .dashboards-nav .desktop-navbar-case a,
 .dashboards-nav .desktop-navbar-case a:visited,
 .dashboards-nav .desktop-navbar-item a,
 .dashboards-nav .desktop-navbar-item a:visited { 
   color: $greythree !important; }
+.dashboards-nav .desktop-navbar-item-index a,
+.dashboards-nav .desktop-navbar-item-index a:visited, 
 .dashboards-nav .desktop-navbar-item-dashboards a,
 .dashboards-nav .desktop-navbar-item-dashboards a:visited {
   color: $greyone !important;
 }
 
-.journeys-nav .desktop-navbar-item-index a,
-.journeys-nav .desktop-navbar-item-index a:visited, 
+.journeys-nav .desktop-navbar-left-com,
 .journeys-nav .desktop-navbar-case a,
 .journeys-nav .desktop-navbar-case a:visited,
 .journeys-nav .desktop-navbar-item a,
 .journeys-nav .desktop-navbar-item a:visited { 
   color: $halfwhite !important; }
+.journeys-nav .desktop-navbar-item-index a,
+.journeys-nav .desktop-navbar-item-index a:visited, 
 .journeys-nav .desktop-navbar-item-journeys a,
 .journeys-nav .desktop-navbar-item-journeys a:visited {
   color: $white !important;
 }
 
-.googleapps-nav .desktop-navbar-item-index a,
-.googleapps-nav .desktop-navbar-item-index a:visited, 
+.googleapps-nav .desktop-navbar-left-com,
 .googleapps-nav .desktop-navbar-case a,
 .googleapps-nav .desktop-navbar-case a:visited,
 .googleapps-nav .desktop-navbar-item a,
 .googleapps-nav .desktop-navbar-item a:visited { 
   color: $greythree !important; }
+.googleapps-nav .desktop-navbar-item-index a,
+.googleapps-nav .desktop-navbar-item-index a:visited, 
 .googleapps-nav .desktop-navbar-item-googleapps a,
 .googleapps-nav .desktop-navbar-item-googleapps a:visited {
   color: $greyone !important;

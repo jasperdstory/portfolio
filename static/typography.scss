@@ -1,16 +1,18 @@
 @font-face{
   font-family: pn;
-  src: url(http://dn27tkn48vqxi.cloudfront.net/static/PNR.otf);
+  /*src: url(http://dn27tkn48vqxi.cloudfront.net/static/PNR.otf);*/
+  src: url(PNR.otf);
 }
 
 @font-face {
     font-family: pn;
-    src: url(http://dn27tkn48vqxi.cloudfront.net/static/PNB.otf);
+    /*src: url(http://dn27tkn48vqxi.cloudfront.net/static/PNB.otf);*/
+    src: url(PNB.otf);
     font-weight: bold;
 }
 
 * {
-font-family: pn;
+font-family: pn, Arial;
   -webkit-font-smoothing: antialiased;
 }
 

@@ -397,6 +397,27 @@ and (orientation : portrait) {
   font-size: 14px;
   font-weight: bold;
 }
+
+/*DASHBOARDS*/
+
+.dashboards-bg{
+  width: 100%;
+  height: 473px;
+  margin: 0 auto;
+  position: relative;
+  top: -180px;
+  
+  background-image: url(dashboards-bg.png);
+  background-position: center center;
+  background-size: 822px 236px;
+  background-repeat: no-repeat;
+}
+
+.dashboards .h1-contain h1{
+  padding-top: 170px;
+}
+
+
 /* GOOGLE APPS */
 
 
