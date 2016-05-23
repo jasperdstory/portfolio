@@ -183,7 +183,7 @@ p {
 	margin: 0 auto;
 	margin-top: 50px;
 	border-top: 1px solid rgb(200,200,210);
-	height: 200px;
+	height: 250px;
 	padding-top: 30px;
 	text-transform: uppercase;
 	font-size: 15px;
@@ -252,6 +252,19 @@ p {
 	text-align: right;
 }
 
+.desktop-footer-CV{
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	color: rgb(81,167,249);
+}
+
+.desktop-footer-CV a {
+	
+}
+
 .desktop-footer-email{
 	display: block;
 	width: 100%;
@@ -261,6 +274,10 @@ p {
 }
 
 .mobile-footer-email{
+	display: none;
+}
+
+.mobile-footer-CV{
 	display: none;
 }
 
@@ -466,7 +483,7 @@ p {
 	margin: 0 auto;
 	margin-top: 100px;
 	border-top: 1px solid rgb(200,200,210);
-	height: 120px;
+	height: 220px;
 	padding-top: 30px;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -528,17 +545,29 @@ p {
 	display: none;
 }
 
-.mobile-footer-email{
+.desktop-footer-CV{
+	display: none;
+}
+
+.mobile-footer-CV{
 	display: block;
 	width: 100%;
 	margin-top: 30px;
 	height: 50px;
 	line-height: 3.5;
 	border-radius: 5px;
-	
 }
 
-.mobile-footer-email-button {
+.mobile-footer-email{
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	height: 50px;
+	line-height: 3.5;
+	border-radius: 5px;
+}
+
+.mobile-footer-button {
 	position: relative;
 	width: 100%;
 	height: 100%;
