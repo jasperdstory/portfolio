@@ -1,4 +1,8 @@
 window.addEventListener("load",function(event){console.log("js loaded")
+function preloadImage(url)
+{var img=new Image();img.src=url;console.log("preload loaded")}
+preloadImage('http://dn27tkn48vqxi.cloudfront.net/static/news-head-left.png')
+preloadImage('http://dn27tkn48vqxi.cloudfront.net/static/news-head-right.png')
 var x=document.getElementById("page-verify")
 var j=document.getElementById("mobile-navbar-dropdown-head-section")
 if(x.classList.contains("index")){j.innerHTML=("JASPERSTORY");console.log("on index page!")}

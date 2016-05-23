@@ -2,6 +2,20 @@ window.addEventListener("load", function(event) {
 console.log("js loaded")
 
 
+// PRELOAD IMAGE
+function preloadImage(url)
+{
+    var img=new Image();
+    img.src=url;
+    console.log("preload loaded")
+}
+
+preloadImage('http://dn27tkn48vqxi.cloudfront.net/static/news-head-left.png')
+preloadImage('http://dn27tkn48vqxi.cloudfront.net/static/news-head-right.png')
+
+
+
+
 // MOBILE NAV
 
 var x = document.getElementById("page-verify")
