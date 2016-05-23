@@ -13,7 +13,7 @@ assets.url = app.static_url_path
 
 scss = Bundle('colors.scss', 'mobile-nav.scss', 'desktop-nav.scss', 'typography.scss', 
 			  'layout.scss', 'desktop-page-content.scss', 
-			  'mobile-page-content.scss', 'global-page-content.scss',
+			  'mobile-page-content.scss', 'carousel.scss', 'global-page-content.scss',
 			  filters='pyscss, cssmin', output='all.css')
 assets.register('scss_all', scss)
 

@@ -19,40 +19,6 @@ $semiwhite: rgba(255,255,255,0.8);
 $halfwhite: rgba(255,255,255,0.5);
 
 
-/* INDEX BG COLORS */
-$orange:  rgb(243,144,25);
-$purple:  rgb(179,106,226);
-$red:     rgb(236,93,87);
-$green:   rgb(112,191,65);
-
-
-
-.carousel-left-title{
-  color: $greyone;
-}
-
-.carousel-left-text{
-  color: $greytwo;
-}
-
-
-
-
-/* INDEX BG */
-
-.index-head-bg-one    .index-head-bg-text{ color: $orange;}
-.index-head-bg-two    .index-head-bg-text{ color: $purple;}
-.index-head-bg-three  .index-head-bg-text{ color: $red;}
-.index-head-bg-four   .index-head-bg-text{ color: $midblue;}
-.index-head-bg-five   .index-head-bg-text{ color: $green;}
-
-.index-head-bg-one    .index-head-bg-block{ background-color: $orange;}
-.index-head-bg-two    .index-head-bg-block{ background-color: $purple;}
-.index-head-bg-three  .index-head-bg-block{ background-color: $red;}
-.index-head-bg-four   .index-head-bg-block{ background-color: $midblue;}
-.index-head-bg-five   .index-head-bg-block{ background-color: $green;}
-
-
 
 
 /* PAGE TEXT */
@@ -71,21 +37,31 @@ p  { color: $greyone;     }
 .news           h2 { color: $white;     }
 .journeys       h1 { color: $white;     }
 .journeys       h2 { color: $semiwhite; }
-/*.googleapps     h1 { color: $white;     }
-.googleapps     h2 { color: $white;     }
-*/
 
-/* HEADBOX */
+/* H2 BOXES */
+.h2-item {
+  border: 1px solid $greysix;
+  background-color: rgba(255,255,255,0.75); 
+  @media (-webkit-min-device-pixel-ratio: 2) { 
+      border: 0.5px solid $greysix;
+  }
+}
+
+.news .h2-item, .journeys .h2-item {
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0.05); 
+  @media (-webkit-min-device-pixel-ratio: 2) { 
+      border: 0.5px solid rgba(255,255,255,0.5);
+  }
+}
+
+
+/* HEAD BOXES */
 
 /* Default */
-.head-contain {background: linear-gradient(to bottom, $greyseven 0%, $greyeight 100%);}
-
-.dashboards .head-contain {background: none;}
-
 .index .head-contain {background: linear-gradient(to bottom, $greyseven 0%, white 100%);}
-/* Special */
+.dashboards .head-contain {background: none;}
 .news .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}
-/*.journeys .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}*/
 .googleapps .h1-contain {background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/googleapps-bg.png);}
 
 
@@ -155,22 +131,17 @@ p  { color: $greyone;     }
   color: $greyone !important;
 }
 
-/* Overrides */
 
-/*.news-nav .desktop-navbar-item a, .index-nav .desktop-navbar-item a:visited {color: $semiwhite;}
-.news-nav .desktop-navbar-item-index a, .index-nav .desktop-navbar-item-index a:visited {color: $semiwhite;}
-.news-nav .desktop-navbar-case        {color: $semiwhite;}
-.news-nav .desktop-navbar-item-news a, .index-nav .desktop-navbar-item-news a:visited {color: $white;}
+/* NEWS CAROUSEL */
+.carousel-left-title{
+  color: $greyone;
+}
 
-.journeys-nav .desktop-navbar a           {color: $semiwhite;}
-.journeys-nav .desktop-navbar-case        {color: $semiwhite;}
-.journeys-nav .desktop-navbar-item-bold a {color: $white;}
+.carousel-left-text{
+  color: $greytwo;
+}
 
-.googleapps-nav .desktop-navbar a           {color: $semiwhite;}
-.googleapps-nav .desktop-navbar-case        {color: $semiwhite;}
-.googleapps-nav .desktop-navbar-item-bold a {color: $white;}*/
 
-/* MOBILE NAVBAR */
 
 /* FIXED NAV */
 .mobile-navbar-container{
@@ -192,19 +163,4 @@ p  { color: $greyone;     }
 .hamburger__bottom-bun {
   background: rgb(60,60,80);
 }
-/* H2 BOXES */
-.h2-item {
-  border: 1px solid $greysix;
-  background-color: rgba(255,255,255,0.75); 
-  @media (-webkit-min-device-pixel-ratio: 2) { 
-      border: 0.5px solid $greysix;
-  }
-}
 
-.news .h2-item, .journeys .h2-item {
-  border: 1px solid rgba(255,255,255,0.5);
-  background-color: rgba(0,0,0,0.05); 
-  @media (-webkit-min-device-pixel-ratio: 2) { 
-      border: 0.5px solid rgba(255,255,255,0.5);
-  }
-}
