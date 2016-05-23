@@ -12,7 +12,7 @@ function preloadImage(url)
 
 preloadImage('http://dn27tkn48vqxi.cloudfront.net/static/news-head-left.png')
 preloadImage('http://dn27tkn48vqxi.cloudfront.net/static/news-head-right.png')
-
+preloadImage('http://dn27tkn48vqxi.cloudfront.net/static/news-head-right.png')
 
 
 
