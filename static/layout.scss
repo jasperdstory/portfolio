@@ -1,3 +1,8 @@
+@media only screen
+and (min-device-width : 1000px) {
+
+}
+
 
 .head-contain {
 	height: 700px;
@@ -9,17 +14,17 @@
 .index .head-contain{ height: 500px; }
 .index .head-contain-clear{ height: 500px; }
 
-.news .head-contain{ height: 699px; }
-.news .head-contain-clear{ height: 699px; }
+.news .head-contain{ height: 857px;}
+.news .head-contain-clear{ height: 857px; }
 
-.dashboards .head-contain{ height: 530px; }
-.dashboards .head-contain-clear{ height: 530px; }
+.dashboards .head-contain{ height: 700px; }
+.dashboards .head-contain-clear{ height: 700px; }
 
-.journeys .head-contain{ height: 430px; }
-.journeys .head-contain-clear{ height: 430px; }
+.journeys .head-contain{ height: 680px; }
+.journeys .head-contain-clear{ height: 600px; }
 
-.googleapps .head-contain{ height: 230px; }
-.googleapps .head-contain-clear{ height: 230px; }
+.googleapps .head-contain{ height: 450px; }
+.googleapps .head-contain-clear{ height: 450px; }
 
 
 .head-top-contain{
@@ -28,42 +33,15 @@
 	position: relative;
 	margin: 0 auto;
 	top: 120px;
-	border-bottom: 1px solid rgb(220,220,220);
 	z-index: 5;
-	@media (-webkit-min-device-pixel-ratio: 2) { 
-	    border-bottom: 0.5px solid rgb(220,220,220);
-	}
-
-}
-
-.index .head-top-contain{
-	border-bottom: none;
-}
-
-.googleapps .head-top-contain{
-	border-bottom: none;
-}
-
-.journeys .head-top-contain{
-	border-bottom: none;
-}
-
-
-.news .head-top-contain{
-	border-bottom: none;
-}
-
-.dashboards .head-top-contain{
-	border-bottom: none;
 }
 
 
 .h1-contain{
 	position: relative;
-	text-align: left;
+	text-align: center;
 	width: 650px;
 	margin: 0 auto;
-	top: 10px;
 }
 
 .googleapps .h1-contain{
@@ -74,15 +52,17 @@
 	margin-left: 200px;
 }
 
+.index .head-contain h1{
+	text-align: left;
+}
+
 .h2-contain{
-	width: 650px;
-	margin: 0 auto;
-	top: -70px;
-	position: relative;
+	text-align: center;
+	margin-top: -20px;
 }
 
 .h2-list{
-	float: right;
+	display: inline-block;
 }
 
 .h2-item{
@@ -91,65 +71,77 @@
 	padding-right: 10px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	margin-left: 8px;
+	margin-left: 4px;
+	margin-right: 4px;
 	line-height: 0.4;
 	height: 27px;
 	border-radius: 6px;	
 }
 
-.googleapps .h2-contain {
-	top: -57px;
-}
-
 
 h3 {
-	width: 650px;
+	width: 500px;
 	margin: 0 auto;
-	margin-top: 50px;
+	text-align: center;
+	margin-top: 30px;
 	margin-bottom: 50px;
 }
 
-.index h1 {
-	color: rgb(80,80,90);
-	margin-left: -3px;
+.h3-contain{
+	width: 650px;
+	margin: 0 auto;
 }
 
-.index .head-contain h3 {
-	margin-top: -5px;
-	font-size: 24px;
-	color: rgb(80,80,90);
+.index-h3 h3{
+	font-size: 23px;
+	width: 650px;
+	text-align: left;
+	margin-top: -15px;
 }
 
-.index .h3-contain {
-	border: none;
+.index-h3-2 {
+	margin-top: 180px;
 }
 
-.index .index-bg h3 {
-	font-size: 20px;
-	color: rgb(80,80,90);
-	margin-top: -10px;
+.index-h3-2 h3{
+	font-size: 18px;
+	width: 650px;
+	text-align: left;
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+
+.index-h3-3{
+	margin-top: 0px;
 	margin-bottom: 30px;
 }
 
-.h3-contain{
-	width: 780px;
-	margin: 0 auto;
+.index-h3-3 h3{
+	font-size: 18px;
+	width: 650px;
 	text-align: left;
-	border-bottom: 1px solid rgb(200,200,210);
-	@media (-webkit-min-device-pixel-ratio: 2) { 
-	    border-bottom: 0.5px solid rgb(200,200,210);
-	}	
+	margin-bottom: 5px;
+	margin-top: 0px;
 }
 
-.googleapps-testimonial-name h3 {
-	margin-top: -10px !important;
-	font-size: 18px;
-	color: rgb(140,140,140);
+
+.h4-contain {
+	width: 650px;
+	margin: 0 auto;
+	margin-top: 70px;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgb(200,200,200);
 }
 
 h4 {
-	margin-bottom: 30px;
-	margin-top: 60px;
+	line-height: 1.2;
+}
+
+.h4-contain-read{
+	margin-top: 10px;
+	font-size: 16px;
+	color: rgb(160,160,160);
 }
 
 .h5-contain{
@@ -159,10 +151,23 @@ h4 {
 	margin-bottom: -122px;
 }
 
+h6 {
+	margin-top: 45px;
+	margin-bottom: 25px;
+}
+
 
 p {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	line-height: 1.3;
+}
+
+.page-line{
+	width: 780px;
+	margin: 0 auto;
+	border-bottom: 1px solid rgb(210,210,210);
+	height: 1px;
+	margin-bottom: 50px;
 }
 
 .index-bg{
@@ -187,7 +192,7 @@ p {
 	padding-top: 30px;
 	text-transform: uppercase;
 	font-size: 15px;
-	font-weight: bold;
+	font-weight: 500;
 	color: rgb(160,160,160);
 }
 .footer{
@@ -281,46 +286,9 @@ p {
 	display: none;
 }
 
-
-.index-head-bg-text{
-/*	display: none;*/
-}
-
-/* BG WIDTHS */
-.index-head-bg-one    .index-head-bg-block{ margin-left: 0%; width: 20%; }
-.index-head-bg-two    .index-head-bg-block{ margin-left: 10%; width: 30%; }
-.index-head-bg-three  .index-head-bg-block{ margin-left: 20%; width: 30%; }
-.index-head-bg-four   .index-head-bg-block{ margin-left: 40%; width: 50%; }
-.index-head-bg-five   .index-head-bg-block{ margin-left: 80%; width: 20%; }
-
-.index-head-bg-one    .index-head-bg-text{ margin-left: 0%; width: 40%;}
-.index-head-bg-two    .index-head-bg-text{ margin-left: 10%; width: 20%;}
-.index-head-bg-three  .index-head-bg-text{ margin-left: 20%; width: 20%;}
-.index-head-bg-four   .index-head-bg-text{ margin-left: 40%; width: 20%;}
-.index-head-bg-five   .index-head-bg-text{ margin-left: 80%; width: 20%;}
-
 /* MOBILE */
 
 
-@media only screen
-and (min-device-width : 320px) 
-and (max-device-width : 374px) 
-and (orientation : portrait) {
-
-.index .head-contain{ height: 600px; }
-.index .head-contain-clear{ height: 600px; }
-
-}
-
-@media only screen
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-and (orientation : portrait) {
-
-.index .head-contain{ height: 550px; }
-.index .head-contain-clear{ height: 550px; }
-
-}
 
 
 @media only screen
@@ -335,8 +303,11 @@ and (orientation : portrait) {
 }
 .head-contain-clear{ height: 700px; }
 
-.news .head-contain{ height: 640px; }
-.news .head-contain-clear{ height: 640px; }
+.index .mobile-head-contain{ height: 550px; }
+/*.index .mobile-head-contain-clear { height: 550px; }*/
+
+.news .head-contain{ height: 744px; }
+.news .head-contain-clear{ height: 744px; }
 
 .dashboards .head-contain{ height: 375px; }
 .dashboards .head-contain-clear{ height: 375px; }
@@ -356,16 +327,24 @@ and (orientation : portrait) {
 	position: relative;
 	margin: 0 auto;
 	top: 60px;
-	border-bottom: 1px solid rgb(220,220,220);
 	z-index: 5;
-	@media (-webkit-min-device-pixel-ratio: 2) { 
-	    border-bottom: 0.5px solid rgb(220,220,220);
-	}
-
 }
 
-.index .head-top-contain{
-	border-bottom: none;
+
+
+.h1-contain{
+	position: relative;
+	text-align: left;
+	/*width: 300px;*/
+	width: calc(100% - 15px);
+	margin: 0 auto;
+	top: 0px;
+	/*text-align: center;*/
+}
+
+.h1-contain h1 {
+	text-align: center;
+	font-size: 60px;
 }
 
 .googleapps .h1-contain{
@@ -376,23 +355,11 @@ and (orientation : portrait) {
 	margin-left: 150px;
 }
 
-.h1-contain{
-	position: relative;
-	text-align: left;
-	/*width: 300px;*/
-	width: calc(100% - 15px);
-	margin: 0 auto;
-	top: 25px;
-	/*text-align: center;*/
-}
 
 
 .h2-contain{
-	width: calc(100% - 30px);
-	margin: 0 auto;
-	top: 15px;
-	margin-left: 10px;
-	position: relative;
+	text-align: center;
+	margin-top: -23px;
 }
 
 
@@ -402,7 +369,7 @@ and (orientation : portrait) {
 
 
 .h2-list{
-	float: left;
+	display: inline-block;
 }
 
 .h2-item{
@@ -421,27 +388,22 @@ and (orientation : portrait) {
 h3 {
 	width: calc(100% - 15px);
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-bottom: 50px;
+	font-size: 16px;
 }
 
-.index .head-contain h1 {
-	text-align: center;
+.index .mobile-head-contain h1 {
+	text-align: left;
 	margin-top: 40px;
-	/*color: rgb(81,167,249);
-	font-size: 24px;*/
 }
 
 
 
 .h3-contain{
-	width: calc(100% - 15px);
 	margin: 0 auto;
-	text-align: left;
-	border-bottom: 1px solid rgb(200,200,210);
-	@media (-webkit-min-device-pixel-ratio: 2) { 
-	    border-bottom: 0.5px solid rgb(200,200,210);
-	}	
+	width: calc(100% - 15px);
+	margin-top: -10px;
 }
 
 .index .head-contain h3 {
@@ -450,20 +412,9 @@ h3 {
 }
 
 .index h3 {
-	text-align: center;
-}
-
-.index-bg {
-	margin-top: 0px !important;
-	top: 125px;
-
-}
-
-.index-bg h3{
 	text-align: left;
-	font-size: 20px !important; 
-	width: calc(100% - 30px);
 }
+
 
 h4 {
 	margin-bottom: 30px;
@@ -487,7 +438,7 @@ p {
 	padding-top: 30px;
 	text-transform: uppercase;
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 500;
 	color: rgb(160,160,160);
 }
 .footer{
@@ -586,4 +537,12 @@ p {
 	display: none;
 }
 
+}
+
+@media only screen
+and (min-device-width : 240px) 
+and (max-device-width : 320px) 
+and (orientation : portrait) {
+
+.index .mobile-head-contain{ height: 610px; }
 }

@@ -25,6 +25,11 @@
 				<div class="h2-item"><h2>UI</h2></div>
 				<div class="h2-item"><h2>DATA</h2></div>
 			</div>
+		</div>	
+		<div class="h3-contain">
+			<h3>
+				A desktop app for retail teams, to monitor, share, and act on 	business intelligence. How we could bring context to decisions in every team by co-building with our users.
+			</h3>
 		</div>
 	</div>
 	<div class="dashboards-bg">
@@ -32,35 +37,51 @@
 </div>
 <div class="head-contain-clear"></div>
 
-<div class="h3-contain">
-	<h3>
-	A web app for retailers, to monitor, share, and act on business intelligence. Why putting users in the driving seat was so important, and how we built for it.
-	</h3>
+<div class="h4-contain">
+	<h4>
+		Bringing context to all decisions for higher performing teams.
+	</h4>
+	<div class="h4-contain-read">
+	(2 min read)
+	</div>
 </div>
 
-<h4>How to bring together different teams with different goals.</h4>
 <p>
-Many of our users liked our email reports. They looked great in mobile mailboxes, and provided teams with key data they had never accessed before. But they didn’t fit into the complex structure of a modern retail business.
+Before Dashboards, the main way users accessed Viewsy was through email reports. Users loved that they received a summary of key store statistics and analysis sent to their inbox every week or month. Accessing reports was frictionless, and they looked great in mobile mailboxes.
 </p>
 <p>
-Retailers have many tens or hundreds teams focused on store sales, which often bring in over 90% of their revenue. Store Managers and Area Managers run the stores. Marketing and Merchandising teams who large campaigns. And a layer of business leaders at the top, executives who make important decisions on marketing, products, and stores.
+But reports weren’t flexible enough to fit into the complex structure of a modern retail business. Different retail teams have different priorities. There were teams in place to manage each of the hundred or more stores. Marketing and merchandising teams at head office launch sophisticated campaigns. A layer of business leaders at the top set the strategic course for the company across many channels. Different teams teams had different time-horizons: for store team the last week was important, for executives the last six months.
 </p>
 <p>
-Different retail teams had different priorities. They were accomplishing different parts of the business – marketing brings customers in-store, stores build loyalty by providing exceptional service and experience, headquarters design and track processes. Different teams had different time-horizons, for some the last week was important, for others the last six months. Between retailers themselves, the differences were even greater.
+So while email reports were a great start, they weren’t targeted, focused or relevant enough for different teams in different retailers.  But we were resistant to content-creation tools (letting users build the reports themselves), because it meant user experience and build complexity.
 </p>
 <p>
-We couldn’t design a single report relevant  for all retailers and all retail teams. But we were resistant to content-creation tools, because it meant user experience and build complexity.
+User experience complexity was a big problem for even best-in-class business intelligence products for organisations, products like Tableau or Domo. They were too complex and too general. Users want to know their critical results. They don’t want to construct bar graphs, move about generic data objects, and tweak axes. The industry leaders had sacrificed simplicity to support the many industries they targeted.
 </p>
 <p>
-User experience complexity was a big problem with even best-in-class business intelligence products for organisations, like Tableau or Domo. They were too complicated, and too general. Users wanted to know if they moved the needle. They don’t want to construct bar graphs, move about generic data objects, and tweak axes. Our users would never had the time to learn a complex user interface or become literate in business-modelling reasoning. We felt that other products had been forced to sacrifice simplicity to to support the many industries and types of businesses they targeted. We were focussed on retailers. They had teams of hundreds of developers. We had two. 
+Our users were left to piece together information from different data stores, spreadsheets, PDFs and emails. But they didn’t have the time to learn a complex user interface or reason about business data models, so typically decisions were made without any data to support them.
+</p>
+<h6>Enter Dashboards</h6>
+<p>
+To minimise build complexity we used open source libraries for key functionality, and looked closely at our existing data models and how we could manage and minimise builds on the data flow. To maximise manageability and build agility, we built with React. 
 </p>
 <p>
-To minimise build complexity we looked closely at our existing data models, and how we could simplify and manage engineering the data flow. To maximise manageability and agility, we built with React.
-</p>
-<p>
-To minimise user complexity, we had to thoughtfully plan the user experience. We wanted to deliver an experience that delivered the right information for each user and team.
+To minimise user complexity, we had to thoughtfully plan the user experience. We wanted to deliver an experience that delivered the right information for each user and team. The user would do no heavy lifting. 
 </p>
 
+
+<h6>Right for every team</h6>
+<p>
+Dashboards were designed around “cards”. Every Dashboard contained cards showing a particular result or visualisation. Careful design ensured that cards were laid out simply and clearly on all screen sizes.
+</p>
+<h6>Simplicity through relevance</h6>
+<p>
+By targeting retail teams specifically, our cards could be structured around retail use-cases. An example are leaderboards, which rank store results. For an area manager or exec, these tables can provide a simple, quick overview of their estate. In a typical BI tool, users would create a table, then for each row set as an “object”, filtering for stores, set each column as a “dimensions” filtering for statistic types, set aggregation types and format, add labels, and then more selections to get things working. With our “Leaderboards” card, users would drag-and-drop some stores and drag-and-drop some KPIs. That’s it.
+</p>
+<h6>Prioritise what matters to you</h6>
+<p>
+Easy sharing was a pre-requisite for a system like this, but this would mean users had a range of Dashboards available to them. Within every team, every user has different priorities. An area manager, for example, might be. With simple favouriting, users would have their critical dashboards available to them in the top-left of their screen; the most important screen estate on the page.
+</p>
 </div>
 
 <div class="footer-contain journeys-footer">

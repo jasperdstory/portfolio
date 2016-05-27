@@ -25,51 +25,46 @@
 				<div class="h2-item"><h2>MACHINE LEARNING</h2></div>
 			</div>
 		</div>
+		<div class="h3-contain">
+			<h3>
+				Google Analytics for the physical world, using sensors.  <br>How we built a system from an idea on a whiteboard <br> to over 100 million measured customer journeys.
+			</h3>
+		</div>
 	</div>
 </div>
 <div class="head-contain-clear"></div>
 
 <div class="particle-canvas-container">
-	<div id="particle-canvas"></div>
+	<div id="particles-js"></div>
 </div>
 
-<div class="h3-contain">
-	<h3>
-		Google Analytics for the physical world, using sensors. How we built a system from an idea on a whiteboard to over 100m measured customer journeys.
-	</h3>
+<div class="particle-fadeout">
+
 </div>
 
-<h4>Where 90% of retail sales are made. Discovering the magic of the store. </h4>
+<div class="h4-contain">
+	<h4>
+		Measuring the real world
+	</h4>
+	<div class="h4-contain-read">
+	(2 min read)
+	</div>
+</div>
+
 <p>
-In the late 20th century, Amazon began to measure how users interacted with their online store. How many users visited each page, how they travelled through the website, how many visitors converted into buyers. 
+Before Dashboards, the main way users accessed Viewsy was through email reports. Users loved that they received a summary of key store statistics and analysis sent to their inbox every week or month. Accessing reports was frictionless, and they looked great in mobile mailboxes.
 </p>
 <p>
-Imagine you are the head of Gap online. You have a review session with your CEO. He asks you how much traffic the site is receiving and how many visitors were brought in from your latest online campaign. He wants to know how long customers are on the site, and your the basket abandonment rate is. Imagine you don’t have the answers to any of these questions, and what it means for how you plan, iterate, and improve Gap online.
+But reports weren’t flexible enough to fit into the complex structure of a modern retail business. Different retail teams have different priorities. There were teams in place to manage each of the hundred or more stores. Marketing and merchandising teams at head office launch sophisticated campaigns. A layer of business leaders at the top set the strategic course for the company across many channels. Different teams teams had different time-horizons: for store team the last week was important, for executives the last six months.
 </p>
 <p>
-For store-retail, this is the experience for many managers. Most retailers today have poor or no sight into what happens in their stores. They don’t even know how many customers visited their stores. They are less advanced than GeoCities websites with page counters. 
+So while email reports were a great start, they weren’t targeted, focused or relevant enough for different teams in different retailers.  But we were resistant to content-creation tools (letting users build the reports themselves), because it meant user experience and build complexity.
 </p>
 <p>
-But today, online sales still only represent a small portion of retail sales. Store sales are typically 10x larger. So twenty years later, we wanted to bring Amazon-style data to real-world stores. 
+User experience complexity was a big problem for even best-in-class business intelligence products for organisations, products like Tableau or Domo. They were too complex and too general. Users want to know their critical results. They don’t want to construct bar graphs, move about generic data objects, and tweak axes. The industry leaders had sacrificed simplicity to support the many industries they targeted.
 </p>
-<p>
-One reason this didn’t exist was because it was so hard to achieve. Browsers leave marks when they request a website from a server, and websites leave cookies in users computers to track their experience. And deploying code has no marginal cost. Sensors to measure the physical world are expensive. We had to deploy a store in under an hour.
-</p>
-<p>
-On the one-side, we had to build the initial sensing system to measure people’s locations and how they travel; on the other, we had to deliver comprehensive, clear, and concrete performance metrics.
-</p>
-<p>
-After exploring the technical landscape, we built the system around measuring customers using their smartphones. We harnessed transmissions from customers smartphones to anonymously measure where and when customers were located in stores. Different smartphones have very different transmitters. have different models and makes. They constantly transmit noisy data. With some magic, we can listen to and measure these noisy transmission.
-</p>
-<p>
-At this point, our sensor engineer was hacking in C++. After we captured the noisy sensor data, we had to transform noisy sensor data into something valuable. There was two parts to this: building a general model of tracking customers and transforming them into customer journeys; the second, to design meaningful statistics on top of these journeys.
-</p>
-<p>
-The first part meant planning the transformations on the raw input data with our data guy, who built stock-trading algorithms before Viewsy. Cue Hadoop. Second, we had to carefully design our business logic and back-end to calculate, store, and offer our business results to our front-end. We had to handle data from multiple data sources, streaming live results to users wherever possible.
-</p>
-<p>
-My role was to understand what each part of the stack could deliver and how we could bring this together into a cohesive product that delivered results to users. A busy period in the store - captured with sensors, would trigger an alert to users within 90 seconds. Insights on the customer journeys - what percentage of visitors “bounced” from the store, would be reported through our web or email products.
-</p>
+
+
 </div>
 <div class="footer-contain journeys-footer">
 	<div class="footer">

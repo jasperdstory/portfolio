@@ -3,24 +3,41 @@ and (min-device-width : 320px)
 and (max-device-width : 667px) 
 and (orientation : portrait) {
 
+.index .head-contain{
+  display: none;
+}
+
+.index .head-contain-clear{
+  display: none;
+}
+
+.index .mobile-head-contain{
+  display: block;
+}
+
+.index .mobile-head-contain-clear{
+  display: block;
+}
+
+/**/
 
 .news-bg{
-  width: calc(100% - 15px);
-  height: 375px;
+  width: 100%;
+  height: 389px;
   margin: 0 auto;
   position: relative;
-  top: 150px;
+  top: 230px;
 }
 
 .news-bg-center{
   width: calc(100% - 15px);
-  height: 375px;
-  width: 256px;
+  height: 389px;
+  width: 100%;
   margin: 0 auto;
-  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/news-bg-mobile.png);
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/news-bg.png);
   background-repeat: no-repeat;
-  background-position: 0px -1px;
-  background-size: auto 100%;
+  background-position: center 0px;
+  background-size: 810px 389px;
 }
 
 /* JOURNEYS */
@@ -41,18 +58,68 @@ and (orientation : portrait) {
 
 /* INDEX HEAD STUFF */
 
-.index .h3-contain{
-  margin-top: 20px;
+.index .mobile-head-contain .h1-contain{
+  font-size: 60px;
+  width: calc(100% - 15px);
+  text-align: left;
+  margin-bottom: 55px;
 }
 
+.index .mobile-head-contain h1 {
+  font-size: 60px;
+  width: calc(100% - 30px);
+  text-align: left;
+  margin-bottom: 55px;
+}
+ 
+.index .mobile-head-contain .index-h3 {
+  width: calc(100% - 15px);
+  text-align: left;
+}
+
+.index .mobile-head-contain .index-h3 h3 {
+  width: calc(100% - 15px);
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.index .mobile-head-contain .index-h3-2 {
+  width: calc(100% - 15px);
+  text-align: left;
+}
+
+.index .mobile-head-contain .index-h3-2 h3 {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  text-align: left;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.index .mobile-head-contain .page-line {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: calc(100% - 30px);
+}
+
+.index .mobile-head-contain .index-h3-3 {
+  width: calc(100% - 15px);
+  text-align: left;
+}
+
+.index .mobile-head-contain .index-h3-3 h3 {
+  width: calc(100% - 30px);
+  text-align: left;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
 
 /* INDEX NAV STUFF */
 .index-nav-contain {
-  height: auto;
+  height: 190px;
   width: 100%;
   padding-bottom: 15px;
-  border-top: 1px solid rgb(200,200,200);
-  border-bottom: 1px solid rgb(200,200,200);
   margin-bottom: -1px;
 }
 
@@ -62,91 +129,92 @@ and (orientation : portrait) {
 }
 
 .index-nav-text{
-  width: auto;
-  max-width: 500px;
+  width: 250px;
+  max-width: 400px;
 }
 
 .index .index-nav-contain h1 {
-  font-size: 22px;
-  padding-top: 30px;
- 
+  font-size: 32px;
+  padding-top: 0px;
+  margin-bottom: 10px;
+}
+
+.index-nav-contain h1 a{
+  color: rgb(81,167,249);
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 white, inset 0 -3px 0 rgb(81,167,249);
+}
+
+.index-nav-contain h1 a:hover{
+  color: rgb(0,126,255);
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 white, inset 0 -3px 0 rgb(0,126,255);
 }
 
 .index-nav-contain h3 {
   font-size: 16px;
   margin-left: 0px;
   margin-bottom: 20px;
-  margin-top: 15px;
-   text-align: left;
+  margin-top: 0px;
+  line-height: 1.25;
+  text-align: left;
 }
 
-.index-nav-contain .h2-contain {
-  /*display: none;*/
-  width: auto;
-  display: block;
-  position: static;
-  margin-top: 5px;
-  top: 0px;
+.index-nav-h2-list{
+  display: none;
 }
 
-.index-nav-button-contain{
-  margin-top: 55px;
-  height: 55px;
-  position: static;
-  display: block;
-  width: calc(100%+30px);
-  margin-left: -15px;
-  margin-right: -15px;
-  padding-left: 15px;
-  -webkit-tap-highlight-color: rgba(68,160,255,0.2) !important;
-}
+/* INDEX NAV BG */
 
-.index-nav-button-contain a{
-  text-decoration: none;
-  color: rgb(68,160,255);
-  font-size: 17px;
-  font-weight: bold;
-}
 
-.index-nav-button-contain a:visited{
-  text-decoration: none;
-  color: rgb(68,160,255);
-  
-}
 
-.index-nav-button{
+.index-nav-news-bg{
+  z-index: 5;
   width: 100%;
   height: 100%;
-  line-height: 3.0;
+  position: absolute;
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/index-nav-news-bg.png);
+  background-repeat: no-repeat;
+  background-position: 280px 40px;
+  background-size: 61px 89px;
 }
 
-/*INDEX HEAD BG*/
 
-.index-head-bg-contain{
-  width: calc(100% - 30px);
-  margin: 0 auto;
-  position: relative;
-  top: 140px;
-  height: auto;
-}
-
-.index-head-bg-part{
-  height: 25px;
+.index-nav-dashboards-bg{
+  z-index: 5;
   width: 100%;
-  margin-bottom: 10px;
+  height: 100%;
+  position: absolute;
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/index-nav-dashboards-bg.png);
+  background-repeat: no-repeat;
+  background-position: 280px 40px;
+  background-size: 78px 91px;
 }
 
-.index-head-bg-block{
-  height: 2px;
-  border-radius: 3px;
-}
-
-.index-head-bg-text{
+.index-nav-journeys-bg{
+  z-index: 5;
   width: 100%;
-  margin-bottom: 3px;
-  font-size: 14px;
-  font-weight: bold;
+  height: 100%;
+  position: absolute;
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/index-nav-journeys-bg.png);
+  background-repeat: no-repeat;
+  background-position: 275px 40px;
+  background-size: 75px 71px;
 }
+
+.index-nav-googleapps-bg{
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/index-nav-googleapps-bg.png);
+  background-repeat: no-repeat;
+  background-position: 255px 40px;
+  background-size: 103px 61px;
+}
+
+
+
 
 /*DASHBOARDS*/
 
@@ -168,7 +236,6 @@ and (orientation : portrait) {
 }
 
 
-/* GOOGLE APPS */
 
 
 .googleapps .h1-contain {
@@ -181,6 +248,44 @@ and (orientation : portrait) {
   display: none;
 }
 
+/*
+  * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+  }*/
 
+}
+
+@media only screen
+and (min-device-width : 240px) 
+and (max-device-width : 320px) 
+and (orientation : portrait) {
+
+.index-nav-contain {
+  height: 170px;
+}
+
+.index-nav-text{
+  width: 100%;
+}
+.index-nav-news-bg{
+    background-image: none;
+  }
+.index-nav-dashboards-bg{
+    background-image: none;
+}
+.index-nav-journeys-bg{
+    background-image: none;
+}
+.index-nav-googleapps-bg{
+    background-image: none;
+}
+}
+
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
 
 }

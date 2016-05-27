@@ -9,11 +9,11 @@ and (min-device-width : 1000px)
 /* PAGE NAVBAR */
 
 .desktop-navbar-container {
-  padding-top: 25px;
+  padding-top: 35px;
   height: 40px;
-  font-size: 13px;
   width: 100%;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 500;
   text-transform: uppercase;
   z-index: 50;
   position: absolute;
@@ -22,13 +22,11 @@ and (min-device-width : 1000px)
 .desktop-navbar{
   width: 650px;
   margin: 0 auto;
-  font-weight: bold;
 }
 
 .desktop-navbar-left{
   display: inline-block;
   float: left;
-  padding: 10px;
 }
 
 .desktop-navbar-right{
@@ -49,16 +47,79 @@ and (min-device-width : 1000px)
 }
 
 .desktop-navbar-list{
-  margin-left: 20px;
+  margin-left: 10px;
   display: inline-block;
 }
 
 .desktop-navbar-item {
    display: inline-block;
    text-align: center;
-   margin-right: 10px;
-   padding: 10px;
+   margin-right: 5px;
 }
+
+.desktop-navbar-left a {
+  padding: 10px;
+  line-height: 1.2;
+  border-radius: 5px;
+}
+
+.desktop-navbar-left a:hover {
+  /*background-color: rgba(0,0,0,0.025);*/
+}
+
+.desktop-navbar-item a {
+  padding: 10px;
+  line-height: 1.2;
+  border-radius: 5px;
+}
+
+.desktop-navbar-item a:hover{
+  /*background-color: rgba(0,0,0,0.025);*/
+}
+
+/* COLORS */
+
+$navdead: rgb(190,190,190);
+$navnonactive: rgb(150,150,150);
+$navbold: rgb(80,80,80);
+$navactive: rgb(60,60,70);
+
+
+.news-nav .desktop-navbar-item-news a,
+.dashboards-nav .desktop-navbar-item-dashboards a,
+.journeys-nav .desktop-navbar-item-journeys a,
+.googleapps-nav .desktop-navbar-item-googleapps a {
+  color: $navactive;
+}
+
+.desktop-navbar-left a {
+  color: $navbold;
+}
+
+.desktop-navbar-item a {
+  color: $navnonactive;
+}
+
+.desktop-navbar-item a:hover {
+  color: $navbold;
+}
+
+.desktop-navbar-left a:hover {
+  .desktop-navbar-left-com{
+    color: $navbold;
+  }
+} 
+
+.desktop-navbar-left-com,
+.desktop-navbar-case {
+  color: $navdead;
+}
+
+.index-nav .desktop-navbar-left a,
+.index-nav .desktop-navbar-left-com{
+  color: $navactive;
+}
+
 
 
 /* Hides Desktop Navbar*/

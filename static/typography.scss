@@ -2,13 +2,14 @@
   font-family: pn;
   /*src: url(http://dn27tkn48vqxi.cloudfront.net/static/PNR.otf);*/
   src: url(PNR.otf);
+  font-weight: 400;
 }
 
 @font-face {
     font-family: pn;
     /*src: url(http://dn27tkn48vqxi.cloudfront.net/static/PNB.otf);*/
-    src: url(PNB.otf);
-    font-weight: bold;
+    src: url(PNSB.otf);
+    font-weight: 500;
 }
 
 * {
@@ -18,24 +19,27 @@ font-family: pn, Arial;
 
 
 
+
+
 /* DESKTOP */
 
 h1 {
 	font-size: 60px;
-	font-weight: bold;
+	font-weight: 500;
 	letter-spacing: -0.015em;
 }
 
 
 h2 {
 	font-size: 13px;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 
 
 h3 {
-	font-size: 22px;
+	font-size: 17px;
+	line-height: 1.4;
 	font-weight: normal;
 }
 
@@ -51,16 +55,21 @@ h4 {
 
 h5 {
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 h6 {
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 17px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 650px;
+	margin: 0 auto;
+	text-align: left;
 }
 
 p { 
-	font-size: 20px;
+	font-size: 18px;
 	width: 550px;
 	padding-right: 100px;
 	margin: 0 auto;
@@ -77,14 +86,14 @@ and (orientation : portrait) {
 
 h1 {
 	font-size: 45px;
-	font-weight: bold;
+	font-weight: 500;
 	letter-spacing: -0.015em;
 }
 
 
 h2 {
 	font-size: 12px;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 

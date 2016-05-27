@@ -3,7 +3,7 @@
 {% block title %}: News{% endblock %}
 
 {% block navbar %}
-<div class="news-nav">
+<div class="nav news-nav">
 	{% include '_desktopnav.html' %}
 	{% include '_mobilenav.html' %}
 </div>
@@ -19,56 +19,70 @@
 			<h1>News</h1>
 		</div>
 		<div class="h2-contain">
-			<div class="h2-list">
+			<div class="h2-list">				
 				<div class="h2-item"><h2>iOS</h2></div>
 				<div class="h2-item"><h2>WEB</h2></div>
 				<div class="h2-item"><h2>API DESIGN</h2></div>
 				<div class="h2-item"><h2>DATA</h2></div>
 			</div>
 		</div>
+		<div class="h3-contain">
+			<h3>
+				An iOS app to make retail teams happier and more productive. Here’s how we armed an entire workforce to make smarter decisions by delivering business intelligence and alerts.
+			</h3>
+		</div>
 	</div>
 	<div class="news-bg">
-		<div class="news-bg-right"></div>
-		<div class="news-bg-left"></div>
 		<div class="news-bg-center"></div>
 	</div>
 </div>
 <div class="head-contain-clear"></div>
 
-<div class="h3-contain">
-	<h3>
-		A team messaging app for retail teams. Delivers news on store performance, from the latest sales results to live crowd alerts. What we learnt from Slack in building products.
-	</h3>
+<div class="h4-contain">
+	<h4>
+		How we enabled smarter decisions throughout an entire workforce.
+	</h4>
+	<div class="h4-contain-read">
+	(2 min read)
+	</div>
 </div>
 
-<h4>Business Intelligence for managers from the Instagram generation.</h4>
-
 <p>
-Sarah is a retail store manager. From hiring employees, hitting targets and managing ops, she’s the CEO of the store. She’s great at organising people and inspiring them. She has a strong sense of aesthetics and her companies brand. She spends a lot of time on the shop floor, solving problems, putting out fires. She plans and co-ordinates projects from headquarters.
+Retail store managers are the CEOs of their store. They are responsible for everything from hiring and hitting targets to managing ops and running campaigns. Great store managers don’t just manage, they inspire. A lot of their time is spent away from their desks, on the shop-floor. 
 </p>
 <p>
-She runs her store like a business. She’s judged on her sales. If they are down one week, she’ll find out with a call on Monday morning from her boss, who manages all the stores in London. It’s difficult to pin down why sales are down, so no-one likes these calls much. 
+Store managers communicate both up and down the retail organisation – to their managers and to their staff. A retailer may have over 100 store teams.
 </p>
 <p>
-We felt that this interaction was important. So did retail teams.
+But communication and collaboration within store teams faced many problems, resulting in poor teamwork.
 </p>
 <p>
-Some store teams of leading retailers were trying to use public social networks to try and solve the problems themselves. They would share sales results and other basic indicators: how many customers convert to sales, and how much would they each spent. Store managers know that if their teams improve the store experience for customers, these metrics will increase and her sales should rise.
+A common example plays out like this. Store managers are judged on their sales. If they are down one week, the store manager will find out with a call on Monday morning from their boss. With only sales results at hand, it’s difficult to pin down why sales are down. Fingers are pointed, and these calls are rarely productive. This information problem cascades down the store team to employees.
 </p>
 <p>
-Products to improve work are changing. Teams can communicate with Slack. They can collaborate with Google Docs. Users enjoy these experiences because they solve their problems directly. Slack and Google Docs improves how teams perform and cooperate. 
+Some store teams of leading retailers were trying to use public social networks to try and solve the problem themselves. They would share sales numbers and key results, often hand-calculated in spreadsheets.
 </p>
 <p>
-More and more of these new products are designed around the structure of the work team and focus on the user problems.
-I worked with two engineers, on iOS and on the web/backend from white-boarding through to release. News required careful technical planning, repeated prototyping with users, and constant problem-solving. How to handle and provide meaningful team-admin features. Or mobile sync strategies. How to silently handle data errors and late data.
+Enter News. We designed News to help retail teams become faster, happier, and more productive. 
+</p>
+<h6>Instant Feedback</h6>
+<p>
+We wanted to speed up the feedback loop and provide users with instant results. When managers have instant feedback on store results they could worry less, plan better, and adapt quicker. Retail organisations typically worked off data days or weeks late. We were going to reduce this to seconds.
 </p>
 <p>
-We designed News to help retail teams become faster, happier, and more productive.
+With full APNS support, we could deliver scorecards to without friction before users left the office or locked up the store.
+</p>
+<h6>Smoke Alarms</h6>
+<p>
+One problem with traditional reporting was that results were communicated after the fact, so managers could not be proactive. By delivering key indicators store managers cared about before the end of the week, could react faster. By analysing past performance, we could identify when on-going results were signifcantly above or below average and only alert users when critical action was needed.
+</p>
+<h6>Diagnose Sales Problems</h6>
+<p>
+Reporting sales and visitor statistics could only tell a limited story what was happening. Users didn't just want to know their sales were down 10% this week. They wanted to know why.
 </p>
 <p>
-When managers have instant feedback on store results they could worry less and adapt quicker. Store managers could react quicker if they had smoke alarms for key indicators. They were perform better with a space to share and discuss results. 
+Low sales could mean low sales-per-visitor, poor conversion, or even poor street footfall. By bringing a dollar value to the entire customer funnel at the story, we could tell the story of why sales were down, and what to do next.  Store teams could pin-point weaknesses and strengths with their stores, bringing a richer dialogue with their employees and managers.
 </p>
-{% include '_newscarousel.html' %}
 
 <div class="footer-contain">
 	<div class="footer">

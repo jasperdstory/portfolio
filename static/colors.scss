@@ -4,7 +4,8 @@ $greyone: rgb(83,88,95);
 $greytwo: rgb(120,120,120);
 $greythree: rgb(166,170,169);
 $greyfour: rgb(190,190,200);
-$greysix: rgb(210,210,220);
+$greyfive: rgb(210,210,220);
+$greysix: rgb(245,245,250);
 $greyseven: rgb(248,248,248);
 $greyeight: rgb(253,253,253);
 
@@ -19,129 +20,41 @@ $semiwhite: rgba(255,255,255,0.8);
 $halfwhite: rgba(255,255,255,0.5);
 
 
-
-
 /* PAGE TEXT */
 
 /* Defaults */
 h1 { color: $greyone;     }
 h2 { color: $semigreyone; }
-h3 { color: $greytwo;     }
+h3 { color: $greyone;     }
 h4 { color: $greyone;     }
 h5 { color: $greythree;   }
 h6 { color: $greythree;   }
 p  { color: $greyone;     }
 
-/* Special */
-.news           h1 { color: $white;     }
-.news           h2 { color: $white;     }
-.journeys       h1 { color: $white;     }
-.journeys       h2 { color: $semiwhite; }
-
 /* H2 BOXES */
 .h2-item {
-  border: 1px solid $greysix;
+  border: 1px solid $greyfive;
   background-color: rgba(255,255,255,0.75); 
   @media (-webkit-min-device-pixel-ratio: 2) { 
-      border: 0.5px solid $greysix;
-  }
-}
-
-.news .h2-item, .journeys .h2-item {
-  border: 1px solid rgba(255,255,255,0.5);
-  background-color: rgba(0,0,0,0.05); 
-  @media (-webkit-min-device-pixel-ratio: 2) { 
-      border: 0.5px solid rgba(255,255,255,0.5);
+      border: 0.5px solid $greyfive;
   }
 }
 
 
-/* HEAD BOXES */
-
-/* Default */
-.index .head-contain {background: linear-gradient(to bottom, $greyseven 0%, white 100%);}
-.dashboards .head-contain {background: none;}
-.news .head-contain {background: linear-gradient(to bottom, $midblue 0%, $lightblue 100%);}
-.googleapps .h1-contain {background-image: url(http://dn27tkn48vqxi.cloudfront.net/static/googleapps-bg.png);}
-
-
-/* DESKTOP NAV BAR */
-
-.index-nav .desktop-navbar-case a,
-.index-nav .desktop-navbar-case a:visited,
-.index-nav .desktop-navbar-item-item a,
-.index-nav .desktop-navbar-item a:visited { 
-  color: $greythree !important; }
-.index-nav .desktop-navbar-item-index a,
-.index-nav .desktop-navbar-item-index a:visited {
-  color: $greyone !important;
+/* BACKGROUND */
+.head-contain {background: linear-gradient(to bottom, $greyseven 0%, white 100%);}
+.news .head-contain{
+  border-bottom: 1px solid $greyfive;
+  background-image:
+    radial-gradient(
+      circle at center bottom,
+      $white,
+      $greyseven 70%
+    );
 }
-
-
-.news-nav .desktop-navbar-left-com,
-.news-nav .desktop-navbar-case a,
-.news-nav .desktop-navbar-case a:visited,
-.news-nav .desktop-navbar-item a,
-.news-nav .desktop-navbar-item a:visited { 
-  color: $halfwhite !important;
+.dashboards .head-contain{
+  border-bottom: 1px solid $greyfive;
 }
-.news-nav .desktop-navbar-item-index a,
-.news-nav .desktop-navbar-item-index a:visited,
-.news-nav .desktop-navbar-item-news a,
-.news-nav .desktop-navbar-item-news a:visited {
-  color: $white !important;
-}
-
-.dashboards-nav .desktop-navbar-left-com,
-.dashboards-nav .desktop-navbar-case a,
-.dashboards-nav .desktop-navbar-case a:visited,
-.dashboards-nav .desktop-navbar-item a,
-.dashboards-nav .desktop-navbar-item a:visited { 
-  color: $greythree !important; }
-.dashboards-nav .desktop-navbar-item-index a,
-.dashboards-nav .desktop-navbar-item-index a:visited, 
-.dashboards-nav .desktop-navbar-item-dashboards a,
-.dashboards-nav .desktop-navbar-item-dashboards a:visited {
-  color: $greyone !important;
-}
-
-.journeys-nav .desktop-navbar-left-com,
-.journeys-nav .desktop-navbar-case a,
-.journeys-nav .desktop-navbar-case a:visited,
-.journeys-nav .desktop-navbar-item a,
-.journeys-nav .desktop-navbar-item a:visited { 
-  color: $halfwhite !important; }
-.journeys-nav .desktop-navbar-item-index a,
-.journeys-nav .desktop-navbar-item-index a:visited, 
-.journeys-nav .desktop-navbar-item-journeys a,
-.journeys-nav .desktop-navbar-item-journeys a:visited {
-  color: $white !important;
-}
-
-.googleapps-nav .desktop-navbar-left-com,
-.googleapps-nav .desktop-navbar-case a,
-.googleapps-nav .desktop-navbar-case a:visited,
-.googleapps-nav .desktop-navbar-item a,
-.googleapps-nav .desktop-navbar-item a:visited { 
-  color: $greythree !important; }
-.googleapps-nav .desktop-navbar-item-index a,
-.googleapps-nav .desktop-navbar-item-index a:visited, 
-.googleapps-nav .desktop-navbar-item-googleapps a,
-.googleapps-nav .desktop-navbar-item-googleapps a:visited {
-  color: $greyone !important;
-}
-
-
-/* NEWS CAROUSEL */
-.carousel-left-title{
-  color: $greyone;
-}
-
-.carousel-left-text{
-  color: $greytwo;
-}
-
-
 
 /* FIXED NAV */
 .mobile-navbar-container{

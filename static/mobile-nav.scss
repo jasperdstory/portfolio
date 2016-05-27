@@ -74,7 +74,7 @@ and (orientation : portrait) {
 
 .mobile-navbar-name{
   display: inline-block;  
-  font-weight: bold;
+  font-weight: 500;
   font-size: 13.5px;
   letter-spacing: 0.03em;
 
@@ -123,7 +123,7 @@ and (orientation : portrait) {
 .mobile-navbar-dropdown-item-link{
   -webkit-tap-highlight-color: rgba(0,0,0,0.1);
   display: block;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   width: 100%;
   margin-top: -15;
@@ -144,7 +144,7 @@ and (orientation : portrait) {
   width: 100%;
   color: rgb(68,160,255);
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 500;
   background-color: rgb(255,255,255);
   border-bottom: 0.5px solid rgb(170,170,170);
   text-decoration: none;
@@ -166,7 +166,7 @@ and (orientation : portrait) {
   height: 54px;
   color: rgb(68,160,255);
   font-size: 12px !important;
-  font-weight: bold;
+  font-weight: 500;
   background-color: rgb(255,255,255);
   border-top: 0.5px solid rgb(170,170,170);
   text-decoration: none;
@@ -197,7 +197,7 @@ and (orientation : portrait) {
 .mobile-navbar-dropdown-item a {
   opacity: 0;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 3.2;
   text-decoration: none;
   color: rgb(120,120,120);
@@ -223,7 +223,7 @@ and (orientation : portrait) {
 }
 
 .mobile-navbar-dropdown-item-link-work{
-  font-weight: bold;
+  font-weight: 500;
   color: rgb(150,150,150);
   /*-webkit-tap-highlight-color: rgba(255,255,255,0);*/
 }
@@ -233,7 +233,7 @@ and (orientation : portrait) {
 }
 
 /*.navbar-dropdown-item-bold{
-  font-weight: bold !important;
+  font-weight: 500 !important;
 }
 
 .navbar-dropdown-item-regular{
@@ -487,13 +487,13 @@ and (orientation : portrait) {
 .mobile-case-navbar-name{
   display: inline-block;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .mobile-case-navbar-section{
   display: inline-block;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   color: rgb(160,160,160);
 }*/
 
