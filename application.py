@@ -17,7 +17,7 @@ scss = Bundle('colors.scss', 'mobile-nav.scss', 'desktop-nav.scss', 'typography.
 			  filters='pyscss, cssmin', output='all.css')
 assets.register('scss_all', scss)
 
-js = Bundle('nav.js', 'menu.js', 'backtop.js', 'case-nav.js', 'particles.js', 'app.js',
+js = Bundle('nav.js', 'menu.js', 'backtop.js', 'particles.js', 'app.js',
             filters='jsmin', output='all.js')
 assets.register('js_all', js)
 

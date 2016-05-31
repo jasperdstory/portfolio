@@ -207,6 +207,19 @@ and (min-device-width : 1000px) {
   top: 570px;
 }
 
+.journey-h4-contain{
+  position: absolute;
+  z-index: 50;
+  top: 490px;
+  width: 100%;
+}
+
+.journey-h4-pad{
+  height: 75px;
+}
+
+
+
 /* GOOGLE APPS */
 
 .googleapps .h1-contain {
@@ -237,12 +250,14 @@ and (min-device-width : 1000px) {
 
 
 .youtube {
-
   width: 780px;
   border-bottom: none;
 }
 .youtube h3{
   width: 650px;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 15px;fa
 }
 
 .youtube-90{

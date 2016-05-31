@@ -27,7 +27,7 @@
 		</div>
 		<div class="h3-contain">
 			<h3>
-				Google Analytics for the physical world, using sensors.  <br>How we built a system from an idea on a whiteboard <br> to over 100 million measured customer journeys.
+				Google Analytics for the physical world, using sensors.  How we built a system from an idea on a whiteboard to over 100 million measured customer journeys.
 			</h3>
 		</div>
 	</div>
@@ -41,29 +41,48 @@
 <div class="particle-fadeout">
 
 </div>
-
-<div class="h4-contain">
-	<h4>
-		Measuring the real world
-	</h4>
-	<div class="h4-contain-read">
-	(2 min read)
+<div class="journey-h4-contain">
+	<div class="h4-contain">
+		<h4>
+			Measuring the real world
+		</h4>
+		<div class="h4-contain-read">
+		(2 min read)
+		</div>
 	</div>
 </div>
-
+<div class="journey-h4-pad">
+</div>
 <p>
-Before Dashboards, the main way users accessed Viewsy was through email reports. Users loved that they received a summary of key store statistics and analysis sent to their inbox every week or month. Accessing reports was frictionless, and they looked great in mobile mailboxes.
+Imagine you are the head of Amazon web-store. You have a review session with your CEO. He asks you how much traffic the site is receiving and how many visitors were brought in from your latest online campaign. He wants to know how long customers are on the site, and what the basket abandonment rate is. Imagine you don’t have the answers to any of these questions, and what it means for how you plan, iterate, and improve the online store.
 </p>
 <p>
-But reports weren’t flexible enough to fit into the complex structure of a modern retail business. Different retail teams have different priorities. There were teams in place to manage each of the hundred or more stores. Marketing and merchandising teams at head office launch sophisticated campaigns. A layer of business leaders at the top set the strategic course for the company across many channels. Different teams teams had different time-horizons: for store team the last week was important, for executives the last six months.
+Of course, Amazon has been measuring how users interact with their online store for over twenty years. But store-retailers are completely in the dark about how customers interact with their stores. They often don’t even know how many customers visited their stores.
 </p>
 <p>
-So while email reports were a great start, they weren’t targeted, focused or relevant enough for different teams in different retailers.  But we were resistant to content-creation tools (letting users build the reports themselves), because it meant user experience and build complexity.
+But online sales still only represent a small portion of retail sales; store sales are 10x larger than online. So twenty years later, we wanted to bring Amazon-style data to real-world stores. 
 </p>
 <p>
-User experience complexity was a big problem for even best-in-class business intelligence products for organisations, products like Tableau or Domo. They were too complex and too general. Users want to know their critical results. They don’t want to construct bar graphs, move about generic data objects, and tweak axes. The industry leaders had sacrificed simplicity to support the many industries they targeted.
+Retailers didn’t have access to this data was because it didn’t exist, in part because it was so hard to collect and analyse. Online, browsers leave marks when they request a website from a server, and websites leave cookies in users computers to track their experience. Deploying tracking code across all your sites is cheap and easy. Sensors to measure the physical world are expensive and we had to deploy a store in under an hour.
 </p>
-
+<p>
+On the one-side, we had to build the initial sensing system to measure people’s locations and how they travel; on the other, we had to deliver comprehensive, clear, and concrete performance metrics.
+</p>
+<p>
+After exploring the technical landscape, we built the capture system around measuring customers via their smartphones. Smartphones constantly transmit noisy information. We can listen to and measure these noisy transmission, and with some magic begin to locate smartphones based on this data.
+</p>
+<p>
+At this point, our sensor engineer was hacking sensor firmware. After we captured the noisy sensor data, we had to transform noisy sensor data into something valuable. There was two parts to this: first, building a general model of locating devices in time and then transforming this into customer journeys; the second, to deliver meaningful statistics on top of these journeys.
+</p>
+<p>
+The first part meant planning the transformations on the raw input data with our data guy, who built stock-trading algorithms before Viewsy. We had to design the transformations on the data, from noisy sensor data, through to location-time sets, through to complete customer journeys. 
+</p>
+<p>
+The second part meant carefully designing our business logic and back-end to calculate, store, and offer our business results to our front-end. And we had to handle data from multiple data sources, streaming live results to users wherever possible.
+</p>
+<p>
+My role was to lead the system planning, understand what each part of the stack could deliver and when, and how we could bring this together into a cohesive product that delivered results to users. A busy period in the store - captured with sensors - would trigger an alert to users within 90 seconds. Insights on the customer journeys - like what percentage of visitors “bounced” from the store, engagement trates, and acquisition metrics – would be reported through our web or email products.
+</p>
 
 </div>
 <div class="footer-contain journeys-footer">

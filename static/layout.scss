@@ -309,14 +309,14 @@ and (orientation : portrait) {
 .news .head-contain{ height: 744px; }
 .news .head-contain-clear{ height: 744px; }
 
-.dashboards .head-contain{ height: 375px; }
-.dashboards .head-contain-clear{ height: 375px; }
+.dashboards .head-contain{ height: 530px; }
+.dashboards .head-contain-clear{ height: 530px; }
 
 .journeys .head-contain{ height: 480px; }
 .journeys .head-contain-clear{ height: 480px; }
 
-.googleapps .head-contain{ height: 210px; }
-.googleapps .head-contain-clear{ height: 210px; }
+.googleapps .head-contain{ height: 410px; }
+.googleapps .head-contain-clear{ height: 410px; }
 
 
 
@@ -421,8 +421,30 @@ h4 {
 	margin-top: 60px;
 }
 
+.h4-contain {
+	width: calc(100% - 30px);
+	margin: 0 auto;
+	border-bottom: 1px solid rgb(200,200,200);
+	margin-bottom: 30px;
+}
+
+h4 {
+	margin: none;
+	width: 100%;
+}
+
+.h4-contain-read {
+	margin: 0 auto;
+	margin-top: -15px;
+}
+
 h5 { display: none; }
 .h5-contain { display: none; }
+
+
+h6 {
+	width: calc(100% - 30px);
+}
 
 p {
 	margin-bottom: 20px;
