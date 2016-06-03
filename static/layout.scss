@@ -1,7 +1,7 @@
 @media only screen
 and (min-device-width : 1000px) {
 
-}
+
 
 
 .head-contain {
@@ -183,7 +183,9 @@ p {
 	margin-bottom: 15px !important;
 }
 
-.footer-contain {
+/* FOOTER */
+
+.desktop-footer-contain {
 	width: 780px;
 	margin: 0 auto;
 	margin-top: 50px;
@@ -199,17 +201,30 @@ p {
 	width: 650px;
 	margin: 0 auto;
 }
-
-.footer a {
-	padding: 10px;
-	border-radius: 5px;
-	/*border: 1px solid red;*/
-	text-decoration: none;
+.footer-bar{
+	height: 40px;
+	line-height: 2.6;
+	border-bottom: 1px solid rgb(240,240,240);
+}
+.footer-bar-top{
+	display: inline-block;
+}
+.footer-bar-left{
+	width: 50%;
+	height: 100%;
+	padding-left: 10px;
 }
 
-.footer a:hover {
-	background-color: rgb(250,250,250);
-	color: rgb(100,100,100) !important;
+.footer-bar-right{
+	width: 45%;
+	height: 100%;
+	float: right;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.footer a {
+	text-decoration: none;
 }
 
 .footer a:visited {
@@ -218,73 +233,47 @@ p {
 	text-decoration: none;
 }
 
-.footer-left{
-	width: 33%;
-	float: left;
-	display: inline-block;
-	text-align: left;
+
+
+.footer-bar-left:hover {
+	background-color: rgb(250,250,250);
+	color: rgb(100,100,100) !important;
 }
 
-.footer-left a {
-	color: rgb(160,160,160);
-}
-
-.footer-left a:visited {
-	color: rgb(160,160,160);
-}
-
-.footer-center{
-	color: rgb(80,80,80);
-	width: 34%;
-	margin: 0 auto;
-	display: inline-block;
-	text-align: center;
-}
-
-.footer-center a,
-.footer-center a:visited{
-	color: rgb(80,80,80);
-}
-
-.footer-center a:hover{
-	color: rgb(60,60,60) !important;
-}
-
-.footer-right{
-	width: 33%;
-	float: right;	
-	display: inline-block;
-	text-align: right;
-}
-
-.desktop-footer-CV{
-	display: block;
-	width: 300px;
-	margin: 0 auto;
-	margin-top: 50px;
-	text-align: center;
+.footer-bar-right{
 	color: rgb(81,167,249);
 }
 
-.desktop-footer-CV a {
-	
+.footer-bar-right:hover {
+	background-color: rgba(81,167,249,0.05);
+	color: rgb(54,140,229) !important;
 }
 
-.desktop-footer-email{
-	display: block;
-	width: 100%;
-	margin-top: 50px;
-	text-align: center;
-	color: rgb(81,167,249);
+.footer-bar-top-left{
+	color: rgb(100,100,100);	
 }
 
-.mobile-footer-email{
+
+.footer-bar-email {
+	border-bottom: none;
+}
+
+.footer-bar-email .footer-bar-left:hover{
+	background-color: rgb(255,255,255) !important;
+	color: rgb(160,160,160) !important;
+}
+
+.googleapps #desktop-footer-next-link{
 	display: none;
 }
 
-.mobile-footer-CV{
+.mobile-footer-contain{
 	display: none;
 }
+
+}
+
+
 
 /* MOBILE */
 

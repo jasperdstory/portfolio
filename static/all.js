@@ -5,11 +5,13 @@ preloadImage('http://dn27tkn48vqxi.cloudfront.net/static/news-bg.png')
 preloadImage('http://dn27tkn48vqxi.cloudfront.net/static/dashboards-bg.png')
 var x=document.getElementById("page-verify")
 var j=document.getElementById("mobile-navbar-dropdown-head-section")
-if(x.classList.contains("index")){j.innerHTML=("JASPERSTORY");console.log("on index page!")}
-else if(x.classList.contains("news")){j.innerHTML=("NEWS");console.log("on news page!")}
-else if(x.classList.contains("dashboards")){j.innerHTML=("DASHBOARDS");console.log("on dashboards page!")}
-else if(x.classList.contains("journeys")){j.innerHTML=("JOURNEYS");console.log("on journeys page!")}
-else if(x.classList.contains("googleapps")){j.innerHTML=("GOOGLEAPPS");console.log("on google apps page!")}
+var m=document.getElementById("desktop-footer-next")
+var n=document.getElementById("desktop-footer-next-link")
+if(x.classList.contains("index")){j.innerHTML=("JASPERSTORY");m.innerHTML=("Next: News");n.href="/news";console.log("on index page!")}
+else if(x.classList.contains("news")){j.innerHTML=("NEWS");m.innerHTML=("Next: Dashboards");n.href="/dashboards";console.log("on news page!")}
+else if(x.classList.contains("dashboards")){j.innerHTML=("DASHBOARDS");m.innerHTML=("Next: Journeys");n.href="/journeys";console.log("on dashboards page!")}
+else if(x.classList.contains("journeys")){j.innerHTML=("JOURNEYS");m.innerHTML=("Next: Google Apps");n.href="/googleapps";console.log("on journeys page!")}
+else if(x.classList.contains("googleapps")){j.innerHTML=("GOOGLEAPPS");m.innerHTML=("");console.log("on google apps page!")}
 else{}
 document.getElementById("mobile-navbar-nav-open").addEventListener("click",function(){console.log("open clicked")
 var d=document.getElementById("mobile-navbar-container");var f=document.getElementById("page-container");var g=document.getElementsByTagName('body')[0]
