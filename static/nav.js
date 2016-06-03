@@ -27,7 +27,7 @@ var o = document.getElementById("mobile-footer-next")
 var p = document.getElementById("mobile-footer-next-link")
 
 if(x.classList.contains("index")){
-  j.innerHTML = ("JASPERSTORY");
+  j.innerHTML = ("JASPERSTORY.COM");
   m.innerHTML = ("Next: News");
   n.href = "/news";
   o.innerHTML = ("Next: News");
