@@ -440,109 +440,48 @@ p {
 }
 
 
-.footer-contain {
-	width: calc(100% - 15px);
-	margin: 0 auto;
-	margin-top: 100px;
-	border-top: 1px solid rgb(200,200,210);
-	height: 220px;
-	padding-top: 30px;
+.desktop-footer-contain{
+	display: none;
+}
+
+
+.mobile-footer-contain{
+	display: block;
+	border-top: 0.5px solid rgba(81,167,249,0.5);
+	width: 100%;
+	margin-top: 40px;
+}
+
+.footer-bar{
+	text-align: center;
+	height: 50px;
+	border-bottom: 0.5px solid rgba(81,167,249,0.5);
+	background-color: rgba(81,167,249,0.01);
 	text-transform: uppercase;
-	font-size: 14px;
 	font-weight: 500;
-	color: rgb(160,160,160);
-}
-.footer{
-	width: calc(100% - 15px);
-	margin: 0 auto;
-}
-
-.footer a {
-	padding: 0px;
-	margin: 0px;
-	width: 160px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-decoration: none;
-}
-
-.footer a:visited {
-	text-transform: none;
-	color: rgb(160,160,160) !important;
-	text-decoration: none;
-}
-
-.footer-left{
-	display: none;
-	width: 0%;
-}
-
-.footer-center{
-	color: rgb(80,80,80);
-	width: 48%;
-	margin: 0;
-	display: inline-block;
-	text-align: left;
-}
-
-.footer-center a {
-	padding-right: 40px;
-}
-
-.footer-center a,
-.footer-center a:visited{
-	color: rgb(80,80,80);
-}
-
-.footer-center a:hover{
-	color: rgb(60,60,60) !important;
-}
-
-.footer-right{
-	width: 48%;
-	float: right;
-}
-
-.desktop-footer-email{
-	display: none;
-}
-
-.desktop-footer-CV{
-	display: none;
-}
-
-.mobile-footer-CV{
-	display: block;
-	width: 100%;
-	margin-top: 30px;
-	height: 50px;
+	color: rgb(54,140,229);
 	line-height: 3.5;
-	border-radius: 5px;
+	font-size: 14px;
 }
 
-.mobile-footer-email{
-	display: block;
-	width: 100%;
-	margin-top: 10px;
-	height: 50px;
-	line-height: 3.5;
-	border-radius: 5px;
-}
-
-.mobile-footer-button {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	border-radius: 5px;
-	background-color: rgba(81,167,249,0.1);
-	text-align: center !important;
-	color: rgb(81,167,249);
-}
-
-.mobile-footer-email a:visited {
-	color: rgb(81,167,249);
+.footer-bar a {
 	text-decoration: none;
+	color: rgb(54,140,229) !important;
 }
+
+.footer-bar a:visited {
+	text-decoration: none;
+	color: rgb(54,140,229) !important;
+}
+
+.googleapps .footer-bar-next{
+	display: none;
+}
+
+
+
+
+
 
 .carousel-contain{
 	display: none;

@@ -23,29 +23,39 @@ var x = document.getElementById("page-verify")
 var j = document.getElementById("mobile-navbar-dropdown-head-section")
 var m = document.getElementById("desktop-footer-next") 
 var n = document.getElementById("desktop-footer-next-link")
+var o = document.getElementById("mobile-footer-next") 
+var p = document.getElementById("mobile-footer-next-link")
 
 if(x.classList.contains("index")){
   j.innerHTML = ("JASPERSTORY");
   m.innerHTML = ("Next: News");
   n.href = "/news";
+  o.innerHTML = ("Next: News");
+  p.href = "/news";
   console.log("on index page!")
 }
 else if(x.classList.contains("news")){
   j.innerHTML = ("NEWS");
   m.innerHTML = ("Next: Dashboards");
   n.href = "/dashboards";
+  o.innerHTML = ("Next: Dashboards");
+  p.href = "/dashboards";
   console.log("on news page!")
 }
 else if(x.classList.contains("dashboards")){
   j.innerHTML = ("DASHBOARDS");
   m.innerHTML = ("Next: Journeys");
   n.href = "/journeys";
+  o.innerHTML = ("Next: Journeys");
+  p.href = "/journeys";
   console.log("on dashboards page!")
 }
 else if(x.classList.contains("journeys")){
   j.innerHTML = ("JOURNEYS");
   m.innerHTML = ("Next: Google Apps");
   n.href = "/googleapps";
+  o.innerHTML = ("Next: Google Apps");
+  p.href = "/googleapps";
   console.log("on journeys page!")
 }
 else if(x.classList.contains("googleapps")){
