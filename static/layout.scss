@@ -292,7 +292,7 @@ and (orientation : portrait) {
 }
 .head-contain-clear{ height: 700px; }
 
-.index .mobile-head-contain{ height: 550px; }
+.index .mobile-head-contain{ height: 500px; }
 /*.index .mobile-head-contain-clear { height: 550px; }*/
 
 .news .head-contain{ height: 744px; }
@@ -386,6 +386,17 @@ h3 {
 	text-align: left;
 	margin-top: 40px;
 }
+
+.index-h3 h3{
+	margin-top: 0px;
+	margin-bottom: 5px !important;
+}
+
+
+.index-h3-2 {
+	margin-top: 180px;
+}
+
 
 
 
